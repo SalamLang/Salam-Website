@@ -14,7 +14,7 @@
         <button id="execute" disabled>Run!</button>
         <pre></pre>
 
-        <script type="text/javascript">
+        <script>
             const codeTextArea = document.querySelector('#code');
             const executeButton = document.querySelector('#execute');
             const outputPre = document.querySelector('pre');
@@ -27,7 +27,7 @@
                 onRuntimeInitialized: () => {
                     console.log('Salam loaded successfully');
                     isReady = true;
-                    executeButton.disabled = false;
+                    executeButton.removeAttribute('disabled');
                     if (codeTextArea.value.toString().trim() != "") {
                         runSalam();
                     }
@@ -85,7 +85,6 @@
             });
 
             var script = document.createElement('script');
-            script.type = 'text/javascript';
             script.src = 'salam.js';
             document.body.appendChild(script);
         </script>
