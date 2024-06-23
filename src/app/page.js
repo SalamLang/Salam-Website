@@ -1,4 +1,5 @@
 import Button from "@/components/atoms/Button";
+import Logo from "@/components/atoms/Logo";
 import TitleDescription from "@/components/atoms/TitleDescription";
 
 
@@ -21,6 +22,7 @@ export default function Home() {
         type="link"
         href="/home"
       />
+      <Logo />
     </main>
   );
 }
