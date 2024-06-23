@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-
-} */
+:root {
+  --bg-button-orange: #FF5C00;
+  --bg-button-blue: #276EF6;
+  --bg-button-blue-2: #ECF2FF;
+  --bg-button-white: #FFFFFF;
+  --bg-button-green: #D1FF6E;
+  --bg-button-black: #000000;
+  --text-button-black: #000000;
+  --text-button-white: #FFFFFF;
+  --text-button-blue: #276EF6;
+  --title: #000000;
+  --description: #7A8093;
+}
+* {
+  font-family: "EstedadThin";
+}
