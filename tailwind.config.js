@@ -19,6 +19,7 @@ module.exports = {
         'text-button-blue': 'var(--text-button-blue)',
         'title': 'var(--title)',
         'description': 'var(--description)',
+        'border-grey': 'var(--border-grey)',
       },
     },
   },

@@ -1,32 +1,45 @@
 import Link from 'next/link';
 
-const Button = ({ text, variant, icon, padding, borderRadius, type, href }) => {
-    let className = '';
+const Button = ({ text, variant, icon, padding, borderRadius, type, href, className }) => {
+    let classes = 'px-4 py-2 rounded-3xl ';
 
     switch (variant) {
         case 'buttonOrange':
-            className += ' bg-bg-button-orange text-text-button-white px-4 py-2 rounded-3xl ';
+            classes += 'bg-bg-button-orange text-text-button-white ';
             break;
         case 'buttonBlue':
-            className += ' bg-bg-button-blue text-text-button-white px-4 py-2 rounded-3xl ';
+            classes += 'bg-bg-button-blue text-text-button-white ';
+            break;
+        case 'buttonBlue2':
+            classes += 'bg-bg-button-blue-2 text-text-button-blue ';
+            break;
+        case 'buttonWhite':
+            classes += 'bg-bg-button-white text-text-button-black ';
+            break;
+        case 'buttonGreen':
+            classes += 'bg-bg-button-green text-text-button-black ';
+            break;
+        case 'buttonBlack':
+            classes += 'bg-bg-button-black text-text-button-white ';
             break;
         default:
-            className += ' bg-bg-button-orange text-text-button-white px-4 py-2 rounded-3xl ';
+            classes += 'bg-bg-button-orange text-text-button-white ';
     }
 
-    if (padding) className += ` ${padding}`;
-    if (borderRadius) className += ` ${borderRadius}`;
+    if (padding) classes += `${padding} `;
+    if (borderRadius) classes += `${borderRadius} `;
+    if (className) classes += `${className} `;
 
     if (type === 'link' && href) {
         return (
-            <Link href={href} className={className}>
+            <Link href={href} className={classes}>
                 {icon && <span className="mr-2">{icon}</span>}
                 {text}
             </Link>
         );
     } else {
         return (
-            <button className={className}>
+            <button className={classes}>
                 {icon && <span className="mr-2">{icon}</span>}
                 {text}
             </button>
