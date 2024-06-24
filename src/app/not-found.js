@@ -9,7 +9,7 @@ function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center gap-14">
 
-        <div className='relative w-full flex items-center justify-center'>
+        <div className='relative w-full sm:w-fit flex items-center justify-center'>
         <Gif variant="Gif404">
         </Gif>
         <CarectersNotFound />

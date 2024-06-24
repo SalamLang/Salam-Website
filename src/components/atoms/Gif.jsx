@@ -11,19 +11,19 @@ function Gif({ variant }) {
 
     switch (variant) {
         case 'Gif404':
-            classes += "w-60 h-64 md:w-[304px] md:h-[337px]";
+            classes += "w-60 h-64 sm:w-[304px] sm:h-[337px]";
             src = Gif404Image;
             break;
         case 'GifDownload':
-            classes += 'h-[270px] w-48 md:w-[275px] md:h-96';
+            classes += 'h-[270px] w-48 sm:w-[275px] sm:h-96';
             src = GifDownloadImage;
             break;
         case 'GifEducation':
-            classes += 'h-56 w-60 md:w-96 md:h-[352px]';
+            classes += 'h-56 w-60 sm:w-96 sm:h-[352px]';
             src = GifEducationImage;
             break;
         case 'GifEducation2':
-            classes += 'w-[337px] h-64 md:h-80 md:w-[425px]';
+            classes += 'w-[337px] h-64 sm:h-80 sm:w-[425px]';
             src = GifEducation2Image;
             break;
         default:
