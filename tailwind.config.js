@@ -14,6 +14,8 @@ module.exports = {
         'bg-button-white': 'var(--bg-button-white)',
         'bg-button-green': 'var(--bg-button-green)',
         'bg-button-black': 'var(--bg-button-black)',
+        'bg-button-orange2': 'var(--bg-button-orange2)',
+        'text-button-orange2': 'var(--text-button-orange2)',
         'text-button-black': 'var(--text-button-black)',
         'text-button-white': 'var(--text-button-white)',
         'text-button-blue': 'var(--text-button-blue)',

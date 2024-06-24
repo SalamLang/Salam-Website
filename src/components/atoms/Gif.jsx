@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Gif404Image from '../../../public/404.gif';
 import GifDownloadImage from '../../../public/Download.gif';
 import GifEducationImage from '../../../public/Education.gif';
-import GifEducation2Image from '../../../public/ٍٍٍٍEducation2.gif';
+import GifEducation2Image from '../../../public/Education2.gif';
 
 function Gif({ variant }) {
     let classes = '';

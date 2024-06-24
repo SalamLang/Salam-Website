@@ -5,7 +5,7 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-y-8 items-center justify-between p-4">
+    <main className="flex min-h-screen flex-col gap-y-2 items-center justify-between p-4">
       <TitleDescription 
         title="یه مشکلی داریم"
         description="دوباره امتحان کنید یا به صفحه ی اصلی بروید !"

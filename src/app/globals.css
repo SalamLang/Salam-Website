@@ -4,12 +4,14 @@
 
 :root {
   --bg-button-orange: #FF5C00;
+  --bg-button-orange2: #FFF2EB;
   --bg-button-blue: #276EF6;
   --bg-button-blue-2: #ECF2FF;
   --bg-button-white: #FFFFFF;
   --bg-button-green: #D1FF6E;
   --bg-button-black: #000000;
   --text-button-black: #000000;
+  --text-button-orange2: #FF5C00;
   --text-button-white: #FFFFFF;
   --text-button-blue: #276EF6;
   --title: #000000;
