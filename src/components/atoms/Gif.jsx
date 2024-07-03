@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Gif404Image from '../../../public/404.gif';
 import GifDownloadImage from '../../../public/Download.gif';
@@ -26,8 +25,6 @@ function Gif({ variant }) {
             classes += 'w-[337px] h-64 sm:h-80 sm:w-[425px]';
             src = GifEducation2Image;
             break;
-        default:
-            classes += '';
     }
 
     return (

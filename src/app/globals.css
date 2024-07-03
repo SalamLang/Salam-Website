@@ -17,10 +17,8 @@
   --title: #000000;
   --description: #7A8093;
   --border-grey: rgba(232, 233, 236, 0.1);
+  --bg-main: #FF5C00;
 }
 * {
   font-family: "EstedadThin";
-}
-body {
-  background-color: #FFFFFF !important;
 }

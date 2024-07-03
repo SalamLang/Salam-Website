@@ -35,13 +35,13 @@ const Button = ({ text, variant, icon, padding, borderRadius, type, href, classN
         return (
             <Link href={href} className={classes}>
                 {text}
-                {icon && <span className="w-8 h-8">{icon}</span>}
+                {icon && <span>{icon}</span>}
             </Link>
         );
     } else {
         return (
             <button className={classes}>
-                {icon && <span className="w-8 h-8">{icon}</span>}
+                {icon && <span>{icon}</span>}
                 {text}
             </button>
         );
