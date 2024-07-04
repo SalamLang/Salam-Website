@@ -14,16 +14,16 @@ function NotFound() {
         </Gif>
         <CarectersNotFound />
         </div>
-        <TitleDescription 
+        <TitleDescription
           title="یه مشکلی داریم"
           description="دوباره امتحان کنید یا به صفحه ی اصلی بروید !"
         />
-        <Button 
-          text="بازگشت به خانه" 
+        <Button
+          text="بازگشت به خانه"
           variant="buttonOrange"
           icon={<span>
             <ArrowLeft />
-          </span>} 
+          </span>}
           type="link"
           href="/"
         />
