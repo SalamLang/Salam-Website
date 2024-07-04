@@ -14,23 +14,23 @@ function Download() {
         </Gif>
         <CarectersDownload />
         </div>
-        <TitleDescription 
+        <TitleDescription
           title="مرسی که ..."
           description="نرم افزار مارو دانلود کردید و تشکر میکنیم از این کارتون !"
         />
         <div className="flex items-center justify-center gap-6">
-        <Button 
-          text="مشاهده ی آموزش" 
+        <Button
+          text="مشاهده ی آموزش"
           variant="buttonOrange2"
           type="link"
           href="/"
         />
-        <Button 
-          text="مشکل تو دانلود" 
+        <Button
+          text="مشکل تو دانلود"
           variant="buttonOrange"
           icon={<span>
             <DownloadClud />
-          </span>} 
+          </span>}
           type="link"
           href="/"
         />

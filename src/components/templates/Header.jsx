@@ -13,8 +13,8 @@ function Header() {
         <Hamberger />
         <Button
             className= " hidden md:flex"
-            text="آنلاین کار کن" 
-            variant="buttonGreen" 
+            text="آنلاین کار کن"
+            variant="buttonGreen"
             type="link"
             href="/"
         />
