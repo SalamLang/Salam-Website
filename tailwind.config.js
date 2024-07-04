@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         'bg-main': 'var(--bg-main)',
+        'bg-box': 'var(--bg-box)',
         'bg-button-orange': 'var(--bg-button-orange)',
         'bg-button-blue': 'var(--bg-button-blue)',
         'bg-button-blue-2': 'var(--bg-button-blue-2)',
