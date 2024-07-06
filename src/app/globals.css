@@ -19,6 +19,7 @@
   --border-grey: rgba(232, 233, 236, 0.1);
   --bg-main: #FF5C00;
   --bg-box: #FFF2EB;
+  --border-grey2: rgba(122, 128, 147, 0.2);
 }
 * {
   font-family: "EstedadThin";

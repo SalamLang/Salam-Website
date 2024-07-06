@@ -24,6 +24,7 @@ module.exports = {
         'title': 'var(--title)',
         'description': 'var(--description)',
         'border-grey': 'var(--border-grey)',
+        'border-grey2': 'var(--border-grey2)',
       },
     },
   },
