@@ -41,8 +41,8 @@ const Button = ({ text, variant, icon, padding, borderRadius, type, href, classN
     } else {
         return (
             <button className={classes}>
-                {icon && <span>{icon}</span>}
                 {text}
+                {icon && <span>{icon}</span>}
             </button>
         );
     }
