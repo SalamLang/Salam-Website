@@ -20,6 +20,10 @@
   --bg-main: #FF5C00;
   --bg-box: #FFF2EB;
   --border-grey2: rgba(122, 128, 147, 0.2);
+  --bg-circel-blue : #0066FF;
+  --bg-circel-green : #4DFFB4;
+  --bg-circel-orange : #FF5C00;
+  --text-orange : #FF5C00;
 }
 * {
   font-family: "EstedadThin";

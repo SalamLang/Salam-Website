@@ -1,6 +1,6 @@
 // app/Education/page.js
 import ArrowDown from '@/components/atoms/ArrowDown';
-import Gif from '@/components/atoms/Gif';
+import CodeExample from '@/components/templates/CodeExample';
 import EducationDownload from '@/components/templates/EducationDownload';
 import EducationHero from '@/components/templates/EducationHero';
 import Faq from '@/components/templates/Faq';
@@ -19,6 +19,7 @@ const Education = () => {
       <GoToLearn />
       <ArrowDown variant="Screw" />
       <SectionInstall />
+      <CodeExample />
     </div>
   );
 };
