@@ -8,8 +8,8 @@ function EducationDownload() {
     <div className="flex items-center justify-center flex-col gap-5">
         <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
         <Button
-            text="دانلود" 
-            variant="buttonOrange" 
+            text="دانلود"
+            variant="buttonOrange"
         />
         <div className="w-full flex items-center justify-evenly flex-wrap gap-8">
             <BoxDownload variant="Mac" />

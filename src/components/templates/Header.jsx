@@ -12,9 +12,9 @@ function Header() {
         <MenuList />
         <Hamberger />
         <Button
-            className= " hidden md:flex"
-            text="آنلاین کار کن" 
-            variant="buttonGreen" 
+            className="hidden md:flex"
+            text="آنلاین کار کن"
+            variant="buttonGreen"
             type="link"
             href="/"
         />
