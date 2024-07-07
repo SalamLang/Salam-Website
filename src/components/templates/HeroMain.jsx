@@ -6,7 +6,7 @@ import CarectersHeroMain from '../molecules/CarectersHeroMain'
 
 function HeroMain() {
   return (
-    <div className="flex items-center justify-center flex-col gap-6 relative w-full mb-96">
+    <div className="flex items-center justify-center flex-col gap-6 relative w-full">
         <TitleDescription 
             title="به جمع دوس داشتنی سلام ما بپیوند"
             description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
