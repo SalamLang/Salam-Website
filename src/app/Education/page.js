@@ -1,5 +1,6 @@
 // app/Education/page.js
 import ArrowDown from '@/components/atoms/ArrowDown';
+import BoxStartLanguge from '@/components/molecules/BoxStartLanguge';
 import CodeExample from '@/components/templates/CodeExample';
 import EducationDownload from '@/components/templates/EducationDownload';
 import EducationHero from '@/components/templates/EducationHero';
@@ -20,6 +21,7 @@ const Education = () => {
       <ArrowDown variant="Screw" />
       <SectionInstall />
       <CodeExample />
+      <BoxStartLanguge />
     </div>
   );
 };
