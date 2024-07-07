@@ -29,6 +29,7 @@ module.exports = {
         'bg-circel-blue': 'var(--bg-circel-blue)',
         'bg-circel-green': 'var(--bg-circel-green)',
         'bg-circel-orange': 'var(--bg-circel-orange)',
+        'bg-box-advantage': 'var(--bg-box-advantage)',
       },
     },
   },
