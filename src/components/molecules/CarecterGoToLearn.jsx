@@ -3,6 +3,7 @@ import CarecterOrange from "../../../public/caracter4.svg"
 import CaracterGreen from "../../../public/carecter7.svg"
 import CaracterGreentow from "../../../public/carecter8.svg"
 
+
 function CarecterGoToLearn() {
   return (
     <>
