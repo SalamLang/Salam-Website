@@ -1,4 +1,5 @@
 import Marquee from "@/components/organisms/Marquee";
+import BestComment from "@/components/templates/BestComment";
 import CodeExample from "@/components/templates/CodeExample";
 import DescriptionOnlineCode from "@/components/templates/DescriptionOnlineCode";
 import HeroMain from "@/components/templates/HeroMain";
@@ -15,6 +16,7 @@ export default function Home() {
       <DescriptionOnlineCode />
       <LanguageAdvantage />
       <HomeDownload />
+      <BestComment />
     </main>
   );
 }

@@ -31,6 +31,8 @@ module.exports = {
         'bg-circel-orange': 'var(--bg-circel-orange)',
         'bg-box-advantage': 'var(--bg-box-advantage)',
         'bg-box-download': 'var(--bg-box-download)',
+        'bg-section': 'var(--bg-section)',
+        'bg-slider': 'var(--bg-slider)',
       },
     },
   },
