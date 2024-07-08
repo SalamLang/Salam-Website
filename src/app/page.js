@@ -1,8 +1,8 @@
 import Marquee from "@/components/organisms/Marquee";
 import CodeExample from "@/components/templates/CodeExample";
 import DescriptionOnlineCode from "@/components/templates/DescriptionOnlineCode";
-import EducationDownload from "@/components/templates/EducationDownload";
 import HeroMain from "@/components/templates/HeroMain";
+import HomeDownload from "@/components/templates/HomeDownload";
 import LanguageAdvantage from "@/components/templates/LanguageAdvantage";
 
 
@@ -14,7 +14,7 @@ export default function Home() {
       <CodeExample />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
-      <EducationDownload />
+      <HomeDownload />
     </main>
   );
 }

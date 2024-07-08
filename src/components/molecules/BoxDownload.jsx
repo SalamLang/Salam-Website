@@ -6,7 +6,7 @@ import Android from '../../../public/Android.png';
 import Windows from '../../../public/Windows.png';
 import Pwa from '../../../public/Pwa.png';
 
-function BoxDownload({ variant }) {
+function BoxDownload({ variant, className }) {
     let src;
     let title;
     let description;
@@ -41,7 +41,7 @@ function BoxDownload({ variant }) {
 
     return (
         <div className="flex items-center justify-center flex-col gap-2">
-            <div className="bg-bg-box rounded-xl p-6 flex items-center justify-center w-20 h-20">
+            <div className={`bg-bg-box rounded-xl p-6 flex items-center justify-center w-20 h-20 ${className}`}>
                 <Image
                     src={src}
                     alt={title} // افزودن alt برای دسترس‌پذیری
