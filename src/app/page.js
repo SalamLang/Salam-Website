@@ -8,6 +8,7 @@ import HomeDownload from "@/components/templates/HomeDownload";
 import LanguageAdvantage from "@/components/templates/LanguageAdvantage";
 import Learn from "@/components/templates/Learn";
 import SliderTemplate from "@/components/templates/SliderTemplate";
+import Users from "@/components/templates/Users";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Learn />
       <SliderTemplate />
       <AccordionContainer />
+      <Users />
     </main>
   );
 }
