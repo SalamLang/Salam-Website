@@ -1,4 +1,3 @@
-import Accordion from "@/components/molecules/Accordion";
 import AccordionContainer from "@/components/organisms/AccordionContainer";
 import Marquee from "@/components/organisms/Marquee";
 import BestComment from "@/components/templates/BestComment";
@@ -8,6 +7,7 @@ import HeroMain from "@/components/templates/HeroMain";
 import HomeDownload from "@/components/templates/HomeDownload";
 import LanguageAdvantage from "@/components/templates/LanguageAdvantage";
 import Learn from "@/components/templates/Learn";
+import SliderTemplate from "@/components/templates/SliderTemplate";
 
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
       <HomeDownload />
       <BestComment />
       <Learn />
+      <SliderTemplate />
       <AccordionContainer />
     </main>
   );

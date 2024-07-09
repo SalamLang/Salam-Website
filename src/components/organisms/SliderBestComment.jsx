@@ -72,7 +72,7 @@ function SliderBestComment() {
                     <div
                         key={index}
                         className={`w-3 h-3 mx-1 rounded-full cursor-pointer ${
-                            index === currentIndex ? 'bg-white w-10' : 'bg-[#FFB992]'
+                            index === currentIndex ? 'bg-white w-8' : 'bg-[#FFB992]'
                         }`}
                         onClick={() => setCurrentIndex(index)}
                     ></div>
