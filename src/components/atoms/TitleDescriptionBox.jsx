@@ -11,4 +11,3 @@ const TitleDescriptionBox = ({ title, description }) => {
 };
 
 export default TitleDescriptionBox;
-

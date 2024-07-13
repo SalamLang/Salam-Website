@@ -18,4 +18,3 @@ const CommentCard = ({ comment }) => {
 };
 
 export default CommentCard;
-
