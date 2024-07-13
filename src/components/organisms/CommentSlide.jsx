@@ -12,4 +12,3 @@ const CommentSlide = ({ comments }) => {
 };
 
 export default CommentSlide;
-
