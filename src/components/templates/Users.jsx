@@ -10,7 +10,7 @@ function Users() {
             description="توی کمترین مدت به دلیل بالا بودن لینک هامون به آدم های مختلف"
         />
         <AvatarGallery />
-        <TitleDescription 
+        <TitleDescription
             description="# و هزاران نفر دیگر"
         />
     </div>

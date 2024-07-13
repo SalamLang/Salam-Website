@@ -8,7 +8,7 @@ function Faq() {
     <div className="flex flex-col items-center justify-center gap-y-8">
         <Gif variant="GifEducation">
         </Gif>
-        <TitleDescription 
+        <TitleDescription
             title="توی این قسمت میتونی سوالات متداول رو ببینی"
             description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
         />
