@@ -44,7 +44,7 @@ function SliderBestComment() {
             <div className="p-4 relative z-20 flex flex-col items-center justify-center gap-y-6">
                 <p className="mb-4 text-white text-base font-normal text-center">{comments[currentIndex].text}</p>
                 <div className="w-full flex items-center justify-center flex-col gap-y-2">
-                    <Image 
+                    <Image
                         className="rounded-2xl w-16 h-16"
                         src={comments[currentIndex].img}
                         alt="profile"

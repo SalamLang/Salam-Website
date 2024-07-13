@@ -10,8 +10,8 @@ function LanguageAdvantage() {
         />
         <div className="w-full max-w-[1093px] flex items-center justify-between flex-wrap gap-y-10">
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="BestDesigne" 
+                <ImageBoxAdvantage
+                    variant="BestDesigne"
                 />
                 <TitleDescriptionBox
                     title="طراحی فوق العاده"
@@ -21,8 +21,8 @@ function LanguageAdvantage() {
                 />
             </div>
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="Security" 
+                <ImageBoxAdvantage
+                    variant="Security"
                 />
                 <TitleDescriptionBox
                     title="امنیت بالا"
@@ -32,19 +32,19 @@ function LanguageAdvantage() {
                 />
             </div>
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="Simplicity" 
+                <ImageBoxAdvantage
+                    variant="Simplicity"
                 />
                 <TitleDescriptionBox
                     title="شخصی سازی بالا"
                     description="شما میتوانید تا جایی که میخواهید
-                    وبسایت خود را شخصی سازی 
+                    وبسایت خود را شخصی سازی
                     کنید و لذت ببرید دوستان عزیز."
                 />
             </div>
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="AllPeople" 
+                <ImageBoxAdvantage
+                    variant="AllPeople"
                 />
                 <TitleDescriptionBox
                     title="مناسب برای همه"
@@ -54,24 +54,24 @@ function LanguageAdvantage() {
                 />
             </div>
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="Rtl" 
+                <ImageBoxAdvantage
+                    variant="Rtl"
                 />
                 <TitleDescriptionBox
                     title="راست چین"
                     description="برعکس باقی زبان ها این زبان
-                    متن های فارسی رو به صورت 
+                    متن های فارسی رو به صورت
                     راست چین مینویسد."
                 />
             </div>
             <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
-                <ImageBoxAdvantage 
-                    variant="Simplicity" 
+                <ImageBoxAdvantage
+                    variant="Simplicity"
                 />
                 <TitleDescriptionBox
                     title="سادگی"
-                    description="شما میتوانید به سادگی تمام این 
-                    زبان رو یاد گرفته و بعد در سریع 
+                    description="شما میتوانید به سادگی تمام این
+                    زبان رو یاد گرفته و بعد در سریع
                     ترین زمان ممکن شروع به کار کنید"
                 />
             </div>

@@ -4,9 +4,9 @@ import BoxDownload from '../molecules/BoxDownload'
 function HomeDownload() {
   return (
     <div className="flex items-center justify-center flex-col gap-y-20 px-4">
-    <TitleDescription 
+    <TitleDescription
         title="دانلود زبان سلام"
-        description= "حالا از ویندوز, لینوکس, مک گرفته تا هرچی که به ذهنت میرسه فقط کافیه اقدام کنی !" 
+        description= "حالا از ویندوز, لینوکس, مک گرفته تا هرچی که به ذهنت میرسه فقط کافیه اقدام کنی !"
     />
     <div className="w-full max-w-[847px] rounded-lg pt-14 bg-bg-box-advantage p-8 md:p-10 md:pt-20 flex items-center justify-evenly flex-wrap gap-8 relative">
         <div className="py-4 px-12 w-fit h-fit rounded-lg bg-bg-box-download absolute inset-0 mx-auto -top-6">

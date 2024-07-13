@@ -8,7 +8,7 @@ import Button from '../atoms/Button'
 function BoxSentCode() {
   return (
     <div className="bg-bg-box-download h-[74px] w-full max-w-2xl rounded-[40px] flex items-center justify-between px-4">
-        <Image 
+        <Image
             src="../../../public/mobile.svg"
             alt="mobile"
             width={120}

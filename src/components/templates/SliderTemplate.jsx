@@ -54,7 +54,7 @@ const comments = [
 
 const SliderTemplate = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    
+
     const groups = [];
     for (let i = 0; i < comments.length; i += 3) {
         groups.push(comments.slice(i, i + 3));

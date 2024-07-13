@@ -13,12 +13,12 @@ function CodeExample() {
             <TextExampleCole />
         </div>
         <div className="flex flex-col items-end justify-end gap-y-10">
-            <ButtonCodeBox 
+            <ButtonCodeBox
                 icon={<span>
                     <Play />
                 </span>}
             />
-            <ButtonCodeBox 
+            <ButtonCodeBox
                 icon={<span>
                     <Play />
                 </span>}
