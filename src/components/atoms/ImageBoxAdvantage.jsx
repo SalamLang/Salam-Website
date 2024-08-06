@@ -6,7 +6,7 @@ import Rtl from '../../../public/Rtl.png';
 import Simplicity from '../../../public/Simplicity.png';
 
 function ImageBoxAdvantage({ variant }) {
-    let classes = 'w-8 h-8 lg:w-[52px] md:h-[52px]';
+    let classes = 'w-8 h-8 lg:w-[52px] brightness-0';
     let src = '';
 
     switch (variant) {
@@ -32,7 +32,7 @@ function ImageBoxAdvantage({ variant }) {
             break;
     }
   return (
-    <div className="bg-white p-8 rounded-3xl flex items-center justify-center">
+    <div className="bg-bg-button-green w-24 h-24 p-8 rounded-3xl flex items-center justify-center">
         <Image
             className={classes}
             src={src}

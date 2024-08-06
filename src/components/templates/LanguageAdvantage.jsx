@@ -4,12 +4,12 @@ import TitleDescriptionBox from '../atoms/TitleDescriptionBox'
 
 function LanguageAdvantage() {
   return (
-    <div className="w-full h-auto flex items-center justify-center flex-col gap-y-6 px-4">
+    <div className="w-full h-auto flex items-center justify-center flex-col gap-y-6">
         <TitleDescription
             title="چرا زبان سلام"
         />
-        <div className="w-full max-w-[1093px] flex items-center justify-between flex-wrap gap-y-10">
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+        <div className="w-full max-w-[900px] grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3">
+            <div className="bg-bg-box2  p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="BestDesigne"
                 />
@@ -20,7 +20,7 @@ function LanguageAdvantage() {
                     میدهیم و لذت ببرید دوستا"
                 />
             </div>
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+            <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="Security"
                 />
@@ -31,7 +31,7 @@ function LanguageAdvantage() {
                     باشید و لذت ببرید دوستان عزیز."
                 />
             </div>
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+            <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="Simplicity"
                 />
@@ -42,7 +42,7 @@ function LanguageAdvantage() {
                     کنید و لذت ببرید دوستان عزیز."
                 />
             </div>
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+            <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="AllPeople"
                 />
@@ -53,7 +53,7 @@ function LanguageAdvantage() {
                     زبان کار کنند و لذت ببرند"
                 />
             </div>
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+            <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="Rtl"
                 />
@@ -64,7 +64,7 @@ function LanguageAdvantage() {
                     راست چین مینویسد."
                 />
             </div>
-            <div className="bg-bg-box-advantage w-[169px] md:w-80 p-3 md:p-10 rounded-3xl flex items-center justify-center flex-col gap-8">
+            <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                 <ImageBoxAdvantage
                     variant="Simplicity"
                 />

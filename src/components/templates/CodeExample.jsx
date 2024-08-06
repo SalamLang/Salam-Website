@@ -7,7 +7,7 @@ import Play from "../../../public/Play.svg"
 
 function CodeExample() {
   return (
-    <div className="w-full h-fit max-w-[1093px] bg-bg-box rounded-2xl p-8 flex items-start justify-between" >
+    <div className="w-full h-fit max-w-[900px] bg-bg-box2 rounded-2xl p-8 flex items-start justify-between" >
         <div className="flex flex-col items-start justify-start gap-y-4">
             <CircelsBoxCode />
             <TextExampleCole />

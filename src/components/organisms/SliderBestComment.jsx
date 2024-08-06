@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import Avatar from "../../../public/avatar.png";
+import Avatar from "../../../public/avatar-comment-2.png";
 import Next from "../../../public/next.svg";
 import Preview from "../../../public/preview.svg";
 
@@ -40,9 +40,9 @@ function SliderBestComment() {
     };
 
     return (
-        <div className="max-w-md mx-auto p-6 bg-bg-slider rounded-3xl z-10">
+        <div className="max-w-[700px] p-6 rounded-xl z-10 bg-[#F6FDA6]">
             <div className="p-4 relative z-20 flex flex-col items-center justify-center gap-y-6">
-                <p className="mb-4 text-white text-base font-normal text-center">{comments[currentIndex].text}</p>
+                <p className="mb-4 text-black  text-base font-Estedad-Light text-center">{comments[currentIndex].text}</p>
                 <div className="w-full flex items-center justify-center flex-col gap-y-2">
                     <Image
                         className="rounded-2xl w-16 h-16"
@@ -51,18 +51,18 @@ function SliderBestComment() {
                         width={150}
                         height={150}
                     />
-                    <p className="text-white text-2xl font-medium">{comments[currentIndex].name}</p>
-                    <p className="text-sm text-white">{comments[currentIndex].title}</p>
+                    <p className="text-black text-2xl font-Estedad-Light">{comments[currentIndex].name}</p>
+                    <p className="text-sm text-black font-Estedad-ExtraLight">{comments[currentIndex].title}</p>
                 </div>
                 <button
                     onClick={prevSlide}
-                    className="absolute w-16 h-16 rounded-3xl right-0 top-[70%] transform -translate-y-1/2 bg-bg-slider p-2 flex items-center justify-center"
+                    className="absolute w-16 h-16 rounded-3xl right-0 top-[70%] transform -translate-y-1/2 bg-bg-gray hover:bg-[#0303037F] transition p-2 flex items-center justify-center"
                 >
                     <Preview />
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute w-16 h-16 left-0 top-[70%] transform -translate-y-1/2 bg-bg-slider rounded-3xl p-2 flex items-center justify-center"
+                    className="absolute w-16 h-16 left-0 top-[70%] transform -translate-y-1/2 bg-bg-gray hover:bg-[#0303037F] transition rounded-3xl p-2 flex items-center justify-center"
                 >
                     <Next />
                 </button>
@@ -71,8 +71,8 @@ function SliderBestComment() {
                 {comments.map((_, index) => (
                     <div
                         key={index}
-                        className={`w-3 h-3 mx-1 rounded-full cursor-pointer ${
-                            index === currentIndex ? 'bg-white w-8' : 'bg-[#FFB992]'
+                        className={`w-20 h-3 mx-2 rounded-full cursor-pointer ${
+                            index === currentIndex ? 'bg-bg-circel-green w-24' : 'bg-[#92C73BD6] w-8'
                         }`}
                         onClick={() => setCurrentIndex(index)}
                     ></div>

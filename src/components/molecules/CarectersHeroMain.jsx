@@ -6,23 +6,23 @@ import CaracterGreentow from "../../../public/carecter-hero-3.svg"
 
 function CarectersHeroMain() {
   return (
-    <>
-    <span className="absolute right-[25%] top-80 lg:right-[35%] lg:top-64 xl:right-[38%] hidden md:block">
+    <div className="">
+    <span className="absolute right-[50%] translate-x-1/2 top-48 xl:top-56 md:block">
         <CarecterGavad />
     </span>
-    <span className="absolute right-[72%] top-14 lg:right-[72%] lg:top-2 xl:right-[68%] xl:top-5 hidden md:block">
+    <span className="absolute left-[1%] top-0 lg:left-[5%] xl:top-5 hidden lg:block">
         <Carecterblue />
     </span>
-    <span className="absolute right-[0%] top-14 lg:right-[5%] lg:top-0 xl:right-[16%] hidden md:block">
+    <span className="absolute right-[1%] top-0 lg:right-[5%] hidden lg:block">
         <CaracterBluetow />
     </span>
-    <span className="absolute right-[58%] top-56 lg:right-[62%] lg:top-48 xl:right-[57%] xl:top-52 hidden md:block">
+    <span className="absolute md:left-[3%] md:top-28 lg:top-40 lg:left-[15%] xl:top-52 hidden md:block">
         <CaracterGreen />
     </span>
-    <span className="absolute right-[6%] top-64 lg:right-[20%] lg:top-48 xl:right-[26%] xl:top-52 hidden md:block">
+    <span className="absolute md:right-[5%] md:top-28 lg:top-40 lg:right-[18%] xl:top-52 hidden md:block">
         <CaracterGreentow />
     </span>
-    </>
+    </div>
   )
 }
 

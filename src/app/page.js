@@ -11,19 +11,19 @@ import Learn from "@/components/templates/Learn";
 import NumberBox from "@/components/templates/NumberBox";
 import SliderTemplate from "@/components/templates/SliderTemplate";
 import Users from "@/components/templates/Users";
-
+import Header from "@/components/templates/Header";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-20 items-center justify-start">
+      <Header />
       <HeroMain />
-      <Marquee />
+      {/*<Marquee />*/}
       <CodeExample />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
-      <HomeDownload />
-      <BestComment />
-      <Learn />
+      <HomeDownload/>
+      {/*<Learn />*/}
       <SliderTemplate />
       <AccordionContainer />
       <Users />
