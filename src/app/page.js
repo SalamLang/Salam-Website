@@ -18,14 +18,14 @@ export default function Home() {
     <main className="flex min-h-screen flex-col gap-y-20 items-center justify-start">
       <Header />
       <HeroMain />
-      {/*<Marquee />*/}
       <CodeExample />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
       <HomeDownload/>
       {/*<Learn />*/}
       <SliderTemplate />
-      <AccordionContainer />
+      {/*<AccordionContainer />*/}
+      <Marquee />
       <Users />
       <NumberBox />
     </main>

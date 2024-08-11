@@ -33,7 +33,7 @@ const avatars = [
 
 const AvatarGallery = () => {
     return (
-        <div className="w-full p-6 max-w-[1066px]">
+        <div className="max-w-[1066px]">
             <AvatarGroup avatars={avatars} />
         </div>
     );

@@ -46,7 +46,7 @@ function BoxDownload({ variant, className }) {
     }
 
     return (
-        <div className="flex items-center justify-center flex-col gap-2">
+        <div className="flex items-center justify-center flex-col gap-2 cursor-pointer">
             <div className={`bg-bg-box rounded-xl p-4 flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}>
                 <Image
                     className={classes}

@@ -17,7 +17,7 @@ const Button = ({ text, variant, icon, padding, borderRadius, type, href, classN
             classes += 'bg-bg-button-blue-2 h-11 text-text-button-blue flex items-center justify-center gap-2';
             break;
         case 'buttonWhite':
-            classes += 'bg-bg-button-white h-11 text-text-button-black flex items-center justify-center gap-2';
+            classes += 'z-20 bg-bg-button-white h-11 text-text-button-black flex items-center justify-center gap-2';
             break;
         case 'buttonGreen':
             classes += 'bg-bg-button-green h-11 text-text-button-black flex items-center justify-center gap-2';

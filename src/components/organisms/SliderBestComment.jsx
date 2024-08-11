@@ -40,7 +40,7 @@ function SliderBestComment() {
     };
 
     return (
-        <div className="max-w-[700px] p-6 rounded-xl z-10 bg-[#F6FDA6]">
+        <div className="max-w-[672px] p-6 rounded-xl z-10 bg-[#F6FDA6]">
             <div className="p-4 relative z-20 flex flex-col items-center justify-center gap-y-6">
                 <p className="mb-4 text-black  text-base font-Estedad-Light text-center">{comments[currentIndex].text}</p>
                 <div className="w-full flex items-center justify-center flex-col gap-y-2">
@@ -71,7 +71,7 @@ function SliderBestComment() {
                 {comments.map((_, index) => (
                     <div
                         key={index}
-                        className={`w-20 h-3 mx-2 rounded-full cursor-pointer ${
+                        className={`w-24 h-3 mx-2 rounded-full cursor-pointer ${
                             index === currentIndex ? 'bg-bg-circel-green w-24' : 'bg-[#92C73BD6] w-8'
                         }`}
                         onClick={() => setCurrentIndex(index)}
