@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "framer-motion": "^11.3.24",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.1.9"
   },
   "devDependencies": {
     "eslint": "^8",
