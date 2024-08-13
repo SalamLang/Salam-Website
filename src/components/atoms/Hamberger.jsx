@@ -14,10 +14,8 @@ function Hamberger() {
     }
   return (
     <Image onClick={clickHanler}
-        className="cursor-pointer md:hidden"
+        className="cursor-pointer md:hidden w-9 h-9"
         src={HambergerImage}
-        width="100%"
-        height="100%"
         alt="Logo"
     />
   )

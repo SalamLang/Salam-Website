@@ -1,33 +1,28 @@
 import React from "react";
-
+import Image from "next/image";
 export default function CommentContent({ comment }) {
   return (
     <>
-      {/* <div className="w-full h-full px-8 py-7 flex flex-col items-center justify-between">
+      <div className="w-full h-full flex flex-col gap-3 items-center justify-between">
               <h1 className="text-xl text-start w-full font-Estedad-SemiBold">
-                نظرم مثبته
+                  {comment.title}
               </h1>
-              <p className="text-sm text-start w-full font-Estedad-Medium !leading-10">
-                در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری
-                ولی در هم حین تمام توانایی ای که در زبان های دیگر دارید رو اینجا
-                هم دارید .{" "}
+              <p className="text-sm text-start w-full font-Estedad-Light !leading-8">
+                {comment.text}
               </p>
-              <div className="w-full flex justify-center items-center gap-2">
-                <div className="w-auto h-full flex flex-col justify-center gap-1 items-center">
-                  <h1 className="text-base font-Estedad-SemiBold">
-                    نظرم مثبته
+              <div className="w-full flex justify-between items-center gap-2">
+                <div className="w-auto h-full flex flex-col text-right gap-1">
+                  <h1 className="text-base font-Estedad-Regular">
+                      {comment.name}
                   </h1>
                   <p className="text-[12px] font-Estedad-Regular">
-                    مدت زمان یادگیری : روز
+                      {comment.description}
                   </p>
                 </div>
                 <div className="w-auto h-full flex justify-center items-center"></div>
-                <Image src={Avatar1} alt="" />
+                <Image src={comment.img} alt="" />
               </div>
-            </div> */}
-      <div className="w-full h-full flex justify-center items-center">
-        CommentContent
-      </div>
+            </div>
     </>
   );
 }

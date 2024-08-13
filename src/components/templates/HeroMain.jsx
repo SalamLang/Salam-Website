@@ -8,7 +8,7 @@ import CarectersHeroMain from '../molecules/CarectersHeroMain'
 
 function HeroMain() {
   return (
-    <div className="max-w-[95%] sm:container flex items-center justify-start flex-col gap-6 relative w-full py-5 lg:py-8 h-[80vh]">
+    <div className="max-w-[95%] sm:container flex items-center justify-start flex-col gap-6 relative w-full py-5 lg:py-8 h-[500px]">
         <div className={"w-full absolute -z-20"}>
             <Vactor1/>
         </div>

@@ -52,7 +52,8 @@ module.exports = {
       },
       boxShadow:{
         'my':'0px 0px 20px 8px #0000000d',
-        'my2':'0px -44px 20px 18px #00000012',
+        'my2':'0px -44px 30px 18px #00000018',
+        'my3':'0px -35px 20px 13px #00000018',
       },
     },
   },

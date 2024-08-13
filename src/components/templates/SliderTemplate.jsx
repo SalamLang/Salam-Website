@@ -18,15 +18,15 @@ const comments = [
     id: 1,
     text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته !",
     img: Avatar1,
   },
   {
     id: 2,
-    text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
+    text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته !",
     img: Avatar2,
   },
@@ -34,7 +34,7 @@ const comments = [
     id: 3,
     text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته !",
     img: Avatar3,
   },
@@ -42,7 +42,7 @@ const comments = [
     id: 4,
     text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته 2",
     img: Avatar1,
   },
@@ -50,7 +50,7 @@ const comments = [
     id: 5,
     text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته 2",
     img: Avatar2,
   },
@@ -58,7 +58,7 @@ const comments = [
     id: 6,
     text: "در سریع تری میتوانی زبانو رو یاد بگیرید و یادگیریش خیلی ساده تری ولی در هم حین تمام توانایی",
     name: "محمد جواد سجادی",
-    description: "مدت زمان یادگیری: دو روزعه",
+    description: "مدت زمان یادگیری: دو روز",
     title: "نظرم مثبته 2",
     img: Avatar3,
   },
@@ -86,9 +86,9 @@ const SliderTemplate = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-[1082px] mx-auto p-6 rounded-3xl z-10">
+    <div className="w-full max-w-[1082px] mx-auto p-6 border-2 border-bg-section-purple rounded-3xl z-10">
       <Swiper
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={perViewSlide}
         onSlideChange={(swiper) => console.log(swiper)}
         loop={true}
