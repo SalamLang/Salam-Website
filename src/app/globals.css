@@ -3,36 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --bg-button-orange: #FF5C00;
-  --bg-button-orange2: #FFF2EB;
-  --bg-button-blue: #276EF6;
-  --bg-button-blue-2: #ECF2FF;
-  --bg-button-white: #FFFFFF;
-  --bg-button-green: #AAEA41D6;
+  --bg-button-orange: #ff5c00;
+  --bg-button-orange2: #fff2eb;
+  --bg-button-blue: #276ef6;
+  --bg-button-blue-2: #ecf2ff;
+  --bg-button-white: #ffffff;
+  --bg-button-green: #aaea41d6;
   --bg-button-black: #000000;
   --bg-gray: rgba(3, 3, 3, 0.25);
   --text-button-black: #000000;
-  --text-button-orange2: #FF5C00;
-  --text-button-white: #FFFFFF;
-  --text-button-blue: #276EF6;
+  --text-button-orange2: #ff5c00;
+  --text-button-white: #ffffff;
+  --text-button-blue: #276ef6;
   --title: #000000;
-  --description: #7A8093;
+  --description: #7a8093;
   --border-grey: rgba(232, 233, 236, 0.1);
-  --bg-main: #FF5C00;
-  --bg-box: #FFF2EB;
-  --bg-box2: #F5FDE4;
+  --bg-main: #ff5c00;
+  --bg-box: #fff2eb;
+  --bg-box2: #f5fde4;
   --border-grey2: rgba(122, 128, 147, 0.2);
-  --bg-circel-blue : #0066FF;
-  --bg-circel-green : #27e046;
-  --bg-circel-orange : #FF5C00;
-  --bg-section : #FF8947;
-  --bg-section-purple:#8470FFEB;
+  --bg-circel-blue: #0066ff;
+  --bg-circel-green: #27e046;
+  --bg-circel-orange: #ff5c00;
+  --bg-section: #ff8947;
+  --bg-section-purple: #8470ffeb;
   --bg-box-purple: rgba(227, 225, 252, 0.92);
-  --bg-box-advantage : #FFF2EB;
-  --text-orange : #FF5C00;
-  --bg-box-download : #FFDCC8;
-  --bg-slider :rgba(233, 240, 255, 0.13);
+  --bg-box-advantage: #fff2eb;
+  --text-orange: #ff5c00;
+  --bg-box-download: #ffdcc8;
+  --bg-slider: rgba(233, 240, 255, 0.13);
 }
-* {
-  font-family: "EstedadThin";
+@layer base {
+  * {
+    font-family: "EstedadThin";
+    box-sizing: border-box;
+  }
 }
