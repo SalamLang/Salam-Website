@@ -1,13 +1,13 @@
 // app/Education/page.js
-import ArrowDown from '@/components/atoms/ArrowDown';
-import BoxStartLanguge from '@/components/molecules/BoxStartLanguge';
-import CodeExample from '@/components/templates/CodeExample';
-import EducationDownload from '@/components/templates/EducationDownload';
-import EducationHero from '@/components/templates/EducationHero';
-import Faq from '@/components/templates/Faq';
-import SectionInstall from '@/components/templates/SectionInstall';
-import GoToLearn from '@/components/templates/goToLearn';
-import React from 'react';
+import ArrowDown from "@/components/atoms/ArrowDown";
+import BoxStartLanguge from "@/components/molecules/BoxStartLanguge";
+import CodeExample from "@/components/templates/CodeExample";
+import EducationDownload from "@/components/templates/EducationDownload";
+import EducationHero from "@/components/templates/EducationHero";
+import Faq from "@/components/templates/Faq";
+import SectionInstall from "@/components/templates/SectionInstall";
+import GoToLearn from "@/components/templates/goToLearn";
+import React from "react";
 
 const Education = () => {
   return (

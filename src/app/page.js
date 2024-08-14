@@ -16,12 +16,11 @@ import Header from "@/components/templates/Header";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-20 items-center justify-start">
-      <Header />
       <HeroMain />
       <CodeExample />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
-      <HomeDownload/>
+      <HomeDownload />
       {/*<Learn />*/}
       <SliderTemplate />
       {/*<AccordionContainer />*/}
