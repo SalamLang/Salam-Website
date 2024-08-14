@@ -5,16 +5,16 @@ import CaracterGreen from "../../../public/caracter5.svg"
 function CarectersDownload() {
   return (
     <>
-    <span className="absolute right-[15%] bottom-10 sm:-right-[8%] sm:bottom-16">
+    <span className="absolute bottom-20 lg:right-[17%] md:right-[15%] right-[13%] sm:bottom-24">
         <CarecterBlue />
     </span>
-    <span className="absolute right-2 sm:-right-16 top-14 sm:top-24 z-20">
+    <span className="absolute right-12 sm:right-14 top-36 sm:top-40 z-20">
         <Ghost />
     </span>
-    <span className="absolute right-[80%] sm:right-[88%] top-9 sm:top-16 -rotate-[55deg]">
+    <span className="absolute left-12 top-24 -rotate-[55deg]">
         <Ghost />
     </span>
-    <span className="absolute right-[50%] sm:right-[60%] bottom-10 sm:bottom-4">
+    <span className="absolute right-[55%] bottom-6">
         <CaracterGreen />
     </span>
     </>

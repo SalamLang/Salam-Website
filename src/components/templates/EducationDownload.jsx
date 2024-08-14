@@ -7,10 +7,12 @@ function EducationDownload() {
   return (
     <div className="flex items-center justify-center flex-col gap-5">
         <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
-        <Button
-            text="دانلود"
-            variant="buttonOrange"
-        />
+        <div className={"-translate-y-1/3"}>
+            <Button
+                text="دانلود"
+                variant="buttonOrange"
+            />
+        </div>
         <div className="w-full flex items-center justify-evenly flex-wrap gap-8">
             <BoxDownload variant="Mac" />
             <BoxDownload variant="Android" />
