@@ -12,6 +12,7 @@ import NumberBox from "@/components/templates/NumberBox";
 import SliderTemplate from "@/components/templates/SliderTemplate";
 import Users from "@/components/templates/Users";
 import Header from "@/components/templates/Header";
+import GetTutorial from "@/components/templates/GetTutorial";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Marquee />
       <Users />
       <NumberBox />
+      <GetTutorial />
     </main>
   );
 }

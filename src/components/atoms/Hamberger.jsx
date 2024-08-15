@@ -1,24 +1,26 @@
-'use client';
+"use client";
 
-import Image from 'next/image'
+import Image from "next/image";
 
-import HambergerImage from '../../../public/Hamberger.png';
-import { useState } from 'react';
+import HambergerImage from "../../../public/Hamberger.png";
+import { useState } from "react";
+import { useContext } from "react";
+import { ToggleMenuContext } from "@/context/ToggleMenu";
 
 function Hamberger() {
-    const [hamber, setHamber] = useState(false);
+  const { isOpen, setIsOpen } = useContext(ToggleMenuContext);
 
-    const clickHanler = () => {
-        setHamber(!hamber);
-        console.log(hamber)
-    }
+  const clickHanler = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <Image onClick={clickHanler}
-        className="cursor-pointer md:hidden w-9 h-9"
-        src={HambergerImage}
-        alt="Logo"
+    <Image
+      onClick={clickHanler}
+      className="cursor-pointer md:hidden w-9 h-9"
+      src={HambergerImage}
+      alt="HambergerToggleButton"
     />
-  )
+  );
 }
 
-export default Hamberger
+export default Hamberger;
