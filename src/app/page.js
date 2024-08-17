@@ -13,6 +13,7 @@ import SliderTemplate from "@/components/templates/SliderTemplate";
 import Users from "@/components/templates/Users";
 import Header from "@/components/templates/Header";
 import GetTutorial from "@/components/templates/GetTutorial";
+import WantSupporter from "@/components/templates/WantSupporter";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <Users />
       <NumberBox />
       <GetTutorial />
+      <WantSupporter />
     </main>
   );
 }

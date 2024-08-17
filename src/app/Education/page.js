@@ -5,8 +5,8 @@ import CodeExample from "@/components/templates/CodeExample";
 import EducationDownload from "@/components/templates/EducationDownload";
 import EducationHero from "@/components/templates/EducationHero";
 import Faq from "@/components/templates/Faq";
+import GoToLearn from "@/components/templates/GoToLearn";
 import SectionInstall from "@/components/templates/SectionInstall";
-import GoToLearn from "@/components/templates/goToLearn";
 import React from "react";
 
 const Education = () => {
