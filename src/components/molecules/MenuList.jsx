@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
 function MenuList() {
   return (
-    <ul className="hidden md:flex items-center justify-center gap-x-12">
+    <ul className="hidden md:flex items-center justify-center gap-x-12 z-[1000000]">
       <NavItem href={getRoute("home")}>سلام</NavItem>
       <NavItem href={getRoute("education")}>یادگیری</NavItem>
       <NavItem href={getRoute("donwload")}>دانلود</NavItem>
@@ -17,7 +17,7 @@ function MenuList() {
         <Logo />
       </div>
       <NavItem href={"#"}>انجمن</NavItem>
-      <NavItem href={"#"}> آزمایش آنلاین</NavItem>
+      <NavItem href={getRoute("playground")}> آزمایش آنلاین</NavItem>
       <NavItem href={"#"}>مثال</NavItem>
     </ul>
   );
