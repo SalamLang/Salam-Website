@@ -20,9 +20,7 @@ function HomeDownload() {
                 <BoxDownload variant="Linux" className="bg-bg-button-green" />
                 <BoxDownload variant="Windows" className="bg-bg-button-green" />
             </div>
-            <div className="flex w-auto items-center justify-center flex-col gap-y-10">
                 <SliderBestComment />
-            </div>
         </div>
         <div className={"bg-bg-button-green absolute bottom-0 h-[690px] md:h-[590px] w-full"}></div>
     </div>
