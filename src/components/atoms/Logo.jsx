@@ -1,19 +1,14 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import logoImage from '../../../public/Logo.png';
+import logoImage from "../../../public/Logo.png";
 
-function Logo() {
+function Logo({ className }) {
   return (
-    <Link href="/" className="w-16 h-14">
-        <Image
-            src={logoImage}
-            width="100%"
-            height="100%"
-            alt="Logo"
-        />
+    <Link href="/" className={`w-16 h-14 ${className || ""}`}>
+      <Image src={logoImage} width="100%" height="100%" alt="Logo" />
     </Link>
-  )
+  );
 }
 
-export default Logo
+export default Logo;
