@@ -60,6 +60,7 @@ module.exports = {
         danger: "rgba(126, 0, 0, 1)",
         crimson: "rgba(205, 51, 69, 1)",
         "light-orange": "rgba(255, 245, 226, 1)",
+        "cream-light": "rgba(255, 242, 235, 1)",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
