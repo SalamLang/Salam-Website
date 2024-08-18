@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {Navigation, Pagination} from 'swiper/modules';
+import Image from "next/image";
 
 const Avatar = "/22.png"
 
@@ -33,17 +34,18 @@ function SliderBestComment() {
             <Swiper
             slidesPerView={1}
             centeredSlides={true}
-            className={"!max-w-[672px] w-full"}
-            pagination={true}
+            className={"!max-w-[672px] w-full comment_slider"}
+            pagination={{ clickable: true }}
             navigation={true}
+
 
             modules={[Pagination, Navigation]}
             >
                 {comments.map((item) => (
-                    <SwiperSlide key={item.id} className={"min-h-[300px] py-5 px-9 rounded-[23px] bg-[#F6FDA6]"}>
+                    <SwiperSlide key={item.id} className={"min-h-[300px] py-5 px-16 rounded-[23px] bg-[#F6FDA6]"}>
                         <p className={"font-Estedad-Medium text-black leading-10"}>{ item.text }</p>
                         <div className={"flex flex-col items-center mb-5"}>
-                            <img src={ item.img } alt="" className={"w-[118px] mt-10 h-[118px]"}/>
+                            <Image src={ item.img } alt={ item.title } width={118} height={118} className={"mt-10"} />
                             <h3 className={"font-Estedad-Bold text-[20px] mt-4"}>ماری بلنکا</h3>
                             <p className={"text-[#577C07] font-Estedad-Regular"}>موسس فیس بوک</p>
                         </div>
