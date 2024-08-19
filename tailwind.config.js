@@ -17,6 +17,11 @@ module.exports = {
         "Estedad-Bold": "Bold",
         "Estedad-ExtraBold": "ExtraBold",
         "Estedad-Black": "Black",
+        "IranSans-Regular": "IranSansRegular",
+        "YekanBakh-Regular": "YekanBakhRegular",
+        "AliBaba-Regular": "AliBabaRegular",
+        "Peyda-Regular": "PeydaRegular",
+        "Graphik-Regular": "GraphikRegular",
       },
       colors: {
         "bg-main": "var(--bg-main)",
@@ -61,6 +66,8 @@ module.exports = {
         crimson: "rgba(205, 51, 69, 1)",
         "light-orange": "rgba(255, 245, 226, 1)",
         "cream-light": "rgba(255, 242, 235, 1)",
+        "orange-medium": "rgba(255, 171, 0, 1)",
+        light: "rgba(238, 244, 255, 1)",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
