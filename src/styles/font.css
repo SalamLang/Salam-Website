@@ -1,54 +1,96 @@
 @font-face {
-    font-style: normal;
-    font-weight: 100;
-    font-family: 'EstedadThin';
-    src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Thin.woff2') format('woff2');
-   }
- @font-face {
-    font-style: normal;
-    font-weight: 200;
-     font-family: 'ExtraLight';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-ExtraLight.woff2') format('woff2');
-   }
-   @font-face {
-    font-style: normal;
-    font-weight: 300;
-     font-family: 'Light';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Light.woff2') format('woff2');
-   }
- @font-face {
-    font-style: normal;
-    font-weight: 400;
-     font-family: 'Regular';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Regular.woff2') format('woff2');
-   }
-   @font-face {
-    font-style: normal;
-    font-weight: 500;
-     font-family: 'Medium';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Medium.woff2') format('woff2');
-   }
- @font-face {
-    font-style: normal;
-    font-weight: 600;
-     font-family: 'SemiBold';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-SemiBold.woff2') format('woff2');
-   }
-   @font-face {
-    font-style: normal;
-    font-weight: 700;
-     font-family: 'Bold';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Bold.woff2') format('woff2');
-   }
- @font-face {
-    font-style: normal;
-    font-weight: 800;
-     font-family: 'ExtraBold';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-ExtraBold.woff2') format('woff2');
-   }
-   @font-face {
-    font-style: normal;
-    font-weight: 900;
-     font-family: 'EstedadThin';
-     src: url('../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Black.woff2') format('woff2');
-   }
+  font-style: normal;
+  font-weight: 100;
+  font-family: "EstedadThin";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Thin.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  font-family: "ExtraLight";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-ExtraLight.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Light";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Light.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Regular";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Regular.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Medium";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Medium.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "SemiBold";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-SemiBold.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Bold";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Bold.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "ExtraBold";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-ExtraBold.woff2")
+    format("woff2");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "EstedadThin";
+  src: url("../assets/fonts/Estedad-v7.3/webfonts/statics/Estedad-Black.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "IranSansRegular";
+  src: url("../assets/fonts/iransans/iransansxfanum-regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "AliBabaRegular";
+  src: url("../assets/fonts/alibaba/alibaba-regular.TTF") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PeydaRegular";
+  src: url("../assets/fonts/peyda/peyda-regular.ttf") format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "YekanBakhRegular";
+  src: url("../assets/fonts/yekanbakht/yekanbakh-regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "GraphikRegular";
+  src: url("../assets/fonts/graphik/graphikarabicmedium.otf") format("opentype");
+}
