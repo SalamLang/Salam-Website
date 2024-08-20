@@ -19,7 +19,7 @@ export default function ListButtonEditor() {
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center !cursor-not-allowed"
         >
-          <EyseMotion className="scale-90" />
+          <EyseIcon className="scale-90" />
         </Button>
         <Button
           intent="orange"
