@@ -43,8 +43,9 @@ export default function BoxEditor() {
   }, []);
 
   return (
-    <div className="w-full max-h-[600px] h-[600px] overflow-auto flex justify-center items-start bg-cream-light rounded-2xl">
+    <div className="w-full max-h-[600px] h-[600px] overflow-auto flex justify-center items-start max-md:bg-cream-light rounded-2xl">
       <div className="w-auto h-auto p-5 !pt-[30px] !pl-4 gap-5 text-base !font-Estedad-Medium flex flex-col justify-center items-center">
+        {contentLength === 0 && <p className={fontName}>۱</p>}
         {Array.from({ length: contentLength }).map((_, index) => {
           return (
             <p key={index} className={fontName}>
