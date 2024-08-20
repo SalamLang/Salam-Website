@@ -21,10 +21,19 @@ export default function SettingModal() {
       }
     };
 
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        onCloseModal();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
@@ -37,7 +46,7 @@ export default function SettingModal() {
         className="max-w-[48rem] w-full max-h-[40rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10"
       >
         <Modal.Header className="w-full h-auto px-6 py-3">
-          <div className="w-full h-full flex justify-between items-center">
+          <div className="w-full h-full flex flex-row-reverse justify-between items-center">
             <CloseSvg
               className="scale-[0.8] cursor-pointer"
               onClick={onCloseModal}
