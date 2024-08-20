@@ -33,7 +33,7 @@ const Modal: ModalComponent = ({ isOpen, onClose, children, ...props }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed overflow-hidden inset-0 w-full h-full bg-black/10 backdrop-blur-sm z-[123000] flex justify-center items-center flex-grow"
+          className="fixed overflow-hidden inset-0 w-full h-full bg-black/10 backdrop-blur-sm z-[100] flex justify-center items-center flex-grow"
           onClick={onClose}
           {...props}
         >
