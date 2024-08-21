@@ -9,7 +9,7 @@ import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import EyseMotion from "./EyseMotion";
 
 export default function ListButtonEditor() {
-  const { setIsOpenSettingModal, setIsOpenShareModal } =
+  const { setIsOpenSettingModal, setIsOpenShareModal, setIsOpenBottonSheet } =
     useContext(EditorModalsContext);
   return (
     <>
@@ -19,12 +19,13 @@ export default function ListButtonEditor() {
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center !cursor-not-allowed"
         >
-          <EyseIcon className="scale-90" />
+          <EyseMotion className="scale-90" />
         </Button>
         <Button
           intent="orange"
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center"
+          onClick={() => setIsOpenBottonSheet(true)}
         >
           <PlayIcon className="scale-75" />
         </Button>

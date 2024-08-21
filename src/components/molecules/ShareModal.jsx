@@ -37,7 +37,7 @@ export default function ShareModal() {
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
       >
-        <Modal.Header className="w-full h-auto pt-2">
+        <Modal.Header className="w-full h-auto pt-2 flex justify-end">
           <CloseSvg
             className="scale-[0.8] cursor-pointer"
             onClick={onCloseModal}
