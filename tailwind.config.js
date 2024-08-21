@@ -68,6 +68,7 @@ module.exports = {
         "cream-light": "rgba(255, 242, 235, 1)",
         "orange-medium": "rgba(255, 171, 0, 1)",
         light: "rgba(238, 244, 255, 1)",
+        cream: "#FFCCAF",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
