@@ -12,6 +12,14 @@ const button = cva("button", {
         "hover:opacity-70",
         "transition-opacity",
       ],
+      primary: [
+        "bg-primary",
+        "text-white",
+        "border-transparent",
+        "font-Estedad-Regular",
+        "hover:opacity-70",
+        "transition-opacity",
+      ],
       crimson: [
         "bg-crimson",
         "text-white",
@@ -36,6 +44,7 @@ const button = cva("button", {
       medium: ["rounded-md"],
       large: ["rounded-lg"],
       full: ["rounded-full"],
+      none: ["rounded-none"],
     },
   },
   compoundVariants: [
