@@ -26,7 +26,7 @@ export default function GetTutorialCard() {
             className="flex gap-1 justify-center items-center"
           >
             بزن بریم
-            <ArrowLeft className="scale-[0.7] relative top-1" />
+            <ArrowLeft className="scale-[0.7] relative top-0.5" />
           </Button>
         </div>
         <div className="w-full h-auto px-3 flex justify-between items-center">
