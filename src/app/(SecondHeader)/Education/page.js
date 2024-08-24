@@ -9,6 +9,11 @@ import GoToLearn from "@/components/templates/GoToLearn";
 import SectionInstall from "@/components/templates/SectionInstall";
 import React from "react";
 
+export const metadata = {
+  title: "education",
+  description: "salam language",
+};
+
 const Education = () => {
   return (
     <div className="container flex items-center flex-col m-auto gap-y-20">

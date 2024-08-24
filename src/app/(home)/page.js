@@ -14,12 +14,19 @@ import Users from "@/components/templates/Users";
 import Header from "@/components/templates/Header";
 import GetTutorial from "@/components/templates/GetTutorial";
 import WantSupporter from "@/components/templates/WantSupporter";
+import FirstPersianLanguage from "@/components/templates/FirstPersianLanguage";
+
+export const metadata = {
+  title: "home",
+  description: "salam language",
+};
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-y-20 items-center justify-start">
       <HeroMain />
       <CodeExample />
+      <FirstPersianLanguage />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
       <HomeDownload />

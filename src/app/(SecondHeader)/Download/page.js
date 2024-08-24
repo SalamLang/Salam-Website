@@ -5,6 +5,11 @@ import CarectersDownload from "@/components/molecules/CarectersDownload";
 import DownloadClud from "../../../../public/download.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
 
+export const metadata = {
+  title: "download",
+  description: "salam language",
+};
+
 function Download() {
   return (
     <div className="flex flex-col items-center justify-center gap-5">

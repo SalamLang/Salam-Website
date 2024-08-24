@@ -5,6 +5,11 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 import ArrowLeft from "../../../public/ArrowLeft.svg";
 import CarectersNotFound from "@/components/molecules/CarectersNotFound";
 
+export const metadata = {
+  title: "not found",
+  description: "salam language",
+};
+
 function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center gap-14">
