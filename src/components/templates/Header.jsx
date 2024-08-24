@@ -7,7 +7,7 @@ import ToggleMenuProvider from "@/context/ToggleMenu";
 
 function Header() {
   return (
-    <div className={"relative w-full"}>
+    <div className={"w-full z-50"}>
       <div
         className={
           "hidden md:block w-full bg-bg-button-green max-h-[200px] !overflow-hidden"

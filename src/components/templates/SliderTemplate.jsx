@@ -86,7 +86,7 @@ const SliderTemplate = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-[1082px] mx-auto p-6 border-2 border-bg-section-purple rounded-3xl z-10">
+    <div className="max-xl:w-11/12 w-full max-w-[1082px] mx-auto p-6 border-2 border-bg-section-purple rounded-3xl z-10">
       <Swiper
         spaceBetween={30}
         slidesPerView={perViewSlide}

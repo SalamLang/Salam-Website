@@ -1,27 +1,31 @@
-import React from 'react'
-import TitleDescription from '../atoms/TitleDescription'
-import Button from '../atoms/Button'
-import BoxDownload from '../molecules/BoxDownload'
+import React from "react";
+import TitleDescription from "../atoms/TitleDescription";
+import BoxDownload from "../molecules/BoxDownload";
+import { Button } from "../common/Button";
 
 function EducationDownload() {
   return (
     <div className="flex items-center justify-center flex-col gap-5">
-        <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
-        <div className={"-translate-y-1/3"}>
-            <Button
-                text="دانلود"
-                variant="buttonOrange"
-            />
-        </div>
-        <div className="w-full flex items-center justify-evenly flex-wrap gap-8">
-            <BoxDownload variant="Mac" />
-            <BoxDownload variant="Android" />
-            <BoxDownload variant="Pwa" />
-            <BoxDownload variant="Linux" />
-            <BoxDownload variant="Windows" />
-        </div>
+      <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
+      <div className={"-translate-y-1/3"}>
+        <Button
+          intent="orange"
+          rounded="full"
+          size="medium"
+          className="!bg-bg-main !px-10 !py-1"
+        >
+          دانلود
+        </Button>
+      </div>
+      <div className="w-full flex items-center justify-evenly flex-wrap gap-8">
+        <BoxDownload variant="Mac" imgClass="scale-75" />
+        <BoxDownload variant="Android" imgClass="scale-75" />
+        <BoxDownload variant="Pwa" imgClass="scale-75" />
+        <BoxDownload variant="Linux" imgClass="scale-75" />
+        <BoxDownload variant="Windows" imgClass="scale-75" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default EducationDownload
+export default EducationDownload;

@@ -12,9 +12,6 @@ function HeroMain() {
       <div className={"w-full absolute -z-20"}>
         <Vactor1 />
       </div>
-      <div className={"hidden md:block absolute w-1/3 -top-36 right-1/2"}>
-        <Vactor2 />
-      </div>
       <div
         className={
           "hidden md:block absolute w-2/5 top-20 left-1/2 -translate-x-1/2 rotate-[195deg]"
