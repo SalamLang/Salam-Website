@@ -1,20 +1,21 @@
-import React from 'react';
-import Avatar from '../atoms/Avatar';
+import React from "react";
+import Avatar from "../atoms/Avatar";
 
 const AvatarGroup = ({ avatars }) => {
-    return (
-        <div className="flex flex-wrap justify-center gap-4">
-            {avatars.map((avatar, index) => (
-                <Avatar
-                    key={index}
-                    src={avatar.src}
-                    alt={avatar.alt}
-                    width={avatar.width}
-                    height={avatar.height}
-                />
-            ))}
-        </div>
-    );
+  return (
+    <div className="flex flex-wrap justify-center max-md:gap-1 gap-4">
+      {avatars.map((avatar, index) => (
+        <Avatar
+          key={index}
+          src={avatar.src}
+          alt={avatar.alt}
+          width={avatar.width}
+          height={avatar.height}
+          className="scale-125"
+        />
+      ))}
+    </div>
+  );
 };
 
 export default AvatarGroup;
