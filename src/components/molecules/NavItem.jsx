@@ -31,12 +31,35 @@ export default function NavItem({
         </span>
       </Link>
     );
+  else if (variants === "second-header")
+    return (
+      <motion.li
+        className={`text-lg ${!isActive && "hover:!scale-110 transition-all"} ${
+          className || ""
+        }`}
+        initial={{ scale: 1 }}
+        animate={{ scale: isActive ? 1.2 : 1 }}
+      >
+        <Link
+          href={href}
+          className={`font-Estedad-Light ${
+            isActive
+              ? "!font-AliBaba-Regular font-extrabold text-bg-button-orange"
+              : "font-Estedad-Medium"
+          } ${classLink || ""}`}
+        >
+          {children}
+        </Link>
+      </motion.li>
+    );
   else
     return (
       <motion.li
-        className={`text-lg ${isActive && "scale-125 mx-5 !text-xl"} ${
-          className || ""
-        }`}
+        className={`text-base ${
+          isActive
+            ? "!scale-125 mx-5 !text-lg"
+            : "hover:!scale-110 transition-all"
+        } ${className || ""}`}
         initial={{ scale: 1 }}
         animate={{ scale: isActive ? 1.25 : 1 }}
       >
@@ -45,7 +68,7 @@ export default function NavItem({
           className={`font-Estedad-Light ${
             isActive
               ? "!font-AliBaba-Regular font-extrabold text-bg-button-orange"
-              : "font-Estedad-Regular"
+              : "font-Estedad-Medium"
           } ${classLink || ""}`}
         >
           {children}

@@ -15,7 +15,7 @@ function BoxSentCode() {
       >
         <div className="flex gap-4 items-center justify-center brightness-0 -translate-x-1.5">
           <Mobile className="scale-75" />
-          <div className="bg-black/60 !rounded-full w-[2px] h-[30px]"></div>
+          <div className="bg-black/20 !rounded-full w-[2px] h-[30px]"></div>
           <Input />
         </div>
         <Button
