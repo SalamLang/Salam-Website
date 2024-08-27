@@ -56,8 +56,8 @@ function BoxDownload({ variant, className, imgClass }) {
           alt={title} // افزودن alt برای دسترس‌پذیری
         />
       </div>
-      <h4 className="text-title text-center font-Estedad-Light">{title}</h4>
-      <p className="text-description text-center text-xs font-Estedad-Light w-24">
+      <h4 className="text-title text-center font-Estedad-SemiBold">{title}</h4>
+      <p className="text-description text-center text-xs font-Estedad-Regular w-24">
         {description}
       </p>
     </div>

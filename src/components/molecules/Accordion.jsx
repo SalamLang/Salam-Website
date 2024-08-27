@@ -35,9 +35,9 @@ const Accordion = ({ number, title, content, index, active, handleToggle }) => {
         initial={{ height: 0 }}
         animate={{ height: active ? "auto" : 0 }}
         transition={{ duration: 0.3 }}
-        className="overflow-hidden w-full"
+        className="overflow-hidden w-full max-w-[60rem]"
       >
-        <div className="p-4">
+        <div className="p-4 w-10/12 mx-auto">
           <p>{content}</p>
         </div>
       </motion.div>

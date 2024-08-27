@@ -18,11 +18,11 @@ function EducationDownload() {
         </Button>
       </div>
       <div className="w-full flex items-center justify-evenly flex-wrap gap-8">
+        <BoxDownload variant="Linux" imgClass="scale-75" />
+        <BoxDownload variant="Windows" imgClass="scale-75" />
         <BoxDownload variant="Mac" imgClass="scale-75" />
         <BoxDownload variant="Android" imgClass="scale-75" />
         <BoxDownload variant="Pwa" imgClass="scale-75" />
-        <BoxDownload variant="Linux" imgClass="scale-75" />
-        <BoxDownload variant="Windows" imgClass="scale-75" />
       </div>
     </div>
   );
