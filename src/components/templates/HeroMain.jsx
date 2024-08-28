@@ -1,10 +1,10 @@
 import TitleDescription from "../atoms/TitleDescription";
-import Button from "../atoms/Button";
 
 import ArrowLeft from "../../../public/ArrowLeft.svg";
 import Vactor1 from "../../../public/Vector 11.svg";
 import Vactor2 from "../../../public/Vector 16.svg";
 import CarectersHeroMain from "../molecules/CarectersHeroMain";
+import { Button } from "../common/Button";
 
 function HeroMain() {
   return (
@@ -23,8 +23,13 @@ function HeroMain() {
         title="به جمع دوس داشتنی سلام ما بپیوند"
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
-      <Button
+      <Button size="large" rounded="full" className="!bg-bg-button-orange2 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2 !z-50">
+        <ArrowLeft className="relative !top-0.5 scale-75" />
+        بزن بریم
+      </Button>
+      {/* <Button
         text="بزن بریم"
+        className="z-50"
         variant="buttonOrange2"
         type="link"
         href="/404"
@@ -33,7 +38,7 @@ function HeroMain() {
             <ArrowLeft />
           </span>
         }
-      />
+      /> */}
       <CarectersHeroMain />
     </div>
   );
