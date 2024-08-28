@@ -2,89 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "nprogress/nprogress.css";
+
 :root {
-    --bg-button-orange: #ff5c00;
-    --bg-button-orange2: #fff2eb;
-    --bg-button-blue: #276ef6;
-    --bg-button-blue-2: #ecf2ff;
-    --bg-button-white: #ffffff;
-    --bg-button-green: #aaea41d6;
-    --bg-button-black: #000000;
-    --bg-gray: rgba(3, 3, 3, 0.25);
-    --text-button-black: #000000;
-    --text-button-orange2: #ff5c00;
-    --text-button-white: #ffffff;
-    --text-button-blue: #276ef6;
-    --title: #000000;
-    --description: #7a8093;
-    --border-grey: rgba(232, 233, 236, 0.1);
-    --bg-main: #ff5c00;
-    --bg-box: #fff2eb;
-    --bg-box2: #f5fde4;
-    --border-grey2: rgba(122, 128, 147, 0.2);
-    --bg-circel-blue: #0066ff;
-    --bg-circel-green: #27e046;
-    --bg-circel-orange: #ff5c00;
-    --bg-section: #ff8947;
-    --bg-section-purple: #8470ffeb;
-    --bg-box-purple: rgba(227, 225, 252, 0.92);
-    --bg-box-advantage: #fff2eb;
-    --text-orange: #ff5c00;
-    --bg-box-download: #ffdcc8;
-    --bg-slider: rgba(233, 240, 255, 0.13);
-    --pagination: #3ED44E;
+  --bg-button-orange: #ff5c00;
+  --bg-button-orange2: #fff2eb;
+  --bg-button-blue: #276ef6;
+  --bg-button-blue-2: #ecf2ff;
+  --bg-button-white: #ffffff;
+  --bg-button-green: #aaea41d6;
+  --bg-button-black: #000000;
+  --bg-gray: rgba(3, 3, 3, 0.25);
+  --text-button-black: #000000;
+  --text-button-orange2: #ff5c00;
+  --text-button-white: #ffffff;
+  --text-button-blue: #276ef6;
+  --title: #000000;
+  --description: #7a8093;
+  --border-grey: rgba(232, 233, 236, 0.1);
+  --bg-main: #ff5c00;
+  --bg-box: #fff2eb;
+  --bg-box2: #f5fde4;
+  --border-grey2: rgba(122, 128, 147, 0.2);
+  --bg-circel-blue: #0066ff;
+  --bg-circel-green: #27e046;
+  --bg-circel-orange: #ff5c00;
+  --bg-section: #ff8947;
+  --bg-section-purple: #8470ffeb;
+  --bg-box-purple: rgba(227, 225, 252, 0.92);
+  --bg-box-advantage: #fff2eb;
+  --text-orange: #ff5c00;
+  --bg-box-download: #ffdcc8;
+  --bg-slider: rgba(233, 240, 255, 0.13);
+  --pagination: #3ed44e;
 }
 
 @layer base {
-    * {
-        @apply font-Estedad-Regular;
-        box-sizing: border-box;
-    }
+  * {
+    @apply font-Estedad-Regular;
+    box-sizing: border-box;
+  }
+}
+
+#nprogress .bar {
+  background: #ff4500; /* Change color to orange-red */
+  height: 3.5px; /* Increase height of the loading bar */
+}
+
+/* Customize the spinner (if enabled) */
+#nprogress .spinner-icon {
+  border-top-color: #ff4500; /* Change top border color of the spinner */
+  border-left-color: #ff4500; /* Change left border color of the spinner */
 }
 
 .swiper-free-mode > .swiper-wrapper {
-    transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 .swiper-button-next {
-    width: 50px !important;
-    height: 50px !important;
-    background-image: url("/slider_arrow2.svg") !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  width: 50px !important;
+  height: 50px !important;
+  background-image: url("/slider_arrow2.svg") !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .swiper-button-prev {
-    width: 50px !important;
-    height: 50px !important;
-    background-image: url("/slider_arrow.svg") !important;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  width: 50px !important;
+  height: 50px !important;
+  background-image: url("/slider_arrow.svg") !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .swiper-button-next:before,
 .swiper-button-next:after,
 .swiper-button-prev:before,
 .swiper-button-prev:after {
-    content: '';
-    display: none;
+  content: "";
+  display: none;
 }
 
 .swiper {
-    border-radius: 23px;
+  border-radius: 23px;
 }
 
 .comment_slider .swiper-pagination-bullet {
-    @apply !inline-block !w-[35px] !rounded-[10px] !transition-all !duration-300 bg-[--pagination] !opacity-100 !mx-2;
+  @apply !inline-block !w-[35px] !rounded-[10px] !transition-all !duration-300 bg-[--pagination] !opacity-100 !mx-2;
 }
 
 .comment_slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 80px !important;
+  width: 80px !important;
 }
 
 .comment_slider .swiper-button-next {
-    @apply !left-[30px];
+  @apply !left-[30px];
 }
 .comment_slider .swiper-button-prev {
-    @apply !right-[30px]
+  @apply !right-[30px];
 }

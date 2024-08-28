@@ -12,7 +12,7 @@ export const metadata = {
 
 function Download() {
   return (
-    <div className="flex flex-col items-center justify-center gap-5">
+    <div className="flex flex-col items-center justify-center gap-5 mt-16">
       <div className="relative w-full sm:w-fit flex items-center justify-center">
         <Gif variant="GifDownload"></Gif>
         <CarectersDownload />
