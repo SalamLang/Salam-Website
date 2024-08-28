@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "../atoms/Logo";
 import { Badge } from "../common/Badge";
 import NavItem from "./NavItem";
@@ -48,7 +49,11 @@ function SecondMenuList() {
           مثال
         </NavItem>
       </ul>
-      <Badge className="!text-base !font-Estedad-SemiBold">آنلاین کار کن</Badge>
+      <Link href={getRoute("playground")}>
+        <Badge className="!text-base !font-Estedad-SemiBold">
+          آنلاین کار کن
+        </Badge>
+      </Link>
     </div>
   );
 }
