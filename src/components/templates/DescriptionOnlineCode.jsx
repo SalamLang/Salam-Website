@@ -13,7 +13,7 @@ function DescriptionOnlineCode() {
           "container w-full mx-auto flex items-center justify-center flex-col gap-y-4 py-32"
         }
       >
-        <div className={"hidden md:block absolute w-11/12 2xl:w-10/12 z-10"}>
+        <div className={"hidden md:block absolute w-11/12 2xl:w-10/12 z-10 opacity-30"}>
           <Vactor1 />
         </div>
         <div className={"absolute w-full h-full top-1/2 -translate-y-1/2 z-10"}>

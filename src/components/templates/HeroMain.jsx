@@ -1,6 +1,6 @@
 import TitleDescription from "../atoms/TitleDescription";
 
-import ArrowLeft from "../../../public/ArrowLeft.svg";
+import ArrowLeft from "../../../public/ArrowLeft-Orange.svg";
 import Vactor1 from "../../../public/Vector 11.svg";
 import Vactor2 from "../../../public/Vector 16.svg";
 import CarectersHeroMain from "../molecules/CarectersHeroMain";
