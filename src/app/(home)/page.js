@@ -29,7 +29,7 @@ export default function Home() {
       <FirstPersianLanguage />
       <DescriptionOnlineCode />
       <LanguageAdvantage />
-      <HomeDownload />
+      <HomeDownload isBlackIcon={true} />
       {/*<Learn />*/}
       <SliderTemplate />
       {/*<AccordionContainer />*/}

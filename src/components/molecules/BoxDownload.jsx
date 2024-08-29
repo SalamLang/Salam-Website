@@ -6,8 +6,8 @@ import Android from "../../../public/Android.png";
 import Windows from "../../../public/Windows.png";
 import Pwa from "../../../public/Pwa.png";
 
-function BoxDownload({ variant, className, imgClass }) {
-  let classes = `w-full ${imgClass}`;
+function BoxDownload({ variant, className, imgClass , isBlack }) {
+  let classes = `w-full ${imgClass} ${isBlack && "!brightness-0"}`;
   let src;
   let title;
   let description;
