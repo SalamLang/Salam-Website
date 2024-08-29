@@ -9,7 +9,6 @@ const div = cva("w-full h-auto select-none", {
         "text-white",
         "border-transparent",
         "font-Estedad-Regular",
-        "cursor-not-allowed",
         "transition-opacity",
       ],
     },
