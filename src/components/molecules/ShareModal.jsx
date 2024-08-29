@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import Modal from "../common/Modal";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import CloseSvg from "../../../public/svg-close-box.svg";
@@ -10,7 +10,11 @@ import toast from "react-hot-toast";
 export default function ShareModal() {
   const { isOpenShareModal, setIsOpenShareModal } =
     useContext(EditorModalsContext);
-  const onCloseModal = () => setIsOpenShareModal(false);
+
+  // Memoize the onCloseModal function
+  const onCloseModal = useCallback(() => {
+    setIsOpenShareModal(false);
+  }, [setIsOpenShareModal]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -24,7 +28,7 @@ export default function ShareModal() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [onCloseModal]);
 
   const handleCopy = () => {
     toast.success("کپی شد");
@@ -61,7 +65,7 @@ export default function ShareModal() {
           </div>
           <div className="w-full h-auto flex justify-center items-center">
             <div
-              className="w-auto border-2 border-cream-light rounded-[9px] p-0.5 select-none cursor-pointer"
+              className="w-auto border-2 border-cream-light rounded-[12px] p-0.5 select-none cursor-pointer"
               onClick={handleCopy}
             >
               <div className="w-full h-full px-4 py-2.5 bg-cream-light rounded-[9px] flex flex-row-reverse justify-center items-center gap-1">

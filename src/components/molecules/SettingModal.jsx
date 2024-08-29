@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import Modal from "../common/Modal";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import CloseSvg from "../../../public/svg-close-box.svg";
@@ -11,7 +11,10 @@ import MoreDetails from "./MoreDetails";
 export default function SettingModal() {
   const { isOpenSettingModal, setIsOpenSettingModal } =
     useContext(EditorModalsContext);
-  const onCloseModal = () => setIsOpenSettingModal(false);
+  // Memoize the onCloseModal function
+  const onCloseModal = useCallback(() => {
+    setIsOpenSettingModal(false);
+  }, [setIsOpenSettingModal]);
   const [page, setPage] = useState(1);
 
   useEffect(() => {
@@ -35,14 +38,13 @@ export default function SettingModal() {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [onCloseModal]);
 
   return (
     <Modal isOpen={isOpenSettingModal} onClose={onCloseModal}>
       <Modal.Box
         initial={{ y: "100vw" }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.3, type: "spring", stiffness: 80 }}
         className="max-w-[48rem] w-full max-h-[40rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10"
       >
         <Modal.Header className="w-full h-auto px-6 py-3">

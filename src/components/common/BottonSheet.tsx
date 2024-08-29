@@ -1,7 +1,7 @@
 "use client";
 
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useCallback, useContext, useEffect, useRef } from "react";
 import { Sheet, SheetRef } from "react-modal-sheet";
 import RunCode from "../molecules/RunCode";
 import Iframe from "react-iframe";
@@ -9,13 +9,18 @@ import Iframe from "react-iframe";
 export default function BottonSheet() {
   const { isOpenBottonSheet, setIsOpenBottonSheet } =
     useContext(EditorModalsContext);
+
+  const onCloseModal = useCallback(() => {
+    setIsOpenBottonSheet(false);
+  }, [setIsOpenBottonSheet]);
+
   const ref = useRef<SheetRef>();
   const snapTo = (i: number) => ref.current?.snapTo(i);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
-        setIsOpenBottonSheet(false);
+        onCloseModal();
       }
     };
 
@@ -24,7 +29,7 @@ export default function BottonSheet() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [onCloseModal]);
 
   return (
     <Sheet
@@ -37,7 +42,7 @@ export default function BottonSheet() {
       }
       className="max-w-[55rem] mx-auto"
     >
-      <Sheet.Container className="cursor-grabbing !shadow-none !bg-cream/40 backdrop-blur-xl !rounded-3xl">
+      <Sheet.Container className="cursor-grabbing !shadow-none !bg-cream/40 backdrop-blur-xl !rounded-t-3xl">
         <Sheet.Header className="relative w-full h-auto flex justify-center items-center">
           <RunCode
             className="absolute -top-11 fill-black"
@@ -47,6 +52,7 @@ export default function BottonSheet() {
         </Sheet.Header>
         <Sheet.Content className="p-3">
           <Iframe
+          className="w-full h-full"
             url="https://www.google.com"
             title="W3Schools Free Online Web Tutorials"
             X-Frame-Options="SAMEORIGIN"
