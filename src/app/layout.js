@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import "./globals.css"; // اگر فایل استایل‌ها در مسیر اصلی باشد
 import { usePathname } from "next/navigation";
 import nProgress from "nprogress";
+import ReactQueryProvider from "@/utils/react-query/ReactQueryProvider";
 
-function Layout({ children }) {
+function RootLayout({ children }) {
   const pathname = usePathname(); // Get the current path
 
   useEffect(() => {
@@ -31,7 +32,11 @@ function Layout({ children }) {
     };
   }, [pathname]); // Dependency array to re-run effect on pathname change
 
-  return <>{children}</>;
+  return (
+    <>
+      <ReactQueryProvider>{children}</ReactQueryProvider>
+    </>
+  );
 }
 
-export default Layout;
+export default RootLayout;
