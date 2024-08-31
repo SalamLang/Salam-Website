@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import BestDesigne from '../../../public/BestDesigne.png';
-import Security from '../../../public/Security.png';
-import AllPeople from '../../../public/AllPeople.png';
-import Rtl from '../../../public/Rtl.png';
-import Simplicity from '../../../public/Simplicity.png';
+import BestDesigne from '../../../public/bestdesigne.png';
+import Security from '../../../public/security.png';
+import AllPeople from '../../../public/all-people.png';
+import Rtl from '../../../public/rtl.png';
+import Simplicity from '../../../public/simplicity.png';
 
 function ImageBoxAdvantage({ variant }) {
     let classes = 'w-8 h-8 lg:w-[52px] brightness-0';

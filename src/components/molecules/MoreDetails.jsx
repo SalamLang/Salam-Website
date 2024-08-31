@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import Logo from "../../../public/Logowhite.svg";
-import { Badge } from "../common/Badge";
-import { Button } from "../common/Button";
+import React from "react";
+import { motion } from "framer-motion";
+import ControlsVersion from "./ControlsVersion";
 
 export default function MoreDetails() {
   return (
@@ -27,53 +25,3 @@ export default function MoreDetails() {
     </motion.div>
   );
 }
-
-const ControlsVersion = () => {
-  const [isOpenVersion, setIsOpenVersion] = useState(false);
-  return (
-    <div className="w-full h-auto flex justify-between items-center">
-      <div className="min-w-[100px] min-h-[100px] flex justify-center items-center bg-bg-main rounded-2xl">
-        <Logo className="scale-110" />
-      </div>
-      <div className="w-full h-full flex flex-col gap-3 justify-center items-center">
-        <h1 className="text-xl font-Estedad-Medium">زبان برنامه نویسی سلام</h1>
-        <div className="flex justify-start items-center gap-5">
-          <Badge
-            intent="primary"
-            size="medium"
-            className={`!py-1.5 relative !px-3 cursor-pointer transition-colors duration-300 select-none ${
-              isOpenVersion && "!bg-primary !text-white"
-            }`}
-            onClick={() => setIsOpenVersion(!isOpenVersion)}
-          >
-            <span className="font-Estedad-Medium">تعویض نسخه</span>
-            <AnimatePresence>
-              {isOpenVersion && (
-                <motion.ul
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 10 }}
-                  exit={{ opacity: 0, y: 40 }}
-                  className="absolute w-full h-full inset-x-0 bg-light-primary !text-primary rounded-lg"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <li className="w-full h-full flex justify-center items-center">
-                    نسخه ۰.۱
-                  </li>
-                </motion.ul>
-              )}
-            </AnimatePresence>
-          </Badge>
-          <p className="text-lg opacity-70">نسخه ۰.۱</p>
-        </div>
-      </div>
-      <Button
-        intent="primary"
-        size="medium"
-        rounded="full"
-        className="text-nowrap"
-      >
-        شروع کردن
-      </Button>
-    </div>
-  );
-};

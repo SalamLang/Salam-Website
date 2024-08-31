@@ -1,26 +1,30 @@
 "use client";
 
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
-import React, { useCallback, useContext, useEffect, useRef } from "react";
+import React, {
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Sheet, SheetRef } from "react-modal-sheet";
 import RunCode from "../molecules/RunCode";
 import Iframe from "react-iframe";
 
 export default function BottonSheet() {
-  const { isOpenBottonSheet, setIsOpenBottonSheet } =
-    useContext(EditorModalsContext);
+  const { isOpenBottonSheet , initialSnap , setInitialSnap } = useContext(EditorModalsContext);
 
-  const onCloseModal = useCallback(() => {
-    setIsOpenBottonSheet(false);
-  }, [setIsOpenBottonSheet]);
 
   const ref = useRef<SheetRef>();
-  const snapTo = (i: number) => ref.current?.snapTo(i);
+  const snapTo = useCallback((i: number) => ref.current?.snapTo(i), [ref]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
-        onCloseModal();
+        console.log("pressed");
+        setInitialSnap(3);
+        snapTo(initialSnap); // Apply the initialSnap value
       }
     };
 
@@ -29,17 +33,23 @@ export default function BottonSheet() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [onCloseModal]);
+  }, [initialSnap, snapTo,setInitialSnap]);
+
+  useEffect(() => {
+    if (ref.current) {
+      snapTo(initialSnap); // Apply the initialSnap value
+    }
+  }, [initialSnap, snapTo]);
 
   return (
     <Sheet
       isOpen={isOpenBottonSheet}
-      onClose={() => setIsOpenBottonSheet(false)}
-      snapPoints={[850, 600, 350, 0]}
-      initialSnap={2}
-      onSnap={(snapIndex) =>
-        console.log("> Current snap point index:", snapIndex)
-      }
+      onClose={() => {}} // Prevent closing
+      snapPoints={[850, 600, 350, 0]} // Adjust snap points to avoid closing
+      initialSnap={initialSnap}
+      onSnap={(snapIndex) => {
+        console.log("> Current snap point index:", snapIndex);
+      }}
       className="max-w-[55rem] mx-auto"
     >
       <Sheet.Container className="cursor-grabbing !shadow-none !bg-cream/40 backdrop-blur-xl !rounded-t-3xl">
@@ -52,7 +62,7 @@ export default function BottonSheet() {
         </Sheet.Header>
         <Sheet.Content className="p-3">
           <Iframe
-          className="w-full h-full"
+            className="w-full h-full"
             url="https://www.google.com"
             title="W3Schools Free Online Web Tutorials"
             X-Frame-Options="SAMEORIGIN"

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logoWhite from '../../../public/LogoWhite.svg';
+import logoWhite from '../../../public/logowhite.svg';
 
 function LogoWhite() {
   return (

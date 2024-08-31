@@ -1,6 +1,6 @@
 import React from "react";
 
-import ArrowLeft from "../../../../public/ArrowLeft.svg";
+import ArrowLeft from "../../../../public/arrowleft.svg";
 import CircleDotClose from "../../../../public/svg-close-box.svg";
 import { Button } from "@/components/common/Button";
 import { Badge } from "@/components/common/Badge";

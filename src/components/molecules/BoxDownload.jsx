@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import Linux from "../../../public/Linux.png";
-import Mac from "../../../public/Mac.png";
-import Android from "../../../public/Android.png";
-import Windows from "../../../public/Windows.png";
-import Pwa from "../../../public/Pwa.png";
+import Linux from "../../../public/linux.png";
+import Mac from "../../../public/mac.png";
+import Android from "../../../public/android.png";
+import Windows from "../../../public/windows.png";
+import Pwa from "../../../public/pwa.png";
 
 function BoxDownload({ variant, className, imgClass , isBlack }) {
   let classes = `w-full ${imgClass} ${isBlack && "!brightness-0"}`;

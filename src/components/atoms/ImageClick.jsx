@@ -1,7 +1,7 @@
 import Image from "next/image"
 
-import BgCursor from "../../../public/BgCursor.png"
-import Cursor from "../../../public/Cursor.png"
+import BgCursor from "../../../public/bgcursor.png"
+import Cursor from "../../../public/cursor.png"
 import Link from "next/link"
 
 

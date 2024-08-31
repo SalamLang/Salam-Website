@@ -1,8 +1,8 @@
 import React from "react";
 import AvatarGroup from "../molecules/AvatarGroup";
 // import Avatar2 from "../../../public/Avatar.png";
-import Avatar2 from "../../../public/Avatar2.png";
-import Avatar3 from "../../../public/Avatar3.png";
+import Avatar2 from "../../../public/avatar2.png";
+import Avatar3 from "../../../public/avatar3.png";
 
 const avatars = [
   { src: Avatar2, alt: "User 1", width: 150, height: 150 },

@@ -2,7 +2,7 @@ import Button from "@/components/atoms/Button"
 import Gif from "@/components/atoms/Gif"
 import CarectersDownload from "@/components/molecules/CarectersDownload"
 
-import ArrowBottom from "../../../public/Arrow-Bottom.svg"
+import ArrowBottom from "../../../public/arrowbottom.svg"
 import TitleDescription from "@/components/atoms/TitleDescription"
 
 function EducationHero() {

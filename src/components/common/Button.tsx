@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
-const button = cva("hover:scale-105 transition-all", {
+const button = cva("hover:scale-105 transition-all disabled:opacity-70", {
   variants: {
     intent: {
       orange: [

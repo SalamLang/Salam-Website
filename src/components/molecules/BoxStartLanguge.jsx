@@ -1,6 +1,6 @@
 import TitleDescription from "../atoms/TitleDescription";
 
-import ArrowLeftBlack from "../../../public/ArrowLeftBlack.svg";
+import ArrowLeftBlack from "../../../public/arrowleftblack.svg";
 import { Button } from "../common/Button";
 
 function BoxStartLanguge() {

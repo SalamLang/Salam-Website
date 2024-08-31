@@ -2,7 +2,7 @@ import React from 'react'
 import TitleDescription from '../atoms/TitleDescription'
 import Button from '../atoms/Button'
 
-import ArrowLeft from "../../../public/ArrowLeft.svg"
+import ArrowLeft from "../../../public/arrowleft.svg"
 import CarecterGoToLearn from '../molecules/CarecterGoToLearn'
 
 function GoToLearn() {

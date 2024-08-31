@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import logoImage from "../../../public/Logo.png";
+import logoImage from "../../../public/logo.png";
 
 function Logo({ className }) {
   return (

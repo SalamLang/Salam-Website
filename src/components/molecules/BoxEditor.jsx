@@ -1,36 +1,26 @@
 "use client";
 import { PlaygroundContextValue } from "@/utils/contexts/Playground";
+import { convertEnglishNumbersToPersian } from "@/utils/helper/handler";
 import React, { useContext, useEffect, useRef, useState } from "react";
-
-const convertEnglishNumbersToPersian = (input) => {
-  const englishToPersianMap = {
-    0: "۰",
-    1: "۱",
-    2: "۲",
-    3: "۳",
-    4: "۴",
-    5: "۵",
-    6: "۶",
-    7: "۷",
-    8: "۸",
-    9: "۹",
-  };
-
-  return String(input)?.replace(
-    /[0-9]/g,
-    (digit) => englishToPersianMap[digit]
-  );
-};
 
 export default function BoxEditor() {
   const editableDivRef = useRef(null);
   const { fontName } = useContext(PlaygroundContextValue);
   const [contentLength, setContentLength] = useState(1);
 
-  const handleInput = () => {
+  const handleInput = async () => {
     if (editableDivRef.current) {
       // Get all nested div elements
       const nestedDivs = editableDivRef.current.querySelectorAll("div");
+      if (nestedDivs.length === 0) {
+        const newDiv = document.createElement("div");
+        newDiv.id = "firstDiv";
+        newDiv.className = fontName;
+        newDiv.innerHTML = "<br>";
+
+        editableDivRef.current.appendChild(newDiv);
+      }
+
       setContentLength(nestedDivs?.length);
       nestedDivs.forEach((div) => {
         div.classList = "";
@@ -43,7 +33,7 @@ export default function BoxEditor() {
   }, []);
 
   return (
-    <div className="w-full max-h-[600px] h-[600px] overflow-auto flex justify-center items-start max-md:bg-cream-light rounded-2xl">
+    <div className="w-full max-h-[600px] h-[600px] overflow-auto orange-scrollbar flex justify-center items-start max-md:bg-cream-light rounded-2xl">
       <div className="w-auto h-auto p-5 !pt-[30px] !pl-4 gap-5 text-base !font-Estedad-Medium flex flex-col justify-center items-center">
         {contentLength === 0 && <p className={fontName}>۱</p>}
         {Array.from({ length: contentLength }).map((_, index) => {

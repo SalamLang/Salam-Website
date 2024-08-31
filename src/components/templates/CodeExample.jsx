@@ -3,7 +3,7 @@ import CircelsBoxCode from "../atoms/CircelsBoxCode";
 import TextExampleCole from "../atoms/TextExampleCole";
 import ButtonCodeBox from "../atoms/ButtonCodeBox";
 
-import Play from "../../../public/Play.svg";
+import Play from "../../../public/play.svg";
 
 function CodeExample() {
   return (

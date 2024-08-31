@@ -21,7 +21,7 @@ const Accordion = ({ number, title, content, index, active, handleToggle }) => {
           animate={{ rotate: active ? -90 : 0 }}
         >
           <Image
-            src="/ArrowLeftFaq.svg"
+            src="/arrowleftfaq.svg"
             width={10}
             height={6}
             alt="arrow-icon"

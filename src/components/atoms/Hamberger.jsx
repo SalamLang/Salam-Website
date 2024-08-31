@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import HambergerImage from "../../../public/Hamberger.png";
+import HambergerImage from "../../../public/hamberger.png";
 import { useState } from "react";
 import { useContext } from "react";
 import { ToggleMenuContext } from "@/context/ToggleMenu";
