@@ -8,12 +8,15 @@ export const EditorModalsContext = createContext({
   setIsOpenShareModal: null,
   isOpenBottonSheet: false,
   setIsOpenBottonSheet: null,
+  initialSnap: 3,
+  setInitialSnap: null,
 });
 
 export function EditorModalsProvider({ children }) {
   const [isOpenSettingModal, setIsOpenSettingModal] = useState(false);
   const [isOpenShareModal, setIsOpenShareModal] = useState(false);
-  const [isOpenBottonSheet, setIsOpenBottonSheet] = useState(false);
+  const [isOpenBottonSheet, setIsOpenBottonSheet] = useState(true);
+  const [initialSnap, setInitialSnap] = useState(3);
 
   return (
     <EditorModalsContext.Provider
@@ -24,6 +27,8 @@ export function EditorModalsProvider({ children }) {
         setIsOpenShareModal,
         isOpenBottonSheet,
         setIsOpenBottonSheet,
+        initialSnap,
+        setInitialSnap
       }}
     >
       {children}
