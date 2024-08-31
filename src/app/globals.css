@@ -101,3 +101,16 @@
 .comment_slider .swiper-button-prev {
   @apply !right-[30px];
 }
+.orange-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--bg-button-orange2);
+}
+
+.orange-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bg-button-orange);
+  border-radius: 5px;
+}
+
+.orange-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-section);
+}
