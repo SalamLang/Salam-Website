@@ -41,11 +41,11 @@ export default function SettingModal() {
   }, [onCloseModal]);
 
   return (
-    <Modal isOpen={isOpenSettingModal} onClose={onCloseModal}>
+    <Modal isOpen={isOpenSettingModal} onClose={onCloseModal} className="overflow-auto">
       <Modal.Box
         initial={{ y: "100vw" }}
         animate={{ y: 0 }}
-        className="max-w-[48rem] w-full max-h-[40rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10"
+        className="max-w-[48rem] w-full max-h-[40rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10 max-2xl:!scale-[0.7]"
       >
         <Modal.Header className="w-full h-auto px-6 py-3">
           <div className="w-full h-full flex flex-row-reverse justify-between items-center">
@@ -63,7 +63,7 @@ export default function SettingModal() {
             <div className="w-1/4 h-full shadow-2xl shadow-black/10">
               <MenuSetting page={page} setPage={setPage} />
             </div>
-            <div className="w-full h-full">
+            <div className="w-full h-full !overflow-auto orange-scrollbar">
               {page === 1 && <DisplaySetting />}
               {page === 2 && <MoreDetails />}
             </div>
