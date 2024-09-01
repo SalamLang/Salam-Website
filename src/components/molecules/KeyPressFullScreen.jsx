@@ -23,7 +23,7 @@ const KeyPressAndClickFullScreen = () => {
       document.removeEventListener("keydown", handleKeyPress);
       document.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, [setIsHidden]);
 
   return <div className="fixed inset-0 -z-50"></div>;
 };
