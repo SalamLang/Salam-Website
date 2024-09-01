@@ -33,7 +33,7 @@ export default function DisplaySetting() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="w-full h-full px-6 py-7 flex flex-col overflow-auto orange-scrollbar gap-8 justify-center items-center"
+      className="w-full min-h-96 px-6 py-7 flex flex-col orange-scrollbar gap-8 justify-center items-center"
     >
       <SelectTheme />
       <SelectFont />
