@@ -50,8 +50,14 @@ const ControlsVersion = () => {
     try {
       await toast.promise(fakeApiCall, {
         loading: "در حال تغییر نسخه..",
-        success: "فرایند تغییر نسخه با موفقیت انجام شد!",
-        error: "خطا در تغییر نسخه!",
+        success: () => {
+          setIsOpenVersion(false);
+          return "فرایند تغییر نسخه با موفقیت انجام شد!";
+        },
+        error: () => {
+          setIsOpenVersion(false);
+          return "خطا در تغییر نسخه!";
+        },
       });
     } catch (err) {
       setIsLoading(false); // Set loading state to false if promise rejects
@@ -113,7 +119,7 @@ const ControlsVersion = () => {
         disabled={isLoading}
       >
         {isLoading ? (
-          <LoaderIcon className="!w-5 !h-5 !my-1 !mx-7" />
+          <LoaderIcon className="!w-5 !h-5 !my-1 !mx-8" />
         ) : (
           "شروع کردن"
         )}

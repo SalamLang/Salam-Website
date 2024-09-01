@@ -22,7 +22,7 @@ const BoxSelectFont = ({ isActive, nameFont, onClickSelectedFont, font }) => {
           )}
         </AnimatePresence>
       </div>
-      <span className="text-sm opacity-70">{nameFont}</span>
+      <span className="text-sm opacity-50 font-Estedad-Medium">{nameFont}</span>
     </div>
   );
 };
