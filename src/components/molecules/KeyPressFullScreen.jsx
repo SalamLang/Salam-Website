@@ -17,7 +17,7 @@ const KeyPressAndClickFullScreen = () => {
 
     document.addEventListener("keydown", handleKeyPress);
     document.addEventListener("click", handleClick);
-
+    console.log(`User pressed key: ${event.key}`);
     // Cleanup event listeners on component unmount
     return () => {
       document.removeEventListener("keydown", handleKeyPress);
