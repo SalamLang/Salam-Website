@@ -49,21 +49,25 @@ Modal.Box = ({ children, ...props }) => (
     {children}
   </motion.div>
 );
+Modal.Box.displayName = "Modal.Box";
 
 Modal.Header = ({ children, ...props }) => (
   <motion.div {...props}>{children}</motion.div>
 );
+Modal.Header.displayName = "Modal.Header";
 
 Modal.Body = ({ children, ...props }) => (
   <motion.div className="modal-body" {...props}>
     {children}
   </motion.div>
 );
+Modal.Body.displayName = "Modal.Body";
 
 Modal.Footer = ({ children, ...props }) => (
   <motion.div className="modal-footer" {...props}>
     {children}
   </motion.div>
 );
+Modal.Footer.displayName = "Modal.Footer";
 
 export default Modal;
