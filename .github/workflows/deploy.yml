@@ -7,6 +7,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      
+      - name: Clear Remote Directory
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: 22
+          script: |
+            rm -rf ${{ secrets.SERVER_PATH }}*
+      
       - name: FTP Deployer
         uses: sand4rt/ftp-deployer@v1.4
         with:
@@ -21,3 +32,24 @@ jobs:
           include: '[ "*", "**/*" ]'
           exclude: '["node_modules/**", ".github/**", ".git/**", "*.env"]'
           pasive: true
+      
+      - name: Check if the directory is empty
+        id: check_dir
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: 22
+          script: |
+            if [ -z "$(ls -A ${{ secrets.SERVER_PATH }})" ]; then
+              echo "DIRECTORY_EMPTY=true" >> $GITHUB_ENV
+            else
+              echo "DIRECTORY_EMPTY=false" >> $GITHUB_ENV
+            fi
+
+      - name: Run additional commands if the directory is not empty
+        if: env.DIRECTORY_EMPTY == 'false'
+        run: |
+          npm install
+          npm run build
