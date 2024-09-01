@@ -1,11 +1,8 @@
 "use client";
 
-import Image from "next/image";
-
-import HambergerImage from "../../../public/hamberger.png";
-import { useState } from "react";
 import { useContext } from "react";
 import { ToggleMenuContext } from "@/context/ToggleMenu";
+import HambergerIcon from "../../../public/hambeger.svg"
 
 function Hamberger() {
   const { isOpen, setIsOpen } = useContext(ToggleMenuContext);
@@ -14,11 +11,9 @@ function Hamberger() {
     setIsOpen(!isOpen);
   };
   return (
-    <Image
+    <HambergerIcon
       onClick={clickHanler}
-      className="cursor-pointer md:hidden w-9 h-9"
-      src={HambergerImage}
-      alt="HambergerToggleButton"
+      className="cursor-pointer md:hidden w-15 h-15 scale-90"
     />
   );
 }
