@@ -22,5 +22,4 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             rm -rf ${{ secrets.SERVER_PATH }}*
-            mkdir -p ${{ secrets.SERVER_PATH }}/dist
-            scp -r ./dist/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}/dist
+            scp -r ./dist/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
