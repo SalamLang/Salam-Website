@@ -13,18 +13,45 @@ import RunCode from "../molecules/RunCode";
 import Iframe from "react-iframe";
 
 export default function BottonSheet() {
-  const { isOpenBottonSheet , initialSnap , setInitialSnap } = useContext(EditorModalsContext);
-
-
+  const { isOpenBottonSheet, initialSnap, setInitialSnap } =
+    useContext(EditorModalsContext);
   const ref = useRef<SheetRef>();
+  const [dynamicSnapPoints, setDynamicSnapPoints] = useState([
+    window.innerHeight / 2,
+    0,
+  ]); // Default snap points
   const snapTo = useCallback((i: number) => ref.current?.snapTo(i), [ref]);
 
+  // Function to determine snap points dynamically
+  const determineSnapPoints = () => {
+    const height = window.innerHeight;
+
+    if (height < 300) {
+      setDynamicSnapPoints([200, 0]); // Set snap points for very small screens
+    } else if (height < 600) {
+      setDynamicSnapPoints([height * 0.8, 0]); // For medium screens
+    } else {
+      setDynamicSnapPoints([height * 0.5, 0]); // For larger screens
+    }
+  };
+
+  // Listen for window resize to adjust snap points dynamically
+  useEffect(() => {
+    determineSnapPoints(); // Determine snap points on initial load
+    window.addEventListener("resize", determineSnapPoints); // Update snap points on window resize
+
+    return () => {
+      window.removeEventListener("resize", determineSnapPoints);
+    };
+  }, []);
+
+  // Listen for the Escape key to set snap to point 1
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         console.log("pressed");
-        setInitialSnap(3);
-        snapTo(initialSnap); // Apply the initialSnap value
+        setInitialSnap(1); // Set to the first snap point
+        snapTo(1); // Apply snap point 1 (half of the height)
       }
     };
 
@@ -33,11 +60,12 @@ export default function BottonSheet() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [initialSnap, snapTo,setInitialSnap]);
+  }, [snapTo, setInitialSnap]);
 
+  // Apply the initial snap value when the component is mounted
   useEffect(() => {
     if (ref.current) {
-      snapTo(initialSnap); // Apply the initialSnap value
+      snapTo(initialSnap); // Apply initial snap
     }
   }, [initialSnap, snapTo]);
 
@@ -45,10 +73,11 @@ export default function BottonSheet() {
     <Sheet
       isOpen={isOpenBottonSheet}
       onClose={() => {}} // Prevent closing
-      snapPoints={[850, 600, 350, 0]} // Adjust snap points to avoid closing
+      snapPoints={dynamicSnapPoints} // Use dynamic snap points
       initialSnap={initialSnap}
       onSnap={(snapIndex) => {
         console.log("> Current snap point index:", snapIndex);
+        setInitialSnap(snapIndex); // Keep track of the current snap index
       }}
       className="max-w-[55rem] mx-auto"
     >
