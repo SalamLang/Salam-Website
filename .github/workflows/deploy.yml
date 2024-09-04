@@ -22,11 +22,11 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: Upload dist Files to SFTP
+      - name: Upload files to SFTP
         run: |
           sshpass -p ${{ secrets.SERVER_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.SERVER_PORT }} -r * ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
 
-      - name: Upload dist Files to SFTP
+      - name: Run and Deploy
         uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -39,7 +39,7 @@ jobs:
               if pm2 describe "salamlang-website" > /dev/null; then
                 pm2 restart "salamlang-website"
               else
-                pm2 start npm --name "salamlang-website" -- start
+                pm2 start --name "salamlang-website" "npm run start"
               fi
               pm2 save
             else
