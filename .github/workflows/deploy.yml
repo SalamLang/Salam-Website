@@ -17,6 +17,10 @@ jobs:
         run: ls -al .next/
 
       - name: Upload dist Files to SFTP
+        run: |
+          scp -r .next/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+
+      - name: Upload dist Files to SFTP
         uses: appleboy/ssh-action@v0.1.9
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -24,7 +28,6 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            scp -r ./.next/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
             if [ -f "package.json" ]; then
               if pm2 describe "salamlang-website" > /dev/null; then
                 pm2 restart "salamlang-website"
@@ -32,4 +35,6 @@ jobs:
                 pm2 start npm --name "salamlang-website" -- start
               fi
               pm2 save
+            else
+              echo "package.json not found. Skipping PM2 start/restart."
             fi
