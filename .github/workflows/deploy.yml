@@ -23,7 +23,7 @@ jobs:
         with:
           sftp: true
           host: ${{ secrets.SERVER_HOST }}
-          port: 22
+          port: ${{ secrets.SERVER_PORT }}
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           remote_folder: ${{ secrets.SERVER_PATH }}
