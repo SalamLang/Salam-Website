@@ -25,7 +25,7 @@ export default function ListButtonEditor() {
           intent="orange"
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center"
-          onClick={() => setInitialSnap(2)}
+          onClick={() => setInitialSnap(0)}
         >
           <PlayIcon className="scale-75" />
         </Button>
