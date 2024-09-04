@@ -18,7 +18,7 @@ jobs:
 
       - name: Upload dist Files to SFTP
         run: |
-          scp -r .next/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+          scp -P ${{ secrets.SERVER_PORT }} -r .next/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
 
       - name: Upload dist Files to SFTP
         uses: appleboy/ssh-action@v0.1.9
