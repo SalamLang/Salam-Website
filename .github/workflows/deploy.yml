@@ -24,7 +24,7 @@ jobs:
 
       - name: Upload dist Files to SFTP
         run: |
-          sshpass -p ${{ secrets.SERVER_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.SERVER_PORT }} -r . ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+          sshpass -p ${{ secrets.SERVER_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.SERVER_PORT }} -r ./ ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
 
       - name: Upload dist Files to SFTP
         uses: appleboy/ssh-action@v0.1.9
