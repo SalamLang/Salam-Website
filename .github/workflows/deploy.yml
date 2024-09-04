@@ -12,9 +12,6 @@ jobs:
 
       - name: Build Project
         run: npm run build
-
-      - name: Export Project
-        run: npm run export
                 
       - name: List of dist files
         run: ls -al .next/
