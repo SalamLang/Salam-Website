@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext } from "react";
 import { Button } from "../common/Button";
-import EyseIcon from "../../../public/eyse.svg";
+// import EyseIcon from "../../../public/eyse.svg";
 import PlayIcon from "../../../public/play.svg";
 import SettingIcon from "../../../public/setting.svg";
 import ShareIcon from "../../../public/share.svg";
