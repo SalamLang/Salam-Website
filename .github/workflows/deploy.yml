@@ -12,9 +12,15 @@ jobs:
 
       - name: Build Project
         run: npm run build
+
+      - name: Export Project
+        run: npm run export
                 
       - name: List of dist files
         run: ls -al .next/
+
+      - name: List of files
+        run: ls -al
 
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
