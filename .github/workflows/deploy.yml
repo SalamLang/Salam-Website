@@ -12,12 +12,9 @@ jobs:
 
       - name: Build Project
         run: npm run build
-        
-      - name: List of files
-        run: ls -al
-        
+                
       - name: List of dist files
-        run: ls -al dist/
+        run: ls -al .next/
 
       - name: Upload dist Files to SFTP
         uses: appleboy/ssh-action@v0.1.9
@@ -27,5 +24,12 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            rm -rf ${{ secrets.SERVER_PATH }}*
-            scp -r ./dist/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+            scp -r ./.next/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+            if [ -f "package.json" ]; then
+              if pm2 describe "salamlang-website" > /dev/null; then
+                pm2 restart "salamlang-website"
+              else
+                pm2 start npm --name "salamlang-website" -- start
+              fi
+              pm2 save
+            fi
