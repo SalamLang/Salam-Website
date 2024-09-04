@@ -7,24 +7,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install --force
+      # - name: Install dependencies
+      #   run: npm install --force
 
-      - name: Build Project
-        run: npm run build
+      # - name: Build Project
+      #   run: npm run build
                 
-      - name: List of dist files
-        run: ls -al .next/
+      # - name: List of dist files
+      #   run: ls -al .next/
 
-      - name: List of files
-        run: ls -al
+      # - name: List of files
+      #   run: ls -al
 
-      - name: Install sshpass
-        run: sudo apt-get install -y sshpass
+      # - name: Install sshpass
+      #   run: sudo apt-get install -y sshpass
 
-      - name: Upload files to server
-        run: |
-          sshpass -p ${{ secrets.SERVER_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.SERVER_PORT }} -r * ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
+      # - name: Upload files to server
+      #   run: |
+      #     sshpass -p ${{ secrets.SERVER_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.SERVER_PORT }} -r * ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}
 
       - name: Run and deploy
         uses: appleboy/ssh-action@v0.1.9
@@ -35,6 +35,9 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             cd ${{ secrets.SERVER_PATH }}
+            git pull
+            npm install --force
+            npm run build
             if [ -f "package.json" ]; then
               if pm2 describe "salamlang-website" > /dev/null; then
                 pm2 restart "salamlang-website"
@@ -43,5 +46,5 @@ jobs:
               fi
               pm2 save
             else
-              echo "package.json not found. Skipping PM2 start/restart."
+              echo "package.json not found. Skipping start/restart."
             fi
