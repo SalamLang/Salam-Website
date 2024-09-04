@@ -31,6 +31,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
+            cd ${{ secrets.SERVER_PATH }}
             if [ -f "package.json" ]; then
               if pm2 describe "salamlang-website" > /dev/null; then
                 pm2 restart "salamlang-website"
