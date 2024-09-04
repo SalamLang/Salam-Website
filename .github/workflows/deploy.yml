@@ -12,6 +12,12 @@ jobs:
 
       - name: Build Project
         run: npm run build
+        
+      - name: List of files
+        run: ls -al
+        
+      - name: List of dist files
+        run: ls -al dist/
 
       - name: Upload dist Files to SFTP
         uses: appleboy/ssh-action@v0.1.9
