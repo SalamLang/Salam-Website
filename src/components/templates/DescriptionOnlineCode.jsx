@@ -39,7 +39,7 @@ function DescriptionOnlineCode() {
           href="/404"
           icon={
             <span className="w-full h-full block">
-              <ArrowLeftBlack className="scale-75 w-5 h-5 relative top-0.5" />
+              <ArrowLeftBlack className="scale-75 w-5 h-5 relative top-[3px]" />
             </span>
           }
         />
