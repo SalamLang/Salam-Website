@@ -18,7 +18,7 @@ export default function FirstPersianLanguage() {
         className="flex gap-1 justify-center items-center"
       >
         بزن بریم
-        <ArrowLeft className="scale-[0.7] relative top-0.5  " />
+        <ArrowLeft className="scale-[0.7] relative top-px" />
       </Button>
     </div>
   );
