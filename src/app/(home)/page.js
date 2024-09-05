@@ -17,8 +17,10 @@ import WantSupporter from "@/components/templates/WantSupporter";
 import FirstPersianLanguage from "@/components/templates/FirstPersianLanguage";
 
 export const metadata = {
-  title: "home",
-  description: "salam language",
+  title: "زبان برنامه نویسی سلام - برنامه نویسی برای همه",
+  description:
+    "این صفحه به معرفی زبان برنامه‌نویسی سلام می‌پردازد که هدف آن ساده‌سازی برنامه‌نویسی برای همه افراد است.",
+  author: "تیم برنامه نویسی زبان سلام",
 };
 
 export default function Home() {

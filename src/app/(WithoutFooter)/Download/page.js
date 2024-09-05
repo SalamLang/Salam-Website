@@ -6,8 +6,10 @@ import DownloadClud from "../../../../public/download.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
 
 export const metadata = {
-  title: "download",
-  description: "salam language",
+  title: "دانلود زبان سلام - برنامه نویسی سلام",
+  description:
+    "این صفحه به شما امکان می‌دهد زبان برنامه‌نویسی سلام را دانلود کنید و از منابع و مستندات مرتبط با آن بهره‌مند شوید.",
+  author: "تیم برنامه نویسی زبان سلام",
 };
 
 function Download() {

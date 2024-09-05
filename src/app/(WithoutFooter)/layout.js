@@ -9,8 +9,9 @@ import { Alert } from "@/components/common/Alert";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "salam",
-  description: "salam language",
+  title: "زبان برنامه نویسی سلام",
+  description: "ٌ",
+  author: "تیم برنامه نویسی زبان سلام"
 };
 
 export default function RootLayout({ children }) {

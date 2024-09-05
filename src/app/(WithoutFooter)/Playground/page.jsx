@@ -4,8 +4,10 @@ import { PlaygroundContext } from "@/utils/contexts/Playground";
 import React from "react";
 
 export const metadata = {
-  title: "playground",
-  description: "salam language",
+  title: "آزمایش آنلاین زبان سلام - برنامه نویسی سلام",
+  description:
+    "این صفحه یک محیط آزمایش آنلاین برای زبان برنامه‌نویسی سلام فراهم می‌کند که به کاربران اجازه می‌دهد کدهای سلام را مستقیماً در مرورگر خود بنویسند و اجرا کنند.",
+  author: "تیم برنامه نویسی زبان سلام",
 };
 
 export default function Playground() {
