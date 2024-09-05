@@ -34,11 +34,12 @@ function DescriptionOnlineCode() {
         <Button
           text="بزن بریم"
           variant="buttonWhite"
+          className={'w-full flex flex-row items-center gap-0.5 justify-center'}
           type="link"
           href="/404"
           icon={
-            <span>
-              <ArrowLeftBlack />
+            <span className="w-full h-full block">
+              <ArrowLeftBlack className="scale-75 w-5 h-5 relative top-0.5" />
             </span>
           }
         />
