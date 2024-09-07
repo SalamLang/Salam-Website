@@ -7,10 +7,10 @@ import Button from "../atoms/Button";
 
 function DescriptionOnlineCode() {
   return (
-    <div className="w-full bg-bg-section relative">
+    <div className="w-full bg-bg-section2 relative">
       <div
         className={
-          "container w-full mx-auto flex items-center justify-center flex-col gap-y-4 py-32"
+          "container w-full mx-auto flex items-center justify-center flex-col gap-y-8 py-32"
         }
       >
         <div className={"hidden md:block absolute w-11/12 2xl:w-10/12 z-10 opacity-30"}>
@@ -27,6 +27,9 @@ function DescriptionOnlineCode() {
         </div>
         <div className={"relative z-20"}>
           <TitleDescription
+            headerClass="text-white"
+            descClass="text-white"
+            className="!gap-4"
             title="میتونی به صورت آنلاین با سلام کار کنی 🚀"
             description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
           />
@@ -34,7 +37,7 @@ function DescriptionOnlineCode() {
         <Button
           text="بزن بریم"
           variant="buttonWhite"
-          className={'w-full flex flex-row items-center gap-0.5 justify-center'}
+          className={'w-full flex flex-row items-center gap-0.5 justify-center !px-5'}
           type="link"
           href="/404"
           icon={
