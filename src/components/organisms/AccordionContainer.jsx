@@ -32,7 +32,7 @@ const AccordionContainer = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center flex-col gap-y-3">
+    <div className="flex items-center justify-center flex-col">
       {accordionData.map((item, index) => (
         <Accordion
           key={index}
