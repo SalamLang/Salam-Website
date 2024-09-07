@@ -28,6 +28,7 @@
   --bg-circel-green: #27e046;
   --bg-circel-orange: #ff5c00;
   --bg-section: #ff8947;
+  --bg-section2: #F66E21;
   --bg-section-purple: #8470ffeb;
   --bg-box-purple: rgba(227, 225, 252, 0.92);
   --bg-box-advantage: #fff2eb;
@@ -88,11 +89,12 @@
 }
 
 .comment_slider .swiper-pagination-bullet {
-  @apply !inline-block !w-[35px] !rounded-[10px] !transition-all !duration-300 bg-[--pagination] !opacity-100 !mx-2;
+  @apply !inline-block !w-[35px] !rounded-[10px] !transition-all !duration-300 bg-[--bg-button-green] !opacity-100 !mx-2;
 }
 
 .comment_slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 80px !important;
+  background-color: var(--pagination);
 }
 
 .comment_slider .swiper-button-next {
