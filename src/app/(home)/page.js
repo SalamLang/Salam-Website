@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-y-20 items-center justify-start">
+    <main className="flex min-h-screen flex-col max-md:gap-y-10 gap-y-20 items-center justify-start">
       <HeroMain />
       <CodeExample />
       <FirstPersianLanguage />
