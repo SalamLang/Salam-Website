@@ -26,6 +26,21 @@ function MenuListMobile() {
     }
   }, [isOpen, blockScroll, allowScroll]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsOpen(false);
+        allowScroll();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [setIsOpen,allowScroll]);
+
   return (
     <AnimatePresence>
       {isOpen && (
