@@ -8,7 +8,7 @@ import { Button } from "../common/Button";
 
 function HeroMain() {
   return (
-    <div className="max-w-[95%] sm:container flex items-center justify-start flex-col gap-6 relative w-full py-5 lg:py-8 h-[500px]">
+    <div className="max-w-[95%] sm:container flex items-center justify-start flex-col gap-6 relative w-full py-5 lg:py-8 h-[500px] z-0">
       <div className={"w-full absolute -z-20"}>
         <Vactor1 />
       </div>
@@ -23,7 +23,7 @@ function HeroMain() {
         title="به جمع دوس داشتنی سلام ما بپیوند"
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
-      <Button size="large" rounded="full" className="!bg-bg-button-orange2 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2 !z-50">
+      <Button size="large" rounded="full" className="!bg-bg-button-orange2 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2">
         <ArrowLeft className="relative !top-0.5 scale-75" />
         بزن بریم
       </Button>
