@@ -52,6 +52,7 @@ module.exports = {
         "bg-box-advantage": "var(--bg-box-advantage)",
         "bg-box-download": "var(--bg-box-download)",
         "bg-section": "var(--bg-section)",
+        "bg-section2": "var(--bg-section2)",
         "bg-section-purple": "var(--bg-section-purple)",
         "bg-box-purple": "var(--bg-box-purple)",
         "bg-slider": "var(--bg-slider)",
