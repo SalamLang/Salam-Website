@@ -1,6 +1,5 @@
 import React from "react";
 import AvatarGroup from "../molecules/AvatarGroup";
-// import Avatar2 from "../../../public/Avatar.png";
 import Avatar2 from "../../../public/avatar2.png";
 import Avatar3 from "../../../public/avatar3.png";
 
