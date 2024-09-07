@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Input from "../atoms/Input";
 
 import Mobile from "../../../public/mobile.svg";
@@ -11,11 +11,9 @@ import toast, { LoaderIcon } from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { AnimatePresence, motion } from "framer-motion";
-import {convertToPersianNumbers} from "@/utils/helper/handler";
+import { convertToPersianNumbers } from "@/utils/helper/handler";
 
 function BoxSentCode() {
-  const [InputValue, setInputValue] = useState("");
-
   const { mutateAsync: sendNumberMutation, isPending } = useMutation({
     mutationKey: ["send-number"],
     mutationFn: sendNumber,
@@ -57,7 +55,7 @@ function BoxSentCode() {
         }
       >
         <div className="flex gap-4 items-center justify-center -translate-x-1.5">
-          <Mobile className="scale-75 brightness-0" />
+          <Mobile className="scale-75 opacity-50 brightness-0" />
           <div className="bg-black/10 !rounded-full w-[2px] h-[30px]"></div>
           <Input
             type="text"
@@ -80,16 +78,20 @@ function BoxSentCode() {
             )}
           </AnimatePresence>
         </div>
-        <Button
-          intent="orange"
-          size="medium"
-          rounded="full"
-          type="submit"
-          className="text-sm px-4 md:!px-7"
-          disabled={isPending}
-        >
-          {isPending ? <LoaderIcon className="!w-5 !h-5 m-1.5" /> : "ارسال کد"}
-        </Button>
+          <Button
+            intent="orange"
+            size="medium"
+            rounded="full"
+            type="submit"
+            className="text-sm !py-0 !px-0 min-h-10 max-md:min-h-8 max-md:max-w-16 max-w-28 w-full !h-full flex justify-center items-center"
+            disabled={isPending}
+          >
+            {isPending ? (
+              <LoaderIcon className="!w-5 !h-5 m-1.5" />
+            ) : (
+              "ارسال کد"
+            )}
+          </Button>
       </form>
     </div>
   );
