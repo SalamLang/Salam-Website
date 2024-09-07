@@ -10,9 +10,9 @@ function LanguageAdvantage() {
                 title="چرا زبان سلام"
             />
             <div className="w-full max-w-[900px] grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3">
-                <div className="bg-bg-box2  p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
+                <div className="bg-bg-box2 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                     <ImageBoxAdvantage
-                        variant="BestDesigne"
+                        variant="Simplicity"
                     />
                     <TitleDescriptionBox
                         title="طراحی فوق العاده"
@@ -34,7 +34,7 @@ function LanguageAdvantage() {
                 </div>
                 <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                     <ImageBoxAdvantage
-                        variant="Simplicity"
+                        variant="BestDesigne"
                     />
                     <TitleDescriptionBox
                         title="شخصی سازی بالا"
@@ -67,7 +67,7 @@ function LanguageAdvantage() {
                 </div>
                 <div className="bg-bg-box2 min-h-80 p-3 rounded-3xl flex items-center justify-center flex-col gap-8">
                     <ImageBoxAdvantage
-                        variant="Simplicity"
+                        variant="Lamp"
                     />
                     <TitleDescriptionBox
                         title="سادگی"
