@@ -41,7 +41,11 @@ export default function SettingModal() {
   }, [onCloseModal]);
 
   return (
-    <Modal isOpen={isOpenSettingModal} onClose={onCloseModal} className="overflow-auto">
+    <Modal
+      isOpen={isOpenSettingModal}
+      onClose={onCloseModal}
+      className="overflow-auto"
+    >
       <Modal.Box
         initial={{ y: "100vw" }}
         animate={{ y: 0 }}
@@ -49,10 +53,12 @@ export default function SettingModal() {
       >
         <Modal.Header className="w-full h-auto px-6 py-3">
           <div className="w-full h-full flex flex-row-reverse justify-between items-center">
-            <CloseSvg
-              className="scale-[0.8] cursor-pointer"
+            <div
+              className="w-auto h-full px-1 flex justify-center items-center cursor-pointer"
               onClick={onCloseModal}
-            />
+            >
+              <CloseSvg className="scale-[0.8]" />
+            </div>
             <span className="font-Estedad-Medium text-orange-medium">
               تنظیمات
             </span>
