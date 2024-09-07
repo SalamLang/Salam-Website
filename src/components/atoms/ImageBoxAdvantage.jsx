@@ -1,45 +1,45 @@
-import Image from 'next/image';
-import BestDesigne from '../../../public/bestdesigne.png';
-import Security from '../../../public/security.png';
-import AllPeople from '../../../public/all-people.png';
-import Rtl from '../../../public/rtl.png';
-import Simplicity from '../../../public/simplicity.png';
+import Customize from "../../../public/customizeicon.svg";
+import Security from "../../../public/lockicon.svg";
+import Persons from "../../../public/personsicon.svg";
+import Rtl from "../../../public/rtlicon.svg";
+import Design from "../../../public/designicon.svg";
+import Lamp from "../../../public/lampicon.svg";
 
 function ImageBoxAdvantage({ variant }) {
-    let classes = 'w-8 h-8 lg:w-[52px] brightness-0';
-    let src = '';
+  let classes = "scale-[0.8] brightness-0";
+  let svgComponent = null;
 
-    switch (variant) {
-        case 'BestDesigne':
-            classes
-            src = BestDesigne;
-            break;
-        case 'Security':
-            classes
-            src = Security;
-            break;
-        case 'AllPeople':
-            classes
-            src = AllPeople;
-            break;
-        case 'Rtl':
-            classes
-            src = Rtl;
-            break;
-        case 'Simplicity':
-            classes
-            src = Simplicity;
-            break;
-    }
+  switch (variant) {
+    case "BestDesigne":
+      classes;
+      svgComponent = <Customize className={classes} />;
+      break;
+    case "Security":
+      classes;
+      svgComponent = <Security className={classes} />;
+      break;
+    case "AllPeople":
+      classes;
+      svgComponent = <Persons className={classes} />;
+      break;
+    case "Rtl":
+      classes;
+      svgComponent = <Rtl className={classes} />;
+      break;
+    case "Simplicity":
+      classes;
+      svgComponent = <Design className={classes} />;
+      break;
+    case "Lamp":
+      classes;
+      svgComponent = <Lamp className={classes} />;
+      break;
+  }
   return (
-    <div className="bg-bg-button-green w-24 h-24 p-8 rounded-3xl flex items-center justify-center">
-        <Image
-            className={classes}
-            src={src}
-            alt="img"
-        />
+    <div className="bg-bg-button-green w-24 h-24 rounded-3xl flex items-center justify-center">
+      {svgComponent}
     </div>
-  )
+  );
 }
 
-export default ImageBoxAdvantage
+export default ImageBoxAdvantage;
