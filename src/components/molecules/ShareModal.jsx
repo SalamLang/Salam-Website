@@ -42,10 +42,12 @@ export default function ShareModal() {
         animate={{ x: 0 }}
       >
         <Modal.Header className="w-full h-auto pt-2 flex justify-end">
-          <CloseSvg
-            className="scale-[0.8] cursor-pointer"
+          <div
+            className="w-auto h-full px-1 flex justify-center items-center cursor-pointer"
             onClick={onCloseModal}
-          />
+          >
+            <CloseSvg className="scale-[0.8]" />
+          </div>
         </Modal.Header>
         <Modal.Body className="w-full h-auto flex justify-center items-center">
           <Image
