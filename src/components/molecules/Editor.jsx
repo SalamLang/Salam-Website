@@ -1,6 +1,5 @@
 import ListButtonEditor from "./ListButtonEditor";
 import BoxEditor from "./BoxEditor";
-import { useContext } from "react";
 import { EditorModalsProvider } from "@/utils/contexts/EditorModals";
 import SettingModal from "./SettingModal";
 import ShareModal from "./ShareModal";
@@ -13,7 +12,7 @@ export default function Editor() {
       <ShareModal />
       <BottonSheet />
       <div
-        className={`w-full md:[90%] lg:max-w-[70%] h-full py-4 px-6 max-md:!px-4 flex max-md:flex-col justify-between items-center`}
+        className={`absolute w-full h-full min-h-full md:max-w-[90%] lg:max-w-[70%] py-4 px-6 max-md:!px-4 flex-grow flex max-md:flex-col justify-between items-center`}
       >
         <BoxEditor />
         <ListButtonEditor />
