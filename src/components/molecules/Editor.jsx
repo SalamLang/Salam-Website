@@ -13,7 +13,7 @@ export default function Editor() {
       <ShareModal />
       <BottonSheet />
       <div
-        className={`w-full md:[90%] lg:max-w-[70%] h-full py-4 px-6 flex max-md:flex-col justify-between items-center`}
+        className={`w-full md:[90%] lg:max-w-[70%] h-full py-4 px-6 max-md:!px-4 flex max-md:flex-col justify-between items-center`}
       >
         <BoxEditor />
         <ListButtonEditor />
