@@ -2,7 +2,7 @@ import EmojiShape from "../../../public/emoji-shape.svg";
 
 export default function ActionToType() {
   return (
-    <div className="w-full h-full flex flex-col gap-4 justify-center items-center flex-grow select-none cursor-not-allowed">
+    <div className="absolute w-full h-full flex flex-col gap-4 justify-center items-center flex-grow select-none cursor-not-allowed">
       <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-Estedad-Medium flex flex-row-reverse justify-center items-center select-none cursor-not-allowed">
         <EmojiShape className="relative max-md:-right-2 scale-50 md:scale-[0.70]" />
         به زبان سلام خوش آمدید
