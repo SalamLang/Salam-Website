@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Button } from "../common/Button";
 // import EyseIcon from "../../../public/eyse.svg";
 import PlayIcon from "../../../public/play.svg";
@@ -7,10 +7,19 @@ import SettingIcon from "../../../public/setting.svg";
 import ShareIcon from "../../../public/share.svg";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import EyseMotion from "./EyseMotion";
+import { LoaderIcon } from "react-hot-toast";
 
 export default function ListButtonEditor() {
   const { setIsOpenSettingModal, setIsOpenShareModal, setInitialSnap } =
     useContext(EditorModalsContext);
+  const [disabled, setDisabled] = useState(false);
+  const handleRunCode = () => {
+    setDisabled(true);
+    setTimeout(() => {
+      setDisabled(false);
+      setInitialSnap(0);
+    }, 1000);
+  };
   return (
     <>
       <div className="max-md:hidden w-auto min-h-[600px] flex flex-col gap-8 justify-start items-start p-4">
@@ -25,9 +34,13 @@ export default function ListButtonEditor() {
           intent="orange"
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center"
-          onClick={() => setInitialSnap(0)}
+          onClick={handleRunCode}
         >
-          <PlayIcon className="scale-75" />
+          {disabled ? (
+            <LoaderIcon className="!w-4 !h-4" />
+          ) : (
+            <PlayIcon className="scale-75" />
+          )}
         </Button>
         <Button
           intent="orange"
@@ -56,7 +69,6 @@ export default function ListButtonEditor() {
           <ShareIcon />
         </Button>
       </div>
-
     </>
   );
 }
