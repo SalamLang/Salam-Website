@@ -35,6 +35,7 @@ export default function ListButtonEditor() {
           size="large"
           className="!rounded-xl !bg-bg-button-orange !p-1 w-12 h-12 flex justify-center items-center"
           onClick={handleRunCode}
+          disabled={disabled}
         >
           {disabled ? (
             <LoaderIcon className="!w-4 !h-4" />
