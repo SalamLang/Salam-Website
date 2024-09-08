@@ -6,7 +6,7 @@ import SecondMenuList from "../molecules/SecondMenuList";
 
 function SecondHeader() {
   return (
-    <div className={"relative w-full"}>
+    <div className={"relative w-full shadow-2xl shadow-black/[0.05]"}>
       <header
         className={
           "md:shadow-my3 lg:shadow-my2 bg-transparent relative w-full px-4 py-2 md:h-[80px] xl:h-[100px] flex items-center justify-center"
