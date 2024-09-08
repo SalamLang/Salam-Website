@@ -107,19 +107,19 @@ const ControlsVersion = () => {
               )}
             </AnimatePresence>
           </Badge>
-          <p className="text-base opacity-45">{currentVersionObject?.title}</p>
+          <p className="w-24 text-base opacity-45">{currentVersionObject?.title}</p>
         </div>
       </div>
       <Button
         intent="primary"
         size="medium"
         rounded="full"
-        className="text-nowrap"
+        className="text-nowrap h-10 w-44 flex !p-2 justify-center items-center"
         onClick={handleStartClick}
         disabled={isLoading}
       >
         {isLoading ? (
-          <LoaderIcon className="!w-5 !h-5 !my-1 !mx-8" />
+          <LoaderIcon className="!w-5 !h-5" />
         ) : (
           "شروع کردن"
         )}
