@@ -6,7 +6,7 @@ import Design from "../../../public/designicon.svg";
 import Lamp from "../../../public/lampicon.svg";
 
 function ImageBoxAdvantage({ variant }) {
-  let classes = "scale-[0.8] brightness-0";
+  let classes = "scale-[0.85] brightness-0";
   let svgComponent = null;
 
   switch (variant) {
