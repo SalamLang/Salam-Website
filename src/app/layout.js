@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import "./globals.css"; // اگر فایل استایل‌ها در مسیر اصلی باشد
+import "./globals.css";
+import "../styles/font.css";
 import { usePathname } from "next/navigation";
 import nProgress from "nprogress";
 import ReactQueryProvider from "@/utils/react-query/ReactQueryProvider";
