@@ -14,7 +14,7 @@ function HeroMain() {
       </div>
       <div
         className={
-          "hidden md:block absolute w-2/5 top-20 left-1/2 -translate-x-1/2 rotate-[195deg]"
+          "hidden md:block absolute w-2/5 top-20 left-1/2 -translate-x-1/2 rotate-[195deg] -z-20"
         }
       >
         <Vactor2 />
@@ -23,7 +23,13 @@ function HeroMain() {
         title="به جمع دوس داشتنی سلام ما بپیوند"
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
-      <Button size="large" rounded="full" className="!bg-bg-button-orange2 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2">
+      <Button
+        link="playground"
+        size="large"
+        rounded="full"
+        className="!bg-bg-button-orange2 z-10 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2"
+        style={{ zIndex: 10 }}
+      >
         <ArrowLeft className="relative !top-0.5 scale-75" />
         بزن بریم
       </Button>
