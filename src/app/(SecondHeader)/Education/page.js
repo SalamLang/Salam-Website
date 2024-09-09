@@ -16,7 +16,7 @@ export const metadata = {
   author: "تیم برنامه نویسی زبان سلام",
 };
 
-const Education = () => {
+const page = () => {
   return (
     <div className="container flex items-center flex-col m-auto gap-y-20">
       <EducationHero />
@@ -33,4 +33,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default page;
