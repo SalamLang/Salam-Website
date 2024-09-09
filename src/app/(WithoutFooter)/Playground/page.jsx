@@ -10,7 +10,7 @@ export const metadata = {
   author: "تیم برنامه نویسی زبان سلام",
 };
 
-export default function Playground() {
+export default function page() {
   return (
     <div className="w-full h-full flex flex-col flex-grow">
       <PlaygroundContext>
