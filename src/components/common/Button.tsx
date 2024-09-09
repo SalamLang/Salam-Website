@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import Link from "next/link";
 
 const button = cva("hover:scale-105 transition-all disabled:opacity-70", {
   variants: {
@@ -53,14 +54,32 @@ const button = cva("hover:scale-105 transition-all disabled:opacity-70", {
 
 export interface ButtonProps
   extends HTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof button> {}
+    VariantProps<typeof button> {
+  link: string;
+}
 
 export const Button: React.FC<ButtonProps> = ({
   className,
   intent,
   size,
   rounded,
+  link,
   ...props
-}) => (
-  <button className={button({ intent, size, rounded, className })} {...props} />
-);
+}) => {
+  if (link)
+    return (
+      <Link href={link}>
+        <button
+          className={button({ intent, size, rounded, className })}
+          {...props}
+        />
+      </Link>
+    );
+  else
+    return (
+      <button
+        className={button({ intent, size, rounded, className })}
+        {...props}
+      />
+    );
+};
