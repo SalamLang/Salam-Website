@@ -2,15 +2,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Badge } from "../common/Badge";
 import Logo from "../../../public/logowhite.svg";
 import { Button } from "../common/Button";
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import VersionItem from "./VersionItem";
 import toast, { LoaderIcon } from "react-hot-toast";
+import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 
 const ControlsVersion = () => {
   const [isOpenVersion, setIsOpenVersion] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [currectVersion, setCurrectVersion] = useState("v1");
   const [currentVersionObject, setCurrentVersionObject] = useState(null);
+  const { setIsOpenSettingModal } = useContext(EditorModalsContext);
 
   const versions = useMemo(
     () => [
@@ -52,6 +54,7 @@ const ControlsVersion = () => {
         loading: "در حال تغییر نسخه..",
         success: () => {
           setIsOpenVersion(false);
+          setIsOpenSettingModal(false);
           return "فرایند تغییر نسخه با موفقیت انجام شد!";
         },
         error: () => {
@@ -107,7 +110,9 @@ const ControlsVersion = () => {
               )}
             </AnimatePresence>
           </Badge>
-          <p className="w-24 text-base opacity-45">{currentVersionObject?.title}</p>
+          <p className="w-24 text-base opacity-45">
+            {currentVersionObject?.title}
+          </p>
         </div>
       </div>
       <Button
@@ -118,11 +123,7 @@ const ControlsVersion = () => {
         onClick={handleStartClick}
         disabled={isLoading}
       >
-        {isLoading ? (
-          <LoaderIcon className="!w-5 !h-5" />
-        ) : (
-          "شروع کردن"
-        )}
+        {isLoading ? <LoaderIcon className="!w-5 !h-5" /> : "شروع کردن"}
       </Button>
     </div>
   );
