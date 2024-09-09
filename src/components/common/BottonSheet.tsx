@@ -80,6 +80,7 @@ export default function BottonSheet() {
         setInitialSnap(snapIndex); // Keep track of the current snap index
       }}
       className="max-w-[55rem] mx-auto"
+      style={{ zIndex: 10 }}
     >
       <Sheet.Container className="cursor-grabbing !shadow-none !bg-cream/40 backdrop-blur-xl !rounded-t-3xl">
         <Sheet.Header className="relative w-full h-auto flex justify-center items-center">
