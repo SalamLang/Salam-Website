@@ -13,7 +13,11 @@ function DescriptionOnlineCode() {
           "container w-full mx-auto flex items-center justify-center flex-col gap-y-8 py-32"
         }
       >
-        <div className={"hidden md:block absolute w-11/12 2xl:w-10/12 z-10 opacity-30"}>
+        <div
+          className={
+            "hidden md:block absolute w-11/12 2xl:w-10/12 z-10 opacity-30"
+          }
+        >
           <Vactor1 />
         </div>
         <div className={"absolute w-full h-full top-1/2 -translate-y-1/2 z-10"}>
@@ -37,9 +41,11 @@ function DescriptionOnlineCode() {
         <Button
           text="بزن بریم"
           variant="buttonWhite"
-          className={'w-full flex flex-row items-center gap-0.5 justify-center !px-5'}
+          className={
+            "w-full flex flex-row items-center gap-0.5 justify-center !px-5"
+          }
           type="link"
-          href="/404"
+          href="/playground"
           icon={
             <span className="w-full h-full block">
               <ArrowLeftBlack className="scale-75 w-5 h-5 relative top-[3px]" />
