@@ -22,33 +22,38 @@ function HomeDownload({ isBlackIcon }) {
             variant="Linux"
             className="bg-bg-button-green"
             isBlack={isBlackIcon || false}
+            href={`download?os=Linux`}
           />
           <BoxDownload
             variant="Windows"
             className="bg-bg-button-green"
             isBlack={isBlackIcon || false}
+            href={`download?os=Windows`}
           />
           <BoxDownload
             variant="Mac"
             className="bg-bg-button-green"
             isBlack={isBlackIcon || false}
+            href={`download?os=Mac`}
           />
           <BoxDownload
             variant="Android"
             className="bg-bg-button-green"
             isBlack={isBlackIcon || false}
+            href={`download?os=Android`}
           />
           <BoxDownload
             variant="Pwa"
             className="bg-bg-button-green"
             isBlack={isBlackIcon || false}
+            href={`download?os=Pwa`}
           />
         </div>
         <SliderBestComment />
       </div>
       <div
         className={
-          "bg-bg-button-green absolute bottom-0 h-[690px] md:h-[590px] w-full"
+          "bg-dark-green absolute bottom-0 h-[690px] md:h-[590px] w-full bg-vector bg-contain bg-center bg-no-repeat"
         }
       ></div>
     </div>
