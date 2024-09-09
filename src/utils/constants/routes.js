@@ -1,8 +1,8 @@
 const routes = {
   home: "/",
-  education: "/Education",
-  donwload: "/Download",
-  playground: "/Playground",
+  education: "/education",
+  donwload: "/download",
+  playground: "/playground",
   //   blog: (slug) => `/blog/${slug}`,
 };
 
