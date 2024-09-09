@@ -4,6 +4,7 @@ import "../../styles/font.css";
 import Header from "@/components/templates/Header";
 import Footer from "@/components/templates/Footer";
 import { Toaster } from "react-hot-toast";
+import FixedMenu from "@/components/molecules/FixedMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <div className="relative w-full min-h-screen overflow-auto flex flex-col justify-between">
           <div className="w-full h-full flex flex-col">
             <Header />
+            <FixedMenu />
             {children}
           </div>
           <Footer />
