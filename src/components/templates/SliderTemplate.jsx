@@ -7,7 +7,7 @@ import Avatar2 from "../../../public/avatar-comment-2.png";
 import Avatar3 from "../../../public/avatar-comment-3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import CommentBox from "../home/comment-box";
@@ -92,6 +92,9 @@ const SliderTemplate = () => {
         slidesPerView={perViewSlide}
         onSlideChange={(swiper) => console.log(swiper)}
         loop={true}
+        autoplay={{ delay: 2000, disableOnInteraction: false }} // پیکربندی تنظیمات autoplay
+        longSwipes={true}
+        modules={[Autoplay]}
       >
         {comments.map((comment) => (
           <SwiperSlide key={comment.id}>
