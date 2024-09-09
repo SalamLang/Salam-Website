@@ -7,13 +7,14 @@ import Vactor2 from "../../../public/vector16.svg";
 function MenuList() {
   return (
     <ul className="relative hidden md:flex items-center justify-center gap-x-12">
-      <div
+      {/* <div
         className={
-          "hidden md:block absolute inset-0 w-2/3 top-12 right-[44%] -z-20"
+          "hidden md:block absolute inset-0 w-2/3 h-full overflow-hidden min-h-[50vh] top-12 right-[44%]"
         }
+        style={{ zIndex: -1 }}
       >
         <Vactor2 />
-      </div>
+      </div> */}
 
       <NavItem href={getRoute("home")}>سلام</NavItem>
       <NavItem href={getRoute("education")}>یادگیری</NavItem>
