@@ -5,8 +5,9 @@ import Mac from "../../../public/mac.svg";
 import Android from "../../../public/android.svg";
 import Windows from "../../../public/windows.svg";
 import Pwa from "../../../public/pwa.svg";
+import Link from "next/link";
 
-function BoxDownload({ variant, className, imgClass, isBlack }) {
+function BoxDownload({ variant, className, imgClass, isBlack, href }) {
   let classes = `scale-[0.65] ${imgClass} ${isBlack && "!brightness-0"}`;
   let svgComponent = null;
   let title;
@@ -45,19 +46,41 @@ function BoxDownload({ variant, className, imgClass, isBlack }) {
       break;
   }
 
-  return (
-    <div className="flex items-center justify-center flex-col gap-2 cursor-pointer">
-      <div
-        className={`bg-bg-box rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
+  if (href)
+    return (
+      <Link
+        href={href}
+        className="flex items-center justify-center flex-col gap-2 cursor-pointer"
       >
-        {svgComponent}
+        <div
+          className={`bg-bg-box rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
+        >
+          {svgComponent}
+        </div>
+        <h4 className="text-title text-center font-Estedad-SemiBold">
+          {title}
+        </h4>
+        <p className="text-description text-center text-xs font-Estedad-Regular w-24">
+          {description}
+        </p>
+      </Link>
+    );
+  else
+    return (
+      <div className="flex items-center justify-center flex-col gap-2 cursor-pointer">
+        <div
+          className={`bg-bg-box rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
+        >
+          {svgComponent}
+        </div>
+        <h4 className="text-title text-center font-Estedad-SemiBold">
+          {title}
+        </h4>
+        <p className="text-description text-center text-xs font-Estedad-Regular w-24">
+          {description}
+        </p>
       </div>
-      <h4 className="text-title text-center font-Estedad-SemiBold">{title}</h4>
-      <p className="text-description text-center text-xs font-Estedad-Regular w-24">
-        {description}
-      </p>
-    </div>
-  );
+    );
 }
 
 export default BoxDownload;
