@@ -1,9 +1,9 @@
-import React from 'react'
-import SecondHeader from '../templates/SecondHeader'
-import { Alert } from '../common/Alert'
-import Footer from '../templates/Footer'
+import React from "react";
+import SecondHeader from "../templates/SecondHeader";
+import { Alert } from "../common/Alert";
+import Footer from "../templates/Footer";
 
-export default function NotFoundLayout({children}) {
+export default function NotFoundLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body>
@@ -23,5 +23,5 @@ export default function NotFoundLayout({children}) {
         </div>
       </body>
     </html>
-  )
+  );
 }
