@@ -1,6 +1,6 @@
 import TitleDescription from "../atoms/TitleDescription";
 
-import ArrowLeftBlack from "../../../public/arrowleftblack.svg";
+import ArrowLeft from "../../../public/arrowleft.svg";
 import { Button } from "../common/Button";
 
 function BoxStartLanguge() {
@@ -14,9 +14,10 @@ function BoxStartLanguge() {
         intent="primary"
         rounded="full"
         className="flex justify-center items-center gap-1"
+        link="/playground"
       >
         بزن بریم
-        <ArrowLeftBlack className="relative top-0.5 scale-75" />
+        <ArrowLeft className="relative top-0.5 scale-75" />
       </Button>
     </div>
   );
