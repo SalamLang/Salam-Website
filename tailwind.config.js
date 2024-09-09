@@ -5,7 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:"class",
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -71,6 +71,8 @@ module.exports = {
         "orange-medium": "rgba(255, 171, 0, 1)",
         light: "rgba(238, 244, 255, 1)",
         cream: "#FFCCAF",
+        "dark-green": "var(--dark-green)",
+        "footer-green": "rgba(142, 214, 89, 1)",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
