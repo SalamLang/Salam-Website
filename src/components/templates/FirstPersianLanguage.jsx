@@ -12,6 +12,7 @@ export default function FirstPersianLanguage() {
         اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟
       </p>
       <Button
+        link="playground"
         intent="orange"
         size="medium"
         rounded="full"
