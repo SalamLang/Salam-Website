@@ -28,7 +28,7 @@
   --bg-circel-green: #27e046;
   --bg-circel-orange: #ff5c00;
   --bg-section: #ff8947;
-  --bg-section2: #F66E21;
+  --bg-section2: #f66e21;
   --bg-section-purple: #8470ffeb;
   --bg-box-purple: rgba(227, 225, 252, 0.92);
   --bg-box-advantage: #fff2eb;
@@ -36,6 +36,7 @@
   --bg-box-download: #ffdcc8;
   --bg-slider: rgba(233, 240, 255, 0.13);
   --pagination: #3ed44e;
+  --dark-green: rgba(139, 210, 87, 1);
 }
 
 @layer base {
