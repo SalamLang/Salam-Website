@@ -39,7 +39,7 @@ const Modal: ModalComponent = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className={`fixed !overflow-hidden inset-0 w-full h-full bg-black/10 backdrop-blur-sm z-[100000002] flex justify-center items-center flex-grow ${
+          className={`fixed !overflow-hidden inset-0 w-full h-full bg-black/10 backdrop-blur-sm z-50 flex justify-center items-center flex-grow ${
             className || ""
           }`}
           onClick={onClose}
