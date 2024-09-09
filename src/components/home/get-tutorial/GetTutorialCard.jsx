@@ -20,6 +20,7 @@ export default function GetTutorialCard() {
             دوره آموزشی های ما به شما کمک میکند تا بتوانید با این زبان کار کنید
           </p>
           <Button
+            link="playground"
             intent="orange"
             size="large"
             rounded="full"
