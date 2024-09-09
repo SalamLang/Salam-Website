@@ -27,7 +27,7 @@ function Gif({ variant }) {
       break;
   }
 
-  return <Image className={classes} src={src} alt="Gif" unoptimized />;
+  return <Image className={classes} src={src} alt="Gif" unoptimized priority />;
 }
 
 export default Gif;
