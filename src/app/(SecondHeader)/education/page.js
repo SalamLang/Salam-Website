@@ -18,7 +18,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="container flex items-center flex-col m-auto gap-y-20">
+    <div className="container flex items-center flex-col m-auto max-md:gap-y-10 gap-y-20">
       <EducationHero />
       <ArrowDown variant="Screw" />
       <EducationDownload />
