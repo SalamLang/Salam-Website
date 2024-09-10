@@ -77,7 +77,7 @@ function MenuListMobile() {
             <NavItem href={"#"} variants="mobile">
               انجمن
             </NavItem>
-            <NavItem href={"#"} variants="mobile">
+            <NavItem href={getRoute("playground")} variants="mobile">
               آزمایش آنلاین
             </NavItem>
             <NavItem href={"#"} variants="mobile">
