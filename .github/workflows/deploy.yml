@@ -20,13 +20,17 @@ jobs:
             git pull
             npm install --force
             npm run build
-            if [ -f "package.json" ]; then
-              if pm2 describe "salamlang-website" > /dev/null; then
-                pm2 restart "salamlang-website"
+            if [ $? -eq 0 ]; then
+              if [ -f "package.json" ]; then
+                if pm2 describe "salamlang-website" > /dev/null; then
+                  pm2 restart "salamlang-website"
+                else
+                  pm2 start --name "salamlang-website" "npm run start -- -p 3001"
+                fi
+                pm2 save
               else
-                pm2 start --name "salamlang-website" "npm run start -- -p 3001"
+                echo "package.json not found. Skipping start/restart."
               fi
-              pm2 save
             else
-              echo "package.json not found. Skipping start/restart."
+              echo "Build failed. Skipping PM2 restart."
             fi
