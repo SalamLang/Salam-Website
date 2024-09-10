@@ -7,7 +7,7 @@ import CarecterGoToLearn from "../molecules/CarecterGoToLearn";
 
 function GoToLearn() {
   return (
-    <div className="flex items-center justify-center flex-col gap-6 relative w-full mb-96">
+    <div className="flex items-center justify-center flex-col gap-6 relative w-full mb-20">
       <TitleDescription
         title="به جمع دوس داشتنی سلام ما بپیوند"
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
