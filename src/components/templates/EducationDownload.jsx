@@ -1,11 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import TitleDescription from "../atoms/TitleDescription";
 import BoxDownload from "../molecules/BoxDownload";
 import { Button } from "../common/Button";
 import { getOS } from "@/utils/helper/getOs";
 
 function EducationDownload() {
-  const clinetOS = getOS();
+  const [clientOS, setClientOS] = useState("");
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    let os = "desktop"; // default value
+
+    if (/android/i.test(userAgent)) {
+      os = "Android";
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      os = "iOS";
+    } else if (/Mac/i.test(userAgent)) {
+      os = "Mac";
+    } else if (/Win/i.test(userAgent)) {
+      os = "Windows";
+    } else if (/Linux/i.test(userAgent)) {
+      os = "Linux";
+    }
+
+    setClientOS(os);
+  }, []);
   return (
     <div className="flex items-center justify-center flex-col gap-5">
       <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
@@ -15,7 +36,7 @@ function EducationDownload() {
           rounded="full"
           size="medium"
           className="!bg-bg-main !px-10 !py-1"
-          link={`download?os=${clinetOS}`} // This is a link to the download page
+          link={`download?os=${clientOS}`} // This is a link to the download page
         >
           دانلود
         </Button>
