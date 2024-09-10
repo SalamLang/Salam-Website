@@ -46,38 +46,29 @@ function BoxSentCode() {
   };
 
   return (
-    <div className="w-full flex justify-center items-center">
-      <form
-        action=""
-        onSubmit={formik.handleSubmit}
-        className={
-          "bg-light-orange relative max-w-[400px] md:max-w-[500px] w-full h-full rounded-[40px] flex items-center justify-between px-2 py-1.5 md:p-2.5"
-        }
-      >
-        <div className="flex gap-4 items-center justify-center -translate-x-1.5">
-          <Mobile className="scale-75 opacity-50 brightness-0" />
-          <div className="bg-black/10 !rounded-full w-[2px] h-[30px]"></div>
-          <Input
-            type="text"
-            placeholder="مثال: ۰۹۹۱۳۹۱۵۲۵۴"
-            maxLength={11}
-            className={"placeholder:opacity-45"}
-            {...formik.getFieldProps("number")}
-            onChange={handleChange}
-          />
-          <AnimatePresence>
-            {formik.errors.number && (
-              <motion.p
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 20, opacity: 0 }}
-                className="absolute -bottom-10 right-3 !text-rose-600"
-              >
-                {formik.errors.number}
-              </motion.p>
-            )}
-          </AnimatePresence>
-        </div>
+    <>
+      <div className="w-full flex justify-center items-center">
+        <form
+          action=""
+          onSubmit={formik.handleSubmit}
+          className={
+            "bg-light-orange relative max-w-[400px] md:max-w-[500px] w-full h-full max-sm:h-5/6 rounded-[40px] flex items-center justify-between max-sm:px-1.5 px-2 max-sm:py-1 py-1.5 md:p-2.5"
+          }
+        >
+          <div className="w-full flex gap-1 md:gap-4 items-center justify-start -translate-x-1.5">
+            <Mobile className="max-sm:scale-[0.55] max-md:scale-[0.65] scale-75 opacity-50 brightness-0" />
+            <div className="bg-black/10 !rounded-full max-sm:w-[1.5px] w-[2px] ml-1  h-[30px]"></div>
+            <Input
+              type="text"
+              placeholder="مثال: ۰۹۹۱۳۹۱۵۲۵۴"
+              maxLength={11}
+              className={
+                "placeholder:opacity-45 h-full placeholder:max-sm:text-sm"
+              }
+              {...formik.getFieldProps("number")}
+              onChange={handleChange}
+            />
+          </div>
           <Button
             intent="orange"
             size="medium"
@@ -92,8 +83,21 @@ function BoxSentCode() {
               "ارسال کد"
             )}
           </Button>
-      </form>
-    </div>
+        </form>
+      </div>
+      <AnimatePresence>
+        {formik.errors.number && (
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
+            className="max-sm:text-xs max-md:text-sm !text-rose-600"
+          >
+            {formik.errors.number}
+          </motion.p>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 
