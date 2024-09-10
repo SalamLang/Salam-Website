@@ -6,6 +6,7 @@ import SecondHeader from "@/components/templates/SecondHeader";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/templates/Footer";
 import { Alert } from "@/components/common/Alert";
+import FixedMenu from "@/components/molecules/FixedMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
 
         <div className="relative w-full min-h-screen overflow-auto flex flex-col justify-start">
           <SecondHeader />
+          <FixedMenu />
           <Alert
             intent="orange"
             size="medium"
