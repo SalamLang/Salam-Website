@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import TitleDescription from "../atoms/TitleDescription";
 import BoxDownload from "../molecules/BoxDownload";
 import { Button } from "../common/Button";
-import { getOS } from "@/utils/helper/getOs";
 
 function EducationDownload() {
   const [clientOS, setClientOS] = useState("");
