@@ -1,14 +1,12 @@
-import platform from "platform";
-
 export const getOS = () => {
-  const os = platform.os.family;
-  if (os) {
-    if (/Android/i.test(os)) return "Android";
-    if (/iOS/i.test(os)) return "iOS";
-    if (/Windows|Win32|Win64/i.test(os)) return "Windows";
-    if (/Mac/i.test(os)) return "MacOS";
-    if (/Linux/i.test(os)) return "Linux";
-    if (/UNIX/i.test(os)) return "UNIX";
+  if (typeof navigator !== "undefined") {
+    const userAgent = navigator.userAgent;
+    if (/android/i.test(userAgent)) return "Android";
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "iOS";
+    if (userAgent.indexOf("Win") !== -1) return "Windows";
+    if (userAgent.indexOf("Mac") !== -1) return "MacOS";
+    if (userAgent.indexOf("X11") !== -1) return "UNIX";
+    if (userAgent.indexOf("Linux") !== -1) return "Linux";
   }
   return "Unknown OS";
 };
