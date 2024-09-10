@@ -1,31 +1,14 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import TitleDescription from "../atoms/TitleDescription";
 import BoxDownload from "../molecules/BoxDownload";
 import { Button } from "../common/Button";
+import useOS from "@/hooks/useOS";
 
 function EducationDownload() {
-  const [clientOS, setClientOS] = useState("");
+  const clientOS = useOS();
 
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    let os = "desktop"; // default value
-
-    if (/android/i.test(userAgent)) {
-      os = "Android";
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      os = "iOS";
-    } else if (/Mac/i.test(userAgent)) {
-      os = "Mac";
-    } else if (/Win/i.test(userAgent)) {
-      os = "Windows";
-    } else if (/Linux/i.test(userAgent)) {
-      os = "Linux";
-    }
-
-    setClientOS(os);
-  }, []);
   return (
     <div className="flex items-center justify-center flex-col gap-5">
       <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
