@@ -33,7 +33,7 @@ export default function FixedMenu() {
             className="z-[100] fixed w-full h-10 inset-0"
             transition={{ type: "keyframes", duration: 0.2, delay: 0 }}
           >
-            <SecondHeader className={"bg-white/50 backdrop-blur-xl"} />
+            <SecondHeader className={"bg-white/70 backdrop-blur-3xl"} />
           </motion.div>
         )}
       </AnimatePresence>
