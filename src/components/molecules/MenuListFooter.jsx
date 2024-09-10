@@ -29,11 +29,6 @@ function MenuListFooter() {
           دانلود
         </Link>
       </li>
-      <li>
-        <Link href="#" className="text-title text-xl font-Estedad-Regular">
-          نظرات
-        </Link>
-      </li>
     </ul>
   );
 }
