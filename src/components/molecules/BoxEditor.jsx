@@ -1,6 +1,6 @@
 "use client";
 import { PlaygroundContextValue } from "@/utils/contexts/Playground";
-import { convertEnglishNumbersToPersian } from "@/utils/helper/handler";
+import { convertEnglishNumbersToPersian } from "@/utils/helper/handlers";
 import React, { useContext, useEffect, useRef, useState } from "react";
 
 export default function BoxEditor() {
@@ -30,6 +30,25 @@ export default function BoxEditor() {
       });
     }
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Tab") {
+      event.preventDefault();
+
+      const selection = window.getSelection();
+      const range = selection.getRangeAt(0);
+      const tabNode = document.createTextNode("\u00a0\u00a0\u00a0\u00a0"); // Four non-breaking spaces for tab
+
+      range.insertNode(tabNode);
+
+      // Move the caret after the inserted tab
+      range.setStartAfter(tabNode);
+      range.setEndAfter(tabNode);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+  };
+
   useEffect(() => {
     editableDivRef?.current?.focus();
   }, []);
@@ -51,6 +70,7 @@ export default function BoxEditor() {
         className={`${fontName} w-full h-full p-5 leading-[44px] pr-0 outline-none ring-0 border-0 max-w-[95%]`}
         contentEditable={true}
         onInput={handleInput}
+        onKeyDown={handleKeyDown}
         autoFocus={true}
       ></div>
     </div>
