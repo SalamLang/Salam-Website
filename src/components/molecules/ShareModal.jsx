@@ -1,13 +1,15 @@
-import React, { useCallback, useContext, useEffect } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import Modal from "../common/Modal";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import CloseSvg from "../../../public/svgs/svg-close-box.svg";
 import ShareModalIcon from "../../../public/gifs/download.gif";
 import CopyIcon from "../../../public/svgs/copy.svg";
 import Image from "next/image";
-import toast from "react-hot-toast";
+import { copyToClipboard } from "@/utils/helper/handlers";
 
 export default function ShareModal() {
+  const [linkText] = useState("Sallam/ENfrzWaQDSOKdeOtD");
+
   const { isOpenShareModal, setIsOpenShareModal } =
     useContext(EditorModalsContext);
 
@@ -29,10 +31,6 @@ export default function ShareModal() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [onCloseModal]);
-
-  const handleCopy = () => {
-    toast.success("کپی شد");
-  };
 
   return (
     <Modal isOpen={isOpenShareModal} onClose={onCloseModal}>
@@ -68,11 +66,11 @@ export default function ShareModal() {
           <div className="w-full h-auto flex justify-center items-center">
             <div
               className="w-auto border-2 border-cream-light rounded-[12px] p-0.5 select-none cursor-pointer"
-              onClick={handleCopy}
+              onClick={() => copyToClipboard(linkText)}
             >
               <div className="w-full h-full px-4 py-2.5 bg-cream-light rounded-[9px] flex flex-row-reverse justify-center items-center gap-1">
                 <span className="text-xs font-Estedad-Bold text-bg-main">
-                  Sallam/ENfrzWaQDSOKdeOtD
+                  {linkText}
                 </span>
                 <div className="w-auto h-auto">
                   <CopyIcon className="text-nowrap" />
