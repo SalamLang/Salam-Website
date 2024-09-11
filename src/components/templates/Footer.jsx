@@ -20,8 +20,15 @@ function Footer() {
           </div>
         </div>
         <hr className="w-full h-1 bg-border-grey lg:hidden" />
-
-         <img referrerpolicy='origin' id = 'rgvjjzpenbqenbqefukzfukz' style = 'cursor:pointer' onclick = 'window.open("https://logo.samandehi.ir/Verify.aspx?id=372266&p=xlaojyoeuiwkuiwkgvkagvka", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")' alt = 'logo-samandehi' src = 'https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq' />
+        
+        <img
+          referrerPolicy="origin"
+          id="rgvjjzpenbqenbqefukzfukz"
+          style={{ cursor: "pointer" }}
+          onclick='window.open("https://logo.samandehi.ir/Verify.aspx?id=372266&p=xlaojyoeuiwkuiwkgvkagvka", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")'
+          alt="logo-samandehi"
+          src="https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq"
+        />
         
         <MenuListFooter />
         <div className="w-full lg:w-fit flex items-center justify-center">
