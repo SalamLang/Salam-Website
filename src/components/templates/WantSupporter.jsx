@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../common/Button";
-import SupporterIcon from "../../../public/supporter.png";
+import SupporterIcon from "../../../public/images/supporter.png";
 import Image from "next/image";
 
 export default function WantSupporter() {

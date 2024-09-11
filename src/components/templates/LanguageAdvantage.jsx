@@ -1,7 +1,7 @@
 import ImageBoxAdvantage from "../atoms/ImageBoxAdvantage";
 import TitleDescription from "../atoms/TitleDescription";
 import TitleDescriptionBox from "../atoms/TitleDescriptionBox";
-import Vector from "../../../public/vector11.svg";
+import Vector from "../../../public/svgs/vector11.svg";
 
 function LanguageAdvantage() {
   return (
@@ -15,11 +15,11 @@ function LanguageAdvantage() {
         }
       >
         <TitleDescription title="چرا زبان سلام" />
-        <div className="w-full max-w-[900px] grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3">
+        <div className="w-full max-w-[900px] grid grid-cols-1 min-[500px]:grid-cols-2 gap-10 lg:grid-cols-3">
           <div className="bg-bg-box2 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Simplicity" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="طراحی فوق العاده"
               description="ما با کمک بهترین طراحان بهترین
@@ -30,7 +30,7 @@ function LanguageAdvantage() {
           <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Security" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="امنیت بالا"
               description="میتونی با امنیت بالا که در نظر
@@ -41,7 +41,7 @@ function LanguageAdvantage() {
           <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="BestDesigne" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="شخصی سازی بالا"
               description="شما میتوانید تا جایی که میخواهید
@@ -52,7 +52,7 @@ function LanguageAdvantage() {
           <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="AllPeople" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="مناسب برای همه"
               description="افردا از پایین ترین سن ها تا
@@ -63,7 +63,7 @@ function LanguageAdvantage() {
           <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Rtl" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="راست چین"
               description="برعکس باقی زبان ها این زبان
@@ -74,7 +74,7 @@ function LanguageAdvantage() {
           <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Lamp" />
             <TitleDescriptionBox
-              headerClass="!text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="سادگی"
               description="شما میتوانید به سادگی تمام این

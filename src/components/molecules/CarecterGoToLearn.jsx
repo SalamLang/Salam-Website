@@ -1,7 +1,7 @@
-import CarecterBlue from "../../../public/caracter2.svg";
-import CarecterOrange from "../../../public/caracter4.svg";
-import CaracterGreen from "../../../public/carecter7.svg";
-import CaracterGreentow from "../../../public/carecter8.svg";
+import CarecterBlue from "../../../public/svgs/caracter2.svg";
+import CarecterOrange from "../../../public/svgs/caracter4.svg";
+import CaracterGreen from "../../../public/svgs/carecter7.svg";
+import CaracterGreentow from "../../../public/svgs/carecter7.svg";
 
 function CarecterGoToLearn() {
   return (

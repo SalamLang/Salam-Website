@@ -1,7 +1,7 @@
 import MenuListMobile from "../molecules/MenuListMobile";
 import Hamberger from "../atoms/Hamberger";
 import MenuList from "../molecules/MenuList";
-import BgGreen from "../../../public/bg-green.svg";
+import BgGreen from "../../../public/svgs/bg-green.svg";
 import Logo from "@/components/atoms/Logo";
 import ToggleMenuProvider from "@/context/ToggleMenu";
 

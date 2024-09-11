@@ -3,7 +3,9 @@ import CircelsBoxCode from "../atoms/CircelsBoxCode";
 import TextExampleCole from "../atoms/TextExampleCole";
 import ButtonCodeBox from "../atoms/ButtonCodeBox";
 
-import Play from "../../../public/play.svg";
+import Play from "../../../public/svgs/play.svg";
+import Link from "next/link";
+import { getRoute } from "@/utils/constants/getRoutes";
 
 function CodeExample() {
   return (
@@ -18,7 +20,10 @@ function CodeExample() {
             <CircelsBoxCode />
             <TextExampleCole />
           </div>
-          <div className="flex flex-col items-end justify-end gap-y-10">
+          <Link
+            href={getRoute("playground")}
+            className="flex flex-col items-end justify-end gap-y-10"
+          >
             <ButtonCodeBox
               icon={
                 <span>
@@ -33,7 +38,7 @@ function CodeExample() {
                 </span>
               }
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

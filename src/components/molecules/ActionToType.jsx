@@ -1,4 +1,4 @@
-import EmojiShape from "../../../public/emoji-shape.svg";
+import EmojiShape from "../../../public/svgs/emoji-shape.svg";
 
 export default function ActionToType() {
   return (

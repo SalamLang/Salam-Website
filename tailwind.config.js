@@ -80,7 +80,7 @@ module.exports = {
         my3: "0px -35px 20px 13px #00000018",
       },
       backgroundImage: {
-        vector: "url('/bg-vector.png')",
+        vector: "url('/images/bg-vector.png')",
       },
     },
   },

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 
-const Avatar = "/person.png";
+const Avatar = "/images/person.png";
 
 const comments = [
   {

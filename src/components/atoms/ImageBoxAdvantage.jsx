@@ -1,9 +1,9 @@
-import Customize from "../../../public/customizeicon.svg";
-import Security from "../../../public/lockicon.svg";
-import Persons from "../../../public/personsicon.svg";
-import Rtl from "../../../public/rtlicon.svg";
-import Design from "../../../public/designicon.svg";
-import Lamp from "../../../public/lampicon.svg";
+import Customize from "../../../public/svgs/customizeicon.svg";
+import Security from "../../../public/svgs/lockicon.svg";
+import Persons from "../../../public/svgs/personsicon.svg";
+import Rtl from "../../../public/svgs/rtlicon.svg";
+import Design from "../../../public/svgs/designicon.svg";
+import Lamp from "../../../public/svgs/lampicon.svg";
 
 function ImageBoxAdvantage({ variant }) {
   let classes = "scale-[0.85] brightness-0";

@@ -1,10 +1,15 @@
 "use client";
 
 import React from "react";
-import ModeLight from "../.././../public/modelight.svg";
+import ModeLight from "../.././../public/svgs/modelight.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function SelectThemeCard({ titleSelectTheme, spanText, isActive, ...attr }) {
+export default function SelectThemeCard({
+  titleSelectTheme,
+  spanText,
+  isActive,
+  ...attr
+}) {
   return (
     <div className="w-auto h-auto flex flex-col justify-center items-center gap-2">
       <div className="w-auto h-auto relative cursor-pointer" {...attr}>

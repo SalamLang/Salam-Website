@@ -1,10 +1,9 @@
 "use client";
 import React, { useContext, useState } from "react";
 import { Button } from "../common/Button";
-// import EyseIcon from "../../../public/eyse.svg";
-import PlayIcon from "../../../public/play.svg";
-import SettingIcon from "../../../public/setting.svg";
-import ShareIcon from "../../../public/share.svg";
+import PlayIcon from "../../../public/svgs/play.svg";
+import SettingIcon from "../../../public/svgs/setting.svg";
+import ShareIcon from "../../../public/svgs/share.svg";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import EyseMotion from "./EyseMotion";
 import { LoaderIcon } from "react-hot-toast";

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Gif404Image from "../../../public/404.gif";
-import GifDownloadImage from "../../../public/download.gif";
-import GifEducationImage from "../../../public/education.gif";
-import GifEducation2Image from "../../../public/education2.gif";
+import Gif404Image from "../../../public/gifs/404.gif";
+import GifDownloadImage from "../../../public/gifs/download.gif";
+import GifEducationImage from "../../../public/gifs/education.gif";
+import GifEducation2Image from "../../../public/gifs/education2.gif";
 
 function Gif({ variant }) {
   let classes = "";

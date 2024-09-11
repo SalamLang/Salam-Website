@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Logosvg from "../../../public/logo.svg";
+import Logosvg from "../../../public/svgs/logo.svg";
 
 function Logo({ className }) {
   return (

@@ -1,24 +1,24 @@
-import CarecterBlue from "../../../public/carecterblue.svg"
-import Ghost from "../../../public/ghost.svg"
-import CaracterGreen from "../../../public/caracter5.svg"
+import CarecterBlue from "../../../public/svgs/carecterblue.svg";
+import Ghost from "../../../public/svgs/ghost.svg";
+import CaracterGreen from "../../../public/svgs/caracter5.svg";
 
 function CarectersDownload() {
   return (
     <>
-    <span className="absolute bottom-20 lg:right-[17%] md:right-[15%] right-[13%] sm:bottom-24">
+      <span className="absolute bottom-20 lg:right-[0%] md:right-[15%] right-[13%] sm:bottom-22">
         <CarecterBlue />
-    </span>
-    <span className="absolute right-12 sm:right-14 top-36 sm:top-40 z-20">
+      </span>
+      <span className="absolute right-12 sm:right-14 top-36 sm:top-40 z-20">
         <Ghost />
-    </span>
-    <span className="absolute left-12 top-24 -rotate-[55deg]">
+      </span>
+      <span className="absolute left-12 top-24 -rotate-[55deg]">
         <Ghost />
-    </span>
-    <span className="absolute right-[55%] bottom-6">
+      </span>
+      <span className="absolute left-[-20%] max-sm:right-[50%] bottom-6">
         <CaracterGreen />
-    </span>
+      </span>
     </>
-  )
+  );
 }
 
-export default CarectersDownload
+export default CarectersDownload;

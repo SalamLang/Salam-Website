@@ -1,8 +1,7 @@
 import Link from "next/link";
-import Logo from "../../../public/logo.svg";
+import Logo from "../../../public/svgs/logo.svg";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
-import Vactor2 from "../../../public/vector16.svg";
 
 function MenuList() {
   return (

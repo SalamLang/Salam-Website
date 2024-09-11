@@ -5,7 +5,7 @@ import Logo from "../atoms/Logo";
 import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useEffect } from "react";
 import { ToggleMenuContext } from "@/context/ToggleMenu";
-import CloseIcon from "../../../public/close.svg";
+import CloseIcon from "../../../public/svgs/close.svg";
 import { useScrollBlock } from "@/hooks/useScrollBlock ";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
@@ -39,7 +39,7 @@ function MenuListMobile() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [setIsOpen,allowScroll]);
+  }, [setIsOpen, allowScroll]);
 
   return (
     <AnimatePresence>

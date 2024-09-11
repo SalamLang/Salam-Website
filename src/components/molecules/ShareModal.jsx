@@ -1,9 +1,9 @@
 import React, { useCallback, useContext, useEffect } from "react";
 import Modal from "../common/Modal";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
-import CloseSvg from "../../../public/svg-close-box.svg";
-import ShareModalIcon from "../../../public/download.gif";
-import CopyIcon from "../../../public/copy.svg";
+import CloseSvg from "../../../public/svgs/svg-close-box.svg";
+import ShareModalIcon from "../../../public/gifs/download.gif";
+import CopyIcon from "../../../public/svgs/copy.svg";
 import Image from "next/image";
 import toast from "react-hot-toast";
 

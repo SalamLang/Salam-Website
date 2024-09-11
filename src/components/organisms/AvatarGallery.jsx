@@ -1,7 +1,7 @@
 import React from "react";
 import AvatarGroup from "../molecules/AvatarGroup";
-import Avatar2 from "../../../public/avatar2.png";
-import Avatar3 from "../../../public/avatar3.png";
+import Avatar2 from "../../../public/images/avatar2.png";
+import Avatar3 from "../../../public/images/avatar3.png";
 
 const avatars = [
   { src: Avatar2, alt: "User 1", width: 150, height: 150 },

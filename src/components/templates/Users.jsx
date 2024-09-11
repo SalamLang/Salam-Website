@@ -1,7 +1,7 @@
 import React from "react";
 import TitleDescription from "../atoms/TitleDescription";
 import AvatarGallery from "../organisms/AvatarGallery";
-import Vactor1 from "../../../public/vector12-gray.svg";
+import Vactor1 from "../../../public/svgs/vector12-gray.svg";
 
 function Users() {
   return (

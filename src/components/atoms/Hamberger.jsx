@@ -2,7 +2,7 @@
 
 import { useContext } from "react";
 import { ToggleMenuContext } from "@/context/ToggleMenu";
-import HambergerIcon from "../../../public/hambeger.svg"
+import HambergerIcon from "../../../public/svgs/hambeger.svg";
 
 function Hamberger() {
   const { isOpen, setIsOpen } = useContext(ToggleMenuContext);

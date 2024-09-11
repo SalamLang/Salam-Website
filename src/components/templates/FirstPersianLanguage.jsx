@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../common/Button";
-import ArrowLeft from "../../../public/arrowleft.svg";
+import ArrowLeft from "../../../public/svgs/arrowleft.svg";
 
 export default function FirstPersianLanguage() {
   return (

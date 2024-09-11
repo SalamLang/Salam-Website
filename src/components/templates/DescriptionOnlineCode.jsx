@@ -1,8 +1,8 @@
-import ArrowLeftBlack from "../../../public/arrowleftblack.svg";
+import ArrowLeftBlack from "../../../public/svgs/arrowleftblack.svg";
 import TitleDescription from "../atoms/TitleDescription";
-import Vactor1 from "../../../public/vector12.svg";
-import Group1 from "../../../public/group97.svg";
-import Vactor2 from "../../../public/group912.svg";
+import Vactor1 from "../../../public/svgs/vector12.svg";
+import Group1 from "../../../public/svgs/group97.svg";
+import Vactor2 from "../../../public/svgs/group912.svg";
 import Button from "../atoms/Button";
 
 function DescriptionOnlineCode() {

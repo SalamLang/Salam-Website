@@ -3,7 +3,7 @@
 import React from "react";
 import Input from "../atoms/Input";
 
-import Mobile from "../../../public/mobile.svg";
+import Mobile from "../../../public/svgs/mobile.svg";
 import { Button } from "../common/Button";
 import { useMutation } from "@tanstack/react-query";
 import { sendNumber } from "@/utils/api/handler";

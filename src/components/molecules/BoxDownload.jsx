@@ -1,10 +1,10 @@
 "use client";
 
-import Linux from "../../../public/linux.svg";
-import Mac from "../../../public/mac.svg";
-import Android from "../../../public/android.svg";
-import Windows from "../../../public/windows.svg";
-import Pwa from "../../../public/pwa.svg";
+import Linux from "../../../public/svgs/linux.svg";
+import Mac from "../../../public/svgs/mac.svg";
+import Android from "../../../public/svgs/android.svg";
+import Windows from "../../../public/svgs/windows.svg";
+import Pwa from "../../../public/svgs/pwa.svg";
 import Link from "next/link";
 
 function BoxDownload({ variant, className, imgClass, isBlack, href }) {

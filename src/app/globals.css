@@ -64,7 +64,7 @@
 .swiper-button-next {
   width: 50px !important;
   height: 50px !important;
-  background-image: url("/slider_arrow2.svg") !important;
+  background-image: url("/svgs/slider_arrow2.svg") !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -72,7 +72,7 @@
 .swiper-button-prev {
   width: 50px !important;
   height: 50px !important;
-  background-image: url("/slider_arrow.svg") !important;
+  background-image: url("/svgs/slider_arrow.svg") !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

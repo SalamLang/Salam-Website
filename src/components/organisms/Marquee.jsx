@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Snap from "../../../public/snap.png";
-import Digikala from "../../../public/digikala.png";
-import Asrez from "../../../public/asrez.png";
-import Tapsi from "../../../public/tapsi.png";
-import TapsiGarage from "../../../public/tapsigarage.png";
+import Snap from "../../../public/images/snap.png";
+import Digikala from "../../../public/images/digikala.png";
+import Asrez from "../../../public/images/asrez.png";
+import Tapsi from "../../../public/images/tapsi.png";
+import TapsiGarage from "../../../public/images/tapsigarage.png";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 
-import Avatar1 from "../../../public/avatar-comment-1.png";
-import Avatar2 from "../../../public/avatar-comment-2.png";
-import Avatar3 from "../../../public/avatar-comment-3.png";
+import Avatar1 from "../../../public/images/avatar-comment-1.png";
+import Avatar2 from "../../../public/images/avatar-comment-2.png";
+import Avatar3 from "../../../public/images/avatar-comment-3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";

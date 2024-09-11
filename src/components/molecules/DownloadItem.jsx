@@ -5,7 +5,7 @@ import Button from "@/components/atoms/Button";
 import Gif from "@/components/atoms/Gif";
 import CarectersDownload from "@/components/molecules/CarectersDownload";
 
-import DownloadClud from "../../../public/download.svg";
+import DownloadClud from "../../../public/svgs/download.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
 import { useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";

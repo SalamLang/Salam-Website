@@ -1,8 +1,8 @@
 import TitleDescription from "../atoms/TitleDescription";
 
-import ArrowLeft from "../../../public/arrowleft-orange.svg";
-import Vactor1 from "../../../public/vector11.svg";
-import Vactor2 from "../../../public/vector16.svg";
+import ArrowLeft from "../../../public/svgs/arrowleft-orange.svg";
+import Vactor1 from "../../../public/svgs/vector11.svg";
+import Vactor2 from "../../../public/svgs/vector16.svg";
 import CarectersHeroMain from "../molecules/CarectersHeroMain";
 import { Button } from "../common/Button";
 

@@ -2,7 +2,7 @@ import Button from "@/components/atoms/Button";
 import Gif from "@/components/atoms/Gif";
 import TitleDescription from "@/components/atoms/TitleDescription";
 
-import ArrowLeft from "../../../public/arrowleft.svg";
+import ArrowLeft from "../../../public/svgs/arrowleft.svg";
 import CarectersNotFound from "@/components/molecules/CarectersNotFound";
 
 export const metadata = {

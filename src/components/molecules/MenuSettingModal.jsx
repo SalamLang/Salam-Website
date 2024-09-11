@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../common/Button";
-import MoreThreeDots from "../../../public/more-three-dots.svg";
+import MoreThreeDots from "../../../public/svgs/more-three-dots.svg";
 
 const MenuSetting = ({ page, setPage }) => {
   const ListMenuButton = [

@@ -3,7 +3,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import Modal from "../common/Modal";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
-import CloseSvg from "../../../public/svg-close-box.svg";
+import CloseSvg from "../../../public/svgs/svg-close-box.svg";
 import MenuSetting from "./MenuSettingModal";
 import DisplaySetting from "./DisplaySetting";
 import MoreDetails from "./MoreDetails";

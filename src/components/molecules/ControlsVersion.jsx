@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Badge } from "../common/Badge";
-import Logo from "../../../public/logowhite.svg";
+import Logo from "../../../public/svgs/logowhite.svg";
 import { Button } from "../common/Button";
 import { useContext, useEffect, useMemo, useState } from "react";
 import VersionItem from "./VersionItem";
