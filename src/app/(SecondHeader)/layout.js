@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <div className="relative w-full min-h-screen overflow-auto flex flex-col justify-start">
+        <div className="relative w-full min-h-screen overflow-auto overflow-x-hidden flex flex-col justify-start">
           <SecondHeader />
           <FixedMenu />
           <Alert
