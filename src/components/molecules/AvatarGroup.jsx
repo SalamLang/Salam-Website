@@ -12,7 +12,7 @@ const AvatarGroup = ({ avatars }) => {
           width={avatar.width}
           height={avatar.height}
           className="scale-125"
-          tooltip_text={avatar.alt}
+          tooltip_text={avatar.tooltip}
         />
       ))}
     </div>
