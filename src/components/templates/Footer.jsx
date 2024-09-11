@@ -25,7 +25,13 @@ function Footer() {
           referrerPolicy="origin"
           id="rgvjjzpenbqenbqefukzfukz"
           style={{ cursor: "pointer" }}
-          onclick='window.open("https://logo.samandehi.ir/Verify.aspx?id=372266&p=xlaojyoeuiwkuiwkgvkagvka", "Popup","toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30")'
+          onClick={() =>
+            window.open(
+              "https://logo.samandehi.ir/Verify.aspx?id=372266&p=xlaojyoeuiwkuiwkgvkagvka",
+              "Popup",
+              "toolbar=no, scrollbars=no, location=no, statusbar=no, menubar=no, resizable=0, width=450, height=630, top=30"
+            )
+          }
           alt="logo-samandehi"
           src="https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq"
         />
