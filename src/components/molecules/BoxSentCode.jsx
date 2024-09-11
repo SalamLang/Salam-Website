@@ -11,7 +11,7 @@ import toast, { LoaderIcon } from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { AnimatePresence, motion } from "framer-motion";
-import { convertToPersianNumbers } from "@/utils/helper/handler";
+import { convertToPersianNumbers } from "@/utils/helper/handlers";
 
 function BoxSentCode() {
   const { mutateAsync: sendNumberMutation, isPending } = useMutation({
