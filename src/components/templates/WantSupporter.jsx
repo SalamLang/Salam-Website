@@ -15,6 +15,7 @@ export default function WantSupporter() {
       </p>
       <Button
         intent="crimson"
+        link="/supporter"
         size="large"
         rounded="full"
         className="flex flex-row-reverse gap-2 justify-center items-center"
