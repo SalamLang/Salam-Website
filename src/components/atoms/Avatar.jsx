@@ -42,7 +42,7 @@ const Avatar = ({ src, alt, width, height, className, tooltip_text }) => {
         height={height}
         className={`object-cover ${className || ""}`}
       />
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isHovered && (
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -53,7 +53,24 @@ const Avatar = ({ src, alt, width, height, className, tooltip_text }) => {
             {tooltip_text}
           </motion.div>
         )}
+      </AnimatePresence> */}
+      <div className="absolute w-full h-full inset-0 box-content flex justify-center items-center">
+        <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
+            className="tooltip mt-[120%] text-[11px] sm:text-xs md:text-sm lg:text-base z-10 select-none max-w-[500px] w-auto text-nowrap px-2 py-3 h-[30px] bg-black/50 border border-black backdrop-blur-lg text-white rounded-lg flex items-center justify-center"
+          >
+            {tooltip_text} {" "}            {tooltip_text} {" "}            {tooltip_text} {" "}            {tooltip_text} {" "}
+            {tooltip_text} {" "}            {tooltip_text} {" "}
+
+
+          </motion.div>
+        )}
       </AnimatePresence>
+      </div>
     </div>
   );
 };
