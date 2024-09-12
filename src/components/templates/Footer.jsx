@@ -21,7 +21,7 @@ function Footer() {
         </div>
         <hr className="w-full h-1 bg-border-grey lg:hidden" />
         
-        <img
+        {/* <img
           referrerPolicy="origin"
           id="rgvjjzpenbqenbqefukzfukz"
           style={{ cursor: "pointer" }}
@@ -34,7 +34,7 @@ function Footer() {
           }
           alt="logo-samandehi"
           src="https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq"
-        />
+        /> */}
         
         <MenuListFooter />
         <div className="w-full lg:w-fit flex items-center justify-center">
