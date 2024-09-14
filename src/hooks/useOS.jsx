@@ -8,15 +8,17 @@ export default function useOS() {
     let os = "desktop"; // default value
 
     if (/android/i.test(userAgent)) {
-      os = "Android";
+      os = "android";
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      os = "iOS";
+      os = "ios";
     } else if (/Mac/i.test(userAgent)) {
-      os = "Mac";
+      os = "mac";
     } else if (/Win/i.test(userAgent)) {
-      os = "Windows";
+      os = "windows";
     } else if (/Linux/i.test(userAgent)) {
-      os = "Linux";
+      os = "linux";
+    } else {
+      os = "unknown os";
     }
 
     setClientOS(os);
