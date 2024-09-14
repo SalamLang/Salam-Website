@@ -12,7 +12,7 @@ function CarecterGoToLearn() {
       <span className="absolute max-md:hidden -z-10 md:right-[55%] top-72">
         <CarecterOrange />
       </span>
-      <span className="absolute max-md:hidden -z-10 md:right-[40%] top-64">
+      <span className="absolute max-md:hidden -z-10 md:right-[30%] top-64">
         <CaracterGreentow />
       </span>
       <span className="absolute right-[10%] -z-10 md:right-[18%] top-[12rem] md:top-7">
