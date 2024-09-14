@@ -15,8 +15,8 @@ function LanguageAdvantage() {
         }
       >
         <TitleDescription title="چرا زبان سلام" />
-        <div className="w-full max-w-[900px] grid grid-cols-1 min-[500px]:grid-cols-2 gap-10 lg:grid-cols-3">
-          <div className="bg-bg-box2 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+        <div className="w-full max-w-[900px] grid grid-cols-1 min-[400px]:grid-cols-2 gap-4 md:gap-10 lg:grid-cols-3">
+          <div className="bg-bg-box2 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Simplicity" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
@@ -24,10 +24,10 @@ function LanguageAdvantage() {
               title="طراحی فوق العاده"
               description="ما با کمک بهترین طراحان بهترین
                     طراحی ممکن رو به شما ارائه
-                    میدهیم و لذت ببرید دوستا"
+                    میدهیم و لذت ببرید دوستان"
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Security" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
@@ -38,7 +38,7 @@ function LanguageAdvantage() {
                     باشید و لذت ببرید دوستان عزیز."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="BestDesigne" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
@@ -49,7 +49,7 @@ function LanguageAdvantage() {
                     کنید و لذت ببرید دوستان عزیز."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="AllPeople" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
@@ -60,7 +60,7 @@ function LanguageAdvantage() {
                     زبان کار کنند و لذت ببرند"
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Rtl" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
@@ -71,7 +71,7 @@ function LanguageAdvantage() {
                     راست چین مینویسد."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 py-12 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Lamp" />
             <TitleDescriptionBox
               headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
