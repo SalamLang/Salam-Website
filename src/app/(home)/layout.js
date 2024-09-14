@@ -6,13 +6,6 @@ import Footer from "@/components/templates/Footer";
 import { Toaster } from "react-hot-toast";
 import FixedMenu from "@/components/molecules/FixedMenu";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "salam",
-  description: "salam language",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
