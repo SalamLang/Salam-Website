@@ -7,12 +7,14 @@ import CarectersDownload from "@/components/molecules/CarectersDownload";
 
 import DownloadClud from "../../../public/svgs/download.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
+import useOS from "@/hooks/useOS";
 
 export default function DownloadItem() {
+  const router = useRouter();
   const searchParams = useSearchParams();
-
+  const clientOS = useOS();
   const os = searchParams.get("os");
 
   useEffect(() => {
@@ -21,8 +23,14 @@ export default function DownloadItem() {
         position: "bottom-center",
         style: { textWrap: "nowrap" },
       });
+    } else if (clientOS) {
+      if (clientOS === "unknown os") {
+        router.push("/");
+      } else {
+        toast.success(`درخواست دانلود برای : ${clientOS}`);
+      }
     }
-  }, [os]);
+  }, [os, clientOS, router]);
 
   return (
     <>
