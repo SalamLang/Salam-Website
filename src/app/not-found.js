@@ -6,6 +6,12 @@ import ArrowLeft from "../../public/svgs/arrowleft.svg";
 import CarectersNotFound from "@/components/molecules/CarectersNotFound";
 import NotFoundLayout from "@/components/atoms/NotFoundLayout";
 
+export const metadata = {
+  title: "یه مشکلی داریم - زبان سلام",
+  description: "دوباره امتحان کنید یا به صفحه ی اصلی بروید !",
+  author: "تیم برنامه نویسی زبان سلام",
+};
+
 function NotFound() {
   return (
     <NotFoundLayout>
