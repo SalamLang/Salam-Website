@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "زبان برنامه نویسی سلام",
   description: "ٌ",
-  author: "تیم برنامه نویسی زبان سلام"
+  author: "تیم برنامه نویسی زبان سلام",
 };
 
 export default function RootLayout({ children }) {
