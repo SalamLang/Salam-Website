@@ -73,6 +73,7 @@ module.exports = {
         cream: "#FFCCAF",
         "dark-green": "var(--dark-green)",
         "footer-green": "rgba(142, 214, 89, 1)",
+        dark: "rgba(24, 25, 31, 1)",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
