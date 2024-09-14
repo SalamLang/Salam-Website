@@ -45,6 +45,9 @@
     box-sizing: border-box;
   }
 }
+.swiper-wrapper {
+  align-items: center !important;
+}
 
 #nprogress .bar {
   background: #ff4500; /* Change color to orange-red */
