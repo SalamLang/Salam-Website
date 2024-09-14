@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import TextFooter from "../atoms/TextFooter";
 import Button from "../atoms/Button";
 import Logo from "../atoms/Logo";
 import MenuListFooter from "../molecules/MenuListFooter";
+import Image from "next/image";
+import InteractiveImage from "../molecules/InteractiveImage";
 
 function Footer() {
   return (
@@ -20,8 +24,8 @@ function Footer() {
           </div>
         </div>
         <hr className="w-full h-1 bg-border-grey lg:hidden" />
-        
-        {/* <img
+
+        <InteractiveImage
           referrerPolicy="origin"
           id="rgvjjzpenbqenbqefukzfukz"
           style={{ cursor: "pointer" }}
@@ -34,8 +38,10 @@ function Footer() {
           }
           alt="logo-samandehi"
           src="https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq"
-        /> */}
-        
+          width={50}
+          height={50}
+        />
+
         <MenuListFooter />
         <div className="w-full lg:w-fit flex items-center justify-center">
           <TextFooter />
