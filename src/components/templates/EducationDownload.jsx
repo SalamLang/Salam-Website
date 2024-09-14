@@ -1,14 +1,9 @@
-"use client";
-
 import React from "react";
 import TitleDescription from "../atoms/TitleDescription";
 import BoxDownload from "../molecules/BoxDownload";
 import { Button } from "../common/Button";
-import useOS from "@/hooks/useOS";
 
 function EducationDownload() {
-  const clientOS = useOS();
-
   return (
     <div className="flex items-center justify-center flex-col gap-5">
       <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
@@ -18,7 +13,7 @@ function EducationDownload() {
           rounded="full"
           size="medium"
           className="!bg-bg-main !px-10 !py-1"
-          link={`download?os=${clientOS}`} // This is a link to the download page
+          link={`download`} // This is a link to the download page
         >
           دانلود
         </Button>
