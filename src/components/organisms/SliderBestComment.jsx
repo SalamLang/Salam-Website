@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const Avatar = "/images/person.png";
@@ -44,8 +44,10 @@ function SliderBestComment() {
         className={"!max-w-[672px] w-full comment_slider"}
         pagination={{ clickable: true }}
         navigation={true}
+        loop={true}
+        autoplay={{ delay: 5000, disableOnInteraction: false }} // پیکربندی تنظیمات autoplay
         spaceBetween={30}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
       >
         {comments.map((item) => (
           <SwiperSlide
