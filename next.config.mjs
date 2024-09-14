@@ -7,6 +7,13 @@ const withPWA = withPWAInit({
 });
 
 export default withPWA({
+  images: {
+    remotePatterns: [
+      {
+        hostname: "logo.samandehi.ir",
+      },
+    ],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
