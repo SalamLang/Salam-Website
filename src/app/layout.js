@@ -5,6 +5,7 @@ import "./globals.css";
 import "../styles/font.css";
 import { usePathname } from "next/navigation";
 import nProgress from "nprogress";
+import { LayoutProvider } from "@/utils/contexts/LayoutProvider";
 import ReactQueryProvider from "@/utils/react-query/ReactQueryProvider";
 
 function RootLayout({ children }) {
@@ -35,7 +36,9 @@ function RootLayout({ children }) {
 
   return (
     <>
-      <ReactQueryProvider>{children}</ReactQueryProvider>
+      <ReactQueryProvider>
+        <LayoutProvider>{children}</LayoutProvider>
+      </ReactQueryProvider>
     </>
   );
 }
