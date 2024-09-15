@@ -3,7 +3,7 @@ import Hamberger from "../atoms/Hamberger";
 import MenuList from "../molecules/MenuList";
 import BgGreen from "../../../public/svgs/bg-green.svg";
 import Logo from "@/components/atoms/Logo";
-import ToggleMenuProvider from "@/context/ToggleMenu";
+import ToggleMenuProvider from "@/utils/contexts/ToggleMenu";
 
 function Header() {
   return (
