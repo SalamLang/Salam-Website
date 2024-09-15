@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "@/components/atoms/Button";
 import Gif from "@/components/atoms/Gif";
 import CarectersDownload from "@/components/molecules/CarectersDownload";
@@ -10,36 +10,71 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
 import useOS from "@/hooks/useOS";
+import ProblemToDownloadModal from "./ProblemToDownloadModal";
 
 export default function DownloadItem() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const clientOS = useOS();
   const os = searchParams.get("os");
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const download = (os) => {
+    switch (os) {
+      case "android":
+        window.open(
+          "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+        );
+        break;
+      case "ios":
+        window.open(
+          "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+        );
+        break;
+      case "mac":
+        window.open(
+          "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+        );
+        break;
+      case "windows":
+        window.open(
+          "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+        );
+        break;
+      case "linux":
+        window.open(
+          "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+        );
+        break;
+      default:
+        toast.error("درخواست نامعتبر");
+        break;
+    }
+  };
 
   useEffect(() => {
     if (os) {
-      toast.success(`درخواست دانلود برای : ${os}`, {
-        position: "bottom-center",
-        style: { textWrap: "nowrap" },
-      });
+      download(os);
     } else if (clientOS) {
       if (clientOS === "unknown os") {
+        toast.error("سیستم عامل شما پشتیبانی نمی شود");
         router.push("/");
       } else {
-        toast.success(`درخواست دانلود برای : ${clientOS}`);
+        download(clientOS);
       }
     }
   }, [os, clientOS, router]);
 
   return (
     <>
+      <ProblemToDownloadModal isOpen={isOpenModal} setIsOpen={setIsOpenModal} />
       <div className="relative w-full sm:w-fit flex items-center justify-center">
         <Gif variant="GifDownload"></Gif>
         <CarectersDownload />
       </div>
       <TitleDescription
         title="مرسی که ..."
+        className={"!z-0"}
         description="نرم افزار مارو دانلود کردید و تشکر میکنیم از این کارتون !"
       />
       <div className="flex items-center justify-center gap-6">
@@ -59,7 +94,7 @@ export default function DownloadItem() {
             </span>
           }
           type="link"
-          href="/"
+          onClick={() => setIsOpenModal(true)}
           className="text-nowrap"
         />
       </div>
