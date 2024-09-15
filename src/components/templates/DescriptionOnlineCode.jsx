@@ -7,7 +7,7 @@ import Button from "../atoms/Button";
 
 function DescriptionOnlineCode() {
   return (
-    <div className="w-full bg-bg-section2 relative">
+    <div className="w-full bg-bg-section2 relative overflow-hidden bg-vector bg-center bg-contain bg-no-repeat">
       <div
         className={
           "container w-full mx-auto flex items-center justify-center flex-col gap-y-8 py-32"
@@ -20,7 +20,7 @@ function DescriptionOnlineCode() {
         >
           <Vactor1 />
         </div>
-        <div className={"absolute w-full h-full top-1/2 -translate-y-1/2 z-10"}>
+        {/* <div className={"absolute w-full h-full top-1/2 -translate-y-1/2 z-10"}>
           <Group1 />
           <div className={"absolute w-[70px] top-20 left-1/4"}>
             <Vactor2 />
@@ -28,7 +28,7 @@ function DescriptionOnlineCode() {
           <div className={"absolute w-[70px] bottom-20 right-1/4"}>
             <Vactor2 />
           </div>
-        </div>
+        </div> */}
         <div className={"relative z-20"}>
           <TitleDescription
             headerClass="text-white"
