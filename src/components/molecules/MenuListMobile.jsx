@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "../atoms/Logo";
 import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useEffect } from "react";
-import { ToggleMenuContext } from "@/context/ToggleMenu";
+import { ToggleMenuContext } from "@/utils/contexts/ToggleMenu";
 import CloseIcon from "../../../public/svgs/close.svg";
 import { useScrollBlock } from "@/hooks/useScrollBlock ";
 import NavItem from "./NavItem";
