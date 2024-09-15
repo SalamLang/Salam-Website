@@ -1,7 +1,7 @@
 import MenuListMobile from "../molecules/MenuListMobile";
 import Hamberger from "../atoms/Hamberger";
 import Logo from "@/components/atoms/Logo";
-import ToggleMenuProvider from "@/context/ToggleMenu";
+import ToggleMenuProvider from "@/utils/contexts/ToggleMenu";
 import SecondMenuList from "../molecules/SecondMenuList";
 
 function SecondHeader({ className }) {
