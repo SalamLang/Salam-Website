@@ -28,7 +28,7 @@ export function EditorModalsProvider({ children }) {
         isOpenBottonSheet,
         setIsOpenBottonSheet,
         initialSnap,
-        setInitialSnap
+        setInitialSnap,
       }}
     >
       {children}
