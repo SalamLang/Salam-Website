@@ -8,7 +8,7 @@ const MenuSetting = ({ page, setPage }) => {
     { id: 2, title: "اطلاعات بیشتر", icon: <MoreThreeDots /> },
   ];
   return (
-    <div className="w-full h-1/2 flex flex-col justify-center items-center">
+    <div className="w-full min-h-96 flex flex-col justify-center items-center">
       {ListMenuButton.map((item) => (
         <Button
           key={item.id}
