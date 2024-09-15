@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import { ToggleMenuContext } from "@/context/ToggleMenu";
+import { ToggleMenuContext } from "@/utils/contexts/ToggleMenu";
 import HambergerIcon from "../../../public/svgs/hambeger.svg";
 
 function Hamberger() {
