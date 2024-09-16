@@ -14,8 +14,10 @@ const MenuSetting = ({ page, setPage }) => {
           key={item.id}
           rounded="none"
           size="medium"
-          className={`!w-full !text-black !text-sm !font-Estedad-Medium !py-3 flex justify-center items-center gap-1 ${
-            page === item.id ? "bg-cream-light" : "!bg-transparent"
+          className={`!w-full !text-black transition-colors !text-sm !font-Estedad-Medium !py-3 flex justify-center items-center gap-1 ${
+            page === item.id
+              ? "bg-cream-light"
+              : "!bg-transparent dark:!text-white"
           }`}
           onClick={() => setPage(item.id)}
         >
