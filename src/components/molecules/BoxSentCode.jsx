@@ -85,18 +85,20 @@ function BoxSentCode() {
           </Button>
         </form>
       </div>
-      <AnimatePresence>
-        {formik.errors.number && (
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 20, opacity: 0 }}
-            className="max-sm:text-xs max-md:text-sm !text-rose-600"
-          >
-            {formik.errors.number}
-          </motion.p>
-        )}
-      </AnimatePresence>
+      <div className="relative w-full min-h-10 h-full flex justify-center items-center">
+        <AnimatePresence>
+          {formik.errors.number && (
+            <motion.p
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 20, opacity: 0 }}
+              className="absolute max-sm:text-xs max-md:text-sm !text-rose-600"
+            >
+              {formik.errors.number}
+            </motion.p>
+          )}
+        </AnimatePresence>
+      </div>
     </>
   );
 }
