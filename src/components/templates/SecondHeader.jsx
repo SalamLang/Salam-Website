@@ -1,13 +1,20 @@
+"use client";
+
 import MenuListMobile from "../molecules/MenuListMobile";
 import Hamberger from "../atoms/Hamberger";
 import Logo from "@/components/atoms/Logo";
 import ToggleMenuProvider from "@/utils/contexts/ToggleMenu";
 import SecondMenuList from "../molecules/SecondMenuList";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
+import { useContext } from "react";
 
 function SecondHeader({ className }) {
+  const { isDark } = useContext(LayoutContext);
   return (
     <div
-      className={`relative w-full shadow-2xl shadow-black/[0.05] ${className}`}
+      className={`relative w-full shadow-2xl transition-colors shadow-black/[0.05] ${
+        isDark && "dark:shadow-gray-600/[0.05] dark:bg-dark dark:text-white"
+      } ${className}`}
     >
       <header
         className={
