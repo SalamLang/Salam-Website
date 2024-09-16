@@ -6,8 +6,8 @@ const BoxSelectFont = ({ isActive, nameFont, onClickSelectedFont, font }) => {
     <div className="w-auto h-auto flex flex-col justify-center items-center gap-2">
       <div
         className={`${
-          !isActive && "bg-light"
-        } relative max-w-[9.2rem] w-[9.2rem] max-h-[6rem] cursor-pointer select-none h-[5.5rem] rounded-lg flex justify-center items-center`}
+          !isActive && "bg-light dark:bg-gray-800"
+        } relative max-w-[9.2rem] transition-colors w-[9.2rem] max-h-[6rem] cursor-pointer select-none h-[5.5rem] rounded-lg flex justify-center items-center`}
         onClick={onClickSelectedFont}
       >
         <span className={`text-lg z-10 ${font}`}>از سلام چه خبر !</span>
@@ -17,7 +17,7 @@ const BoxSelectFont = ({ isActive, nameFont, onClickSelectedFont, font }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute w-full h-full rounded-lg bg-cream-light border-2 border-orange-medium"
+              className="absolute w-full h-full rounded-lg transition-colors bg-cream-light dark:bg-cream-light/20 border-2 border-orange-medium"
             ></motion.div>
           )}
         </AnimatePresence>
