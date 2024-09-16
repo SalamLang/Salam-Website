@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="w-full h-full flex flex-col flex-grow">
+    <div className="w-full h-full flex flex-col flex-grow transition-colors dark:bg-dark">
       <PlaygroundContext>
         <PlaygroundOnline />
       </PlaygroundContext>
