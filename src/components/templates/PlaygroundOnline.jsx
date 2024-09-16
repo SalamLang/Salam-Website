@@ -1,14 +1,48 @@
 "use client";
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Editor from "../molecules/Editor";
 import { PlaygroundContextValue } from "@/utils/contexts/Playground";
 import ActionToType from "../molecules/ActionToType";
 import KeyPressFullScreen from "../molecules/KeyPressFullScreen";
 import { Alert } from "../common/Alert";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 export default function PlaygroundOnline() {
   const { isHidden } = useContext(PlaygroundContextValue);
+  const { setIsDark } = useContext(LayoutContext);
+
+  useEffect(() => {
+    setIsDark(true);
+
+    return () => {
+      setIsDark(false);
+    };
+  }, [setIsDark]);
+
+  const { theme } = useContext(PlaygroundContextValue);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+
+    root.classList.remove("light", "dark");
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else if (theme === "light") {
+      root.classList.add("light");
+    } else if (theme === "system") {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      if (prefersDark) {
+        root.classList.add("dark");
+      } else {
+        root.classList.add("light");
+      }
+    }
+  }, [theme]);
+
   return (
     <>
       {isHidden && (
