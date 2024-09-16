@@ -7,16 +7,22 @@ import ShareIcon from "../../../public/svgs/share.svg";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
 import EyseMotion from "./EyseMotion";
 import { LoaderIcon } from "react-hot-toast";
+import RunCode from "./RunCode";
 
 export default function ListButtonEditor() {
-  const { setIsOpenSettingModal, setIsOpenShareModal, setInitialSnap } =
-    useContext(EditorModalsContext);
+  const {
+    setIsOpenSettingModal,
+    setIsOpenShareModal,
+    setInitialSnap,
+    setIsOpenBottonSheet,
+  } = useContext(EditorModalsContext);
   const [disabled, setDisabled] = useState(false);
   const handleRunCode = () => {
     setDisabled(true);
     setTimeout(() => {
       setDisabled(false);
       setInitialSnap(0);
+      setIsOpenBottonSheet(true);
     }, 1000);
   };
   return (
@@ -59,7 +65,20 @@ export default function ListButtonEditor() {
           <ShareIcon className="scale-90" />
         </Button>
       </div>
-      <div className="md:hidden w-full flex justify-end items-center p-2">
+      <div className="md:hidden w-full flex gap-3 justify-end items-center p-2">
+        <Button
+          intent="orange"
+          size="large"
+          className="!rounded-xl !bg-bg-button-orange !p-1 w-14 h-14 flex justify-center items-center"
+          onClick={handleRunCode}
+          disabled={disabled}
+        >
+          {disabled ? (
+            <LoaderIcon className="!w-4 !h-4" />
+          ) : (
+            <PlayIcon className="scale-75" />
+          )}
+        </Button>
         <Button
           intent="orange"
           size="large"
