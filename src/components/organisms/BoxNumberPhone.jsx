@@ -9,7 +9,7 @@ function BoxNumberPhone() {
         title="شمارت  رو وارد از آپدیت های ما با خبرشی !"
         description="اینجوری میتونی در سریع ترین زمان ممکن از آپدیت ها ما با خبر شی."
       />
-      <div className="w-full h-full flex flex-col justify-center items-center max-sm:gap-1 max-md:gap-2 gap-3">
+      <div className="w-full h-full flex flex-col justify-center items-center gap-1.5">
         <BoxSentCode />
       </div>
     </div>
