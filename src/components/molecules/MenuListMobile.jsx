@@ -6,13 +6,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useEffect } from "react";
 import { ToggleMenuContext } from "@/utils/contexts/ToggleMenu";
 import CloseIcon from "../../../public/svgs/close.svg";
+import CloseIconDark from "../../../public/svgs/close-dark.svg";
 import { useScrollBlock } from "@/hooks/useScrollBlock ";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 function MenuListMobile() {
   const { isOpen, setIsOpen } = useContext(ToggleMenuContext);
   const [blockScroll, allowScroll] = useScrollBlock();
+  const { isDark } = useContext(LayoutContext);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -48,7 +51,7 @@ function MenuListMobile() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed w-full h-full inset-0 bg-black/10 z-[1000] backdrop-blur-sm"
+          className="fixed w-full h-full inset-0 bg-black/10 dark:bg-white/10 z-[1000] backdrop-blur-sm"
           onClick={handleClose}
         >
           <motion.ul
@@ -56,13 +59,27 @@ function MenuListMobile() {
             animate={{ x: 0 }}
             exit={{ x: "100vw" }}
             transition={{ type: "linear" }}
-            className="absolute flex items-start justify-start h-screen p-8 w-7/12 gap-y-4 bg-white shadow-lg flex-col"
+            className={`absolute flex items-start justify-start h-screen p-8 w-7/12 gap-y-4 bg-white transition-colors ${
+              isDark && "dark:bg-dark"
+            } shadow-lg flex-col`}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="w-full h-auto flex justify-between items-center">
               <Logo />
               <button onClick={handleClose}>
-                <CloseIcon className="w-6 h-6 rounded-lg transition-colors duration-150 opacity-50 scale-125 hover:bg-gray-600" />
+                {isDark ? (
+                  <>
+                    <CloseIconDark className="w-6 h-6 rounded-lg hidden dark:block transition-colors duration-150 opacity-70 scale-125 hover:bg-gray-600" />
+                  </>
+                ) : (
+                  <>
+                    <CloseIcon
+                      className={`w-6 h-6 rounded-lg ${
+                        isDark && "dark:hidden"
+                      } transition-colors duration-150 opacity-50 scale-125 hover:bg-gray-600`}
+                    />
+                  </>
+                )}
               </button>
             </div>
             <NavItem href={getRoute("home")} variants="mobile" className="mt-5">
