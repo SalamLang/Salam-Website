@@ -49,7 +49,7 @@ export default function SettingModal() {
       <Modal.Box
         initial={{ y: "100vw" }}
         animate={{ y: 0 }}
-        className="max-w-[48rem] w-full max-h-[40rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10 max-2xl:!scale-[0.7]"
+        className="max-w-[48rem] w-full max-h-[40rem] h-full transition-colors bg-cream-light dark:bg-gray-800 rounded-2xl flex flex-col shadow-2xl shadow-black/10 dark:shadow-gray-600/10 max-2xl:!scale-[0.7]"
       >
         <Modal.Header className="w-full h-auto px-6 py-3">
           <div className="w-full h-full flex flex-row-reverse justify-between items-center">
@@ -64,9 +64,9 @@ export default function SettingModal() {
             </span>
           </div>
         </Modal.Header>
-        <Modal.Body className="w-full h-full bg-white rounded-b-2xl rounded-t-3xl">
+        <Modal.Body className="w-full h-full transition-colors bg-white dark:bg-dark dark:text-white rounded-b-2xl rounded-t-3xl">
           <div className="w-full h-full flex gap-2 justify-between items-center">
-            <div className="w-1/4 h-full shadow-2xl shadow-black/10">
+            <div className="w-1/4 h-full shadow-2xl shadow-black/10 dark:shadow-gray-600/10">
               <MenuSetting page={page} setPage={setPage} />
             </div>
             <div className="w-full h-full !overflow-auto orange-scrollbar">
