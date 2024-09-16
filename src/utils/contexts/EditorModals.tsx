@@ -15,7 +15,7 @@ export const EditorModalsContext = createContext({
 export function EditorModalsProvider({ children }) {
   const [isOpenSettingModal, setIsOpenSettingModal] = useState(false);
   const [isOpenShareModal, setIsOpenShareModal] = useState(false);
-  const [isOpenBottonSheet, setIsOpenBottonSheet] = useState(true);
+  const [isOpenBottonSheet, setIsOpenBottonSheet] = useState(false);
   const [initialSnap, setInitialSnap] = useState(1);
 
   return (
