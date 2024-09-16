@@ -22,27 +22,27 @@ function EducationDownload() {
         <BoxDownload
           variant="Linux"
           imgClass="scale-75"
-          href={`download?os=Linux`}
+          href={`download?os=linux`}
         />
         <BoxDownload
           variant="Windows"
           imgClass="scale-75"
-          href={`download?os=Windows`}
+          href={`download?os=windows`}
         />
         <BoxDownload
           variant="Mac"
           imgClass="scale-75"
-          href={`download?os=Mac`}
+          href={`download?os=mac`}
         />
         <BoxDownload
           variant="Android"
           imgClass="scale-75"
-          href={`download?os=Android`}
+          href={`download?os=android`}
         />
         <BoxDownload
           variant="Pwa"
           imgClass="scale-75"
-          href={`download?os=Pwa`}
+          href={`download?os=pwa`}
         />
       </div>
     </div>
