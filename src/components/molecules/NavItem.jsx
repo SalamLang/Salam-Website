@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 export default function NavItem({
   variants,
@@ -13,7 +14,7 @@ export default function NavItem({
   children,
 }) {
   const pathname = usePathname();
-
+  const { isDark } = useContext(LayoutContext);
   const isActive = href === pathname;
 
   if (variants === "mobile")
@@ -23,7 +24,7 @@ export default function NavItem({
         className={`w-full mb-1 p-1 px-3 border-b-2 rounded-md border-border-grey border-opacity-10 text-lg transition-colors duration-200 ${
           isActive
             ? "bg-[#ff5c00]/60 shadow-2xl shadow-black/50 text-white font-AliBaba-Regular"
-            : "hover:bg-black/10"
+            : `hover:bg-black/10 ${isDark && "dark:hover:bg-gray-600/50"}`
         } ${className || ""}`}
       >
         <span className={`font-Estedad-Regular ${classLink || ""}`}>
