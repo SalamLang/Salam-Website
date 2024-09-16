@@ -5,8 +5,10 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 
 export default function BoxEditor() {
   const editableDivRef = useRef(null);
-  const { fontName } = useContext(PlaygroundContextValue);
+  const { fontName: fontClass } = useContext(PlaygroundContextValue);
   const [contentLength, setContentLength] = useState(1);
+
+  const fontName = `${fontClass} transition-colors dark:text-white`;
 
   const handleInput = async () => {
     if (editableDivRef.current) {
@@ -26,7 +28,7 @@ export default function BoxEditor() {
       nestedDivs.forEach((div) => {
         div.classList = "";
         div.style.whiteSpace = "nowrap"; // Set white-space to nowrap
-        div.classList.add(fontName);
+        fontName.split(" ").forEach((cls) => div.classList.add(cls)); // Add each class separately
       });
     }
   };
@@ -54,7 +56,7 @@ export default function BoxEditor() {
   }, []);
 
   return (
-    <div className="w-full h-full flex-grow self-stretch overflow-auto orange-scrollbar flex justify-center items-start max-md:bg-cream-light rounded-2xl">
+    <div className="w-full h-full flex-grow self-stretch overflow-auto orange-scrollbar flex justify-center items-start max-md:bg-cream-light max-md:dark:bg-gray-600/10 max-md:dark:backdrop-blur-lg rounded-2xl">
       <div className="w-auto h-auto p-5 !pt-[30px] !pl-4 gap-5 text-base !font-Estedad-Medium flex flex-col justify-center items-center">
         {contentLength === 0 && <p className={fontName}>۱</p>}
         {Array.from({ length: contentLength }).map((_, index) => {
