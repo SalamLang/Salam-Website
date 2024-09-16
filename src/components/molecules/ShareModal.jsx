@@ -35,7 +35,7 @@ export default function ShareModal() {
   return (
     <Modal isOpen={isOpenShareModal} onClose={onCloseModal}>
       <Modal.Box
-        className="max-w-[24rem] max-sm:w-10/12 w-full max-h-[30rem] h-[30rem] bg-white rounded-3xl p-5"
+        className="max-w-[24rem] max-sm:w-10/12 w-full max-h-[30rem] h-[30rem] bg-white dark:bg-dark rounded-3xl p-5 shadow-2xl shadow-black/10 dark:shadow-gray-600/10 dark:text-white"
         initial={{ x: "100vw" }}
         animate={{ x: 0 }}
       >
