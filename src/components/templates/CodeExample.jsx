@@ -13,7 +13,7 @@ function CodeExample() {
       <div className="max-w-[95%] sm:container mx-auto">
         <div
           className={
-            "h-fit max-w-[900px] bg-bg-box2 rounded-2xl p-8 flex items-start justify-between mx-auto"
+            "h-auto max-w-[900px] bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/20 transition-colors dark:text-gray-300 rounded-2xl p-8 flex items-start justify-between mx-auto"
           }
         >
           <div className="flex flex-col items-start justify-start gap-y-4">
