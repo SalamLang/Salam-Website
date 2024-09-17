@@ -4,29 +4,26 @@ import React, { useContext, useEffect, useState } from "react";
 import "@theme-toggles/react/css/Classic.css";
 import { Classic } from "@theme-toggles/react";
 import { LayoutContext } from "@/utils/contexts/LayoutProvider";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 export default function ToggleMode() {
-  const { setTheme } = useContext(LayoutContext);
-  const [isDark, setIsDark] = useState(() => {
-    const savedState = localStorage.getItem("isDark");
-    return savedState ? JSON.parse(savedState) : false;
-  });
+  const {theme, setTheme } = useContext(LayoutContext);
+  const [isToggle,setIsToggle] = useState(()=>{
+    if(theme === "dark" || theme === "system") return true;
+    else return false
+  })
 
   useEffect(() => {
-    localStorage.setItem("isDark", JSON.stringify(isDark));
-  }, [isDark]);
-
-  useEffect(() => {
-    if (!isDark) {
+    if (isToggle) {
       setTheme("dark");
     } else {
       setTheme("light");
     }
-  }, [isDark, setTheme]);
-
+  }, [isToggle, setTheme]);
+  
   return (
     <>
-      <Classic duration={750} toggled={isDark} toggle={setIsDark} />
+      <Classic duration={750} toggled={isToggle} toggle={setIsToggle} />
     </>
   );
 }
