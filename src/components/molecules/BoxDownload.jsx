@@ -8,7 +8,7 @@ import Pwa from "../../../public/svgs/pwa.svg";
 import Link from "next/link";
 
 function BoxDownload({ variant, className, imgClass, isBlack, href }) {
-  let classes = `scale-[0.65] ${imgClass} ${isBlack && "!brightness-0"}`;
+  let classes = `scale-[0.65] ${imgClass} ${isBlack && "!brightness-0 dark:invert"}`;
   let svgComponent = null;
   let title;
   let description;
