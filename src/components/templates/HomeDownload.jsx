@@ -14,37 +14,37 @@ function HomeDownload({ isBlackIcon }) {
           title="دانلود زبان سلام"
           description="حالا از ویندوز, لینوکس, مک گرفته تا هرچی که به ذهنت میرسه فقط کافیه اقدام کنی !"
         />
-        <div className="z-50 w-auto rounded-xl p-14 bg-bg-box2 pt-20 flex items-center justify-center flex-wrap gap-5 relative">
+        <div className="z-50 w-auto rounded-xl p-14 bg-bg-box2 dark:bg-gray-800 pt-20 flex items-center justify-center flex-wrap gap-5 relative">
           <div className="py-4 px-12 w-fit h-fit rounded-lg bg-bg-button-green absolute inset-0 mx-auto -top-6">
             <p className="w-fit">دانلود نرم افزار برای ؟</p>
           </div>
           <BoxDownload
             variant="Linux"
-            className="bg-bg-button-green"
+            className="bg-bg-button-green dark:bg-gray-700"
             isBlack={isBlackIcon || false}
             href={`download?os=Linux`}
           />
           <BoxDownload
             variant="Windows"
-            className="bg-bg-button-green"
+            className="bg-bg-button-green dark:bg-gray-700"
             isBlack={isBlackIcon || false}
             href={`download?os=Windows`}
           />
           <BoxDownload
             variant="Mac"
-            className="bg-bg-button-green"
+            className="bg-bg-button-green dark:bg-gray-700"
             isBlack={isBlackIcon || false}
             href={`download?os=Mac`}
           />
           <BoxDownload
             variant="Android"
-            className="bg-bg-button-green"
+            className="bg-bg-button-green dark:bg-gray-700"
             isBlack={isBlackIcon || false}
             href={`download?os=Android`}
           />
           <BoxDownload
             variant="Pwa"
-            className="bg-bg-button-green"
+            className="bg-bg-button-green dark:bg-gray-700"
             isBlack={isBlackIcon || false}
             href={`download?os=Pwa`}
           />
