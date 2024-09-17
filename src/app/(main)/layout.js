@@ -6,27 +6,27 @@ import SwitchHeader from "@/components/templates/SwitchHeader";
 import ShowFooter from "@/components/templates/ShowFooter";
 
 export default function RootLayout({ children }) {
-  try {
-    const registerVisit = async () => {
-      const response = await fetch("/https://auth.salamlang.ir/api/visit", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+  // try {
+  //   const registerVisit = async () => {
+  //     const response = await fetch("/https://auth.salamlang.ir/api/visit", {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
 
-      if (!response.ok) {
-        throw new Error("Failed to register visit");
-      }
+  //     if (!response.ok) {
+  //       throw new Error("Failed to register visit");
+  //     }
 
-      const data = await response.json();
-      console.log("Visit registered:", data);
-    };
+  //     const data = await response.json();
+  //     console.log("Visit registered:", data);
+  //   };
 
-    registerVisit();
-  } catch (error) {
-    console.error("Error registering visit:", error);
-  }
+  //   registerVisit();
+  // } catch (error) {
+  //   console.error("Error registering visit:", error);
+  // }
   return (
     <html lang="fa" dir="rtl">
       <body>
