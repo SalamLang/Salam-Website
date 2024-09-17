@@ -10,7 +10,7 @@ import InteractiveImage from "../molecules/InteractiveImage";
 
 function Footer() {
   return (
-    <div className={"bg-footer-green"}>
+    <div className={"bg-footer-green dark:bg-gray-900 dark:shadow-2xl dark:shadow-gray-700 dark:text-white"}>
       <div className="p-5 2xl:p-6 flex items-center justify-center flex-col lg:flex-row-reverse lg:justify-between gap-y-6 container m-auto">
         <div className="w-full lg:w-fit flex items-center justify-between">
           <Logo />
