@@ -11,10 +11,10 @@ export default function SupporterContent() {
           <SupportBox intent="buymeacoffee" />
         </div>
         <div className="max-w-[50%] w-full h-full flex flex-col justify-center items-center gap-3">
-          <h2 className="font-Estedad-SemiBold text-lg md:text-2xl lg:text-3xl">
+          <h2 className="font-Estedad-SemiBold text-lg md:text-2xl lg:text-3xl dark:text-white">
             چرا ما؟
           </h2>
-          <p className="text-xs sm:text-sm md:text-base">
+          <p className="text-xs sm:text-sm md:text-base dark:text-gray-300">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
