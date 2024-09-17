@@ -17,6 +17,7 @@ function GoToLearn() {
         variant="buttonBlue"
         type="link"
         href="/playground"
+        className="!z-20"
         icon={
           <span>
             <ArrowLeft />
