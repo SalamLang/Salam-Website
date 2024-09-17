@@ -8,8 +8,8 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 function EducationHero() {
   return (
     <div className="container flex flex-col items-center justify-center gap-5 w-full">
-      <div className="w-fit relative flex items-center justify-center">
-        <Gif variant="GifEducation"></Gif>
+      <div className="w-auto relative flex items-center justify-center">
+        <Gif variant="GifEducation" />
         <CarectersDownload />
       </div>
       <TitleDescription
