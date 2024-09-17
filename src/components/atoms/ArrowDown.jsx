@@ -20,7 +20,7 @@ function ArrowDown({ variant }) {
 
   return (
     <div
-      className={`w-full h-fit flex items-center justify-center relative ${classes}`}
+      className={`w-full h-fit flex items-center justify-center relative dark:invert ${classes}`}
     >
       {SvgComponent && <SvgComponent />}
     </div>
