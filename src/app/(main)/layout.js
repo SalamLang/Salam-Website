@@ -8,7 +8,7 @@ import ShowFooter from "@/components/templates/ShowFooter";
 export default function RootLayout({ children }) {
   try {
     const registerVisit = async () => {
-      const response = await fetch("/https://auth.salamlang.ir/api/visit", {
+      const response = await fetch("https://auth.salamlang.ir/api/visit", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
             },
           }}
         />
-        <div className="relative w-full min-h-screen overflow-auto flex flex-col flex-grow justify-start">
+        <div className="relative w-full min-h-screen overflow-auto flex transition-colors dark:bg-gray-900 flex-col flex-grow justify-start">
           <SwitchHeader />
           <FixedMenu />
           <div className="w-full h-full flex flex-col flex-grow">
