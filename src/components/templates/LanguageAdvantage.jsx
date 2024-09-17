@@ -16,10 +16,10 @@ function LanguageAdvantage() {
       >
         <TitleDescription title="چرا زبان سلام" />
         <div className="w-full max-w-[900px] grid grid-cols-1 min-[400px]:grid-cols-2 gap-4 md:gap-10 lg:grid-cols-3">
-          <div className="bg-bg-box2 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Simplicity" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="طراحی فوق العاده"
               description="ما با کمک بهترین طراحان بهترین
@@ -27,10 +27,10 @@ function LanguageAdvantage() {
                     میدهیم و لذت ببرید دوستان"
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Security" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="امنیت بالا"
               description="میتونی با امنیت بالا که در نظر
@@ -38,10 +38,10 @@ function LanguageAdvantage() {
                     باشید و لذت ببرید دوستان عزیز."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="BestDesigne" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="شخصی سازی بالا"
               description="شما میتوانید تا جایی که میخواهید
@@ -49,10 +49,10 @@ function LanguageAdvantage() {
                     کنید و لذت ببرید دوستان عزیز."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="AllPeople" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="مناسب برای همه"
               description="افردا از پایین ترین سن ها تا
@@ -60,10 +60,10 @@ function LanguageAdvantage() {
                     زبان کار کنند و لذت ببرند"
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Rtl" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="راست چین"
               description="برعکس باقی زبان ها این زبان
@@ -71,10 +71,10 @@ function LanguageAdvantage() {
                     راست چین مینویسد."
             />
           </div>
-          <div className="bg-bg-box2 min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
+          <div className="bg-bg-box2 dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-800/40 transition-colors min-h-80 px-3 pt-10 pb-7 rounded-3xl flex items-center justify-center flex-col gap-8">
             <ImageBoxAdvantage variant="Lamp" />
             <TitleDescriptionBox
-              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium"
+              headerClass="max-sm:!text-lg !text-xl !font-Estedad-Medium dark:text-white"
               descClass="!leading-10 !max-w-[170px] font-Estedad-Regular"
               title="سادگی"
               description="شما میتوانید به سادگی تمام این
