@@ -17,7 +17,7 @@ function Header() {
       </div>
       <header
         className={
-          "md:shadow-my3 lg:shadow-my2 md:-translate-y-[55%] 2xl:-translate-y-[80%] bg-white relative w-full px-4 py-2 md:h-[80px] xl:h-[100px] flex items-center justify-center md:rounded-t-3xl"
+          "md:shadow-my3 lg:shadow-my2 md:-translate-y-[55%] 2xl:-translate-y-[80%] transition-colors bg-white dark:bg-gray-900 dark:text-white relative w-full px-4 py-2 md:h-[80px] xl:h-[100px] flex items-center justify-center md:rounded-t-3xl"
         }
       >
         <MenuList />
