@@ -130,3 +130,8 @@
   border-style: solid;
   border-color: transparent transparent black transparent; /* Adjust the color to match the tooltip background */
 }
+
+.theme-toggle__classic {
+  width: 25px !important;
+  height: 25px !important;
+}
