@@ -3,6 +3,8 @@ import Logo from "../atoms/Logo";
 import { Badge } from "../common/Badge";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
+import ToggleMode from "./ToggleMode";
+
 function SecondMenuList() {
   return (
     <div className="hidden md:flex max-w-[900px] w-full h-full justify-between items-center">
@@ -49,11 +51,14 @@ function SecondMenuList() {
           مثال
         </NavItem>
       </ul>
-      <Link href={getRoute("playground")}>
-        <Badge className="!text-base !font-Estedad-SemiBold">
-          آنلاین کار کن
-        </Badge>
-      </Link>
+      <div className="w-auto h-auto flex flex-row-reverse gap-5 justify-center items-center">
+        <ToggleMode />
+        <Link href={getRoute("playground")}>
+          <Badge className="!text-base !font-Estedad-SemiBold">
+            آنلاین کار کن
+          </Badge>
+        </Link>
+      </div>
     </div>
   );
 }
