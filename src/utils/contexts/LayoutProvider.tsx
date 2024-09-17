@@ -6,8 +6,8 @@ export const LayoutContext = createContext({
   setHeaderType: null,
   isFooterHidden: false,
   setIsFooterHidden: null,
-  isDark: false,
-  setIsDark: null,
+  theme: "light",
+  setTheme: null,
 });
 
 export function LayoutProvider({ children }) {
@@ -15,14 +15,35 @@ export function LayoutProvider({ children }) {
     "default"
   );
   const [isFooterHidden, setIsFooterHidden] = useState(false);
-  const [isDark, setIsDark] = useState(() => {
-    const savedState = localStorage.getItem("isDarkHeader");
-    return savedState ? JSON.parse(savedState) : false;
+  const [theme, setTheme] = useState<"light" | "system" | "dark">(() => {
+    const savedState = localStorage.getItem("theme");
+    return savedState ? JSON.parse(savedState) : "light";
   });
-
   useEffect(() => {
-    localStorage.setItem("isDarkHeader", JSON.stringify(isDark));
-  }, [isDark]);
+    localStorage.setItem("theme", JSON.stringify(theme));
+  }, [theme]);
+
+  // for theme site
+  useEffect(() => {
+    const root = window.document.documentElement;
+
+    root.classList.remove("light", "dark");
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else if (theme === "light") {
+      root.classList.add("light");
+    } else if (theme === "system") {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      if (prefersDark) {
+        root.classList.add("dark");
+      } else {
+        root.classList.add("light");
+      }
+    }
+  }, [theme]);
 
   return (
     <LayoutContext.Provider
@@ -31,8 +52,8 @@ export function LayoutProvider({ children }) {
         setHeaderType,
         isFooterHidden,
         setIsFooterHidden,
-        isDark,
-        setIsDark,
+        theme,
+        setTheme,
       }}
     >
       {children}
