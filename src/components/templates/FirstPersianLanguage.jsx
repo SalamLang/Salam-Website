@@ -1,16 +1,15 @@
 import React from "react";
 import { Button } from "../common/Button";
 import ArrowLeft from "../../../public/svgs/arrowleft.svg";
+import TitleDescription from "../atoms/TitleDescription";
 
 export default function FirstPersianLanguage() {
   return (
     <div className="w-full h-full min-h-[300px] flex flex-col justify-center gap-6 items-center">
-      <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-Estedad-SemiBold">
-        سلام اولین زبان برنامه نویسی فارسی
-      </h1>
-      <p className="text-xs font-Estedad-Medium opacity-70">
-        اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟
-      </p>
+        <TitleDescription
+            title="سلام اولین زبان برنامه نویسی فارسی"
+            description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
+        />
       <Button
         link="playground"
         intent="orange"
