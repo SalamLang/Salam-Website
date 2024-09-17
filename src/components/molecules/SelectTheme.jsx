@@ -14,6 +14,8 @@ export default function SelectTheme() {
     { id: 3, title: "حالت شب", theme: "dark" },
   ];
 
+  console.log(theme)
+
   return (
     <div className="w-full h-full flex flex-col justify-center items-center gap-6">
       <div className="w-full h-auto flex flex-col justify-start items-start gap-1">
