@@ -3,9 +3,10 @@
 import React, { useContext } from "react";
 import { PlaygroundContextValue } from "@/utils/contexts/Playground";
 import SelectThemeCard from "./SelectThemeCard";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 export default function SelectTheme() {
-  const { theme, setTheme } = useContext(PlaygroundContextValue);
+  const { theme, setTheme } = useContext(LayoutContext);
 
   const themes = [
     { id: 1, title: "حالت روز", theme: "light" },
