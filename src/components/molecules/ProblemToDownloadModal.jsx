@@ -15,7 +15,7 @@ const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
         <Modal.Box
           initial={{ y: "100vw" }}
           animate={{ y: 0 }}
-          className="max-w-[30rem] max-md:w-11/12 w-full max-h-[20rem] h-full bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10"
+          className="max-w-[30rem] max-md:w-11/12 w-full max-h-[20rem] h-full dark:bg-gray-800/70 dark:!backdrop-blur-3xl transition-colors bg-cream-light rounded-2xl flex flex-col shadow-2xl shadow-black/10"
         >
           <Modal.Header className="w-full h-auto px-2 py-3">
             <div className="w-full h-full flex flex-row-reverse justify-between items-center">
@@ -30,7 +30,7 @@ const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
               </span>
             </div>
           </Modal.Header>
-          <Modal.Body className="w-full h-full bg-white rounded-b-2xl rounded-t-3xl">
+          <Modal.Body className="w-full h-full dark:text-white bg-white dark:bg-gray-800 transition-colors rounded-b-2xl rounded-t-3xl">
             <div className="w-full h-full flex gap-2 justify-center items-center">
               <div className="w-full h-auto p-3 flex flex-col justify-center items-center gap-3">
                 <h2 className="max-md:text-lg text-xl font-bold">
@@ -40,28 +40,21 @@ const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
                   میتوانید برای دانلود دستی روی دکمه زیر بزنید تا فایل برای شما
                   دانلود شه:)
                 </p>
-                <Button
-                  size="small"
-                  rounded="full"
-                  onClick={() =>
-                    window.open(
-                      "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
-                    )
-                  }
-                >
-                  دانلود دستی
-                </Button>
               </div>
             </div>
           </Modal.Body>
           <Modal.Footer className="w-full h-auto flex justify-center items-center px-3 py-4">
             <Button
               size="small"
-              onClick={onCloseModal}
+              onClick={() =>
+                window.open(
+                  "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
+                )
+              }
               className="!w-full hover:scale-100"
               rounded="large"
             >
-              بستن
+              دانلود
             </Button>
           </Modal.Footer>
         </Modal.Box>
