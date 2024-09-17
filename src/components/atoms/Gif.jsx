@@ -18,7 +18,8 @@ function Gif({ variant }) {
       src = GifDownloadImage;
       break;
     case "GifEducation":
-      classes += "h-[385px] w-[400px] sm:w-[455px] sm:h-[440px]";
+      classes +=
+        "h-[385px] w-[400px] sm:w-[455px] sm:h-[440px] dark:invert dark:opacity-90";
       src = GifEducationImage;
       break;
     case "GifEducation2":
