@@ -23,7 +23,7 @@ function Gif({ variant }) {
       src = GifEducationImage;
       break;
     case "GifEducation2":
-      classes += "w-[337px] h-64 sm:h-80 sm:w-[425px]";
+      classes += "w-[337px] h-64 sm:h-80 sm:w-[425px] dark:invert";
       src = GifEducation2Image;
       break;
   }
