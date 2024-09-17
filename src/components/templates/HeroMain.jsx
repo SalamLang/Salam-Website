@@ -9,7 +9,7 @@ import { Button } from "../common/Button";
 function HeroMain() {
   return (
     <div className="max-w-[95%] sm:container flex items-center justify-start flex-col gap-6 relative w-full py-5 lg:py-8 h-[500px] z-0">
-      <div className={"w-full absolute -z-20"}>
+      <div className={"w-full absolute -z-20 dark:opacity-20"}>
         <Vactor1 />
       </div>
       <div
