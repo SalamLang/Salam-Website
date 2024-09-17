@@ -75,7 +75,7 @@ export default function DownloadItem() {
       <TitleDescription
         title="مرسی که ..."
         className={"!z-0"}
-        description="نرم افزار مارو دانلود کردید و تشکر میکنیم از این کارتون !"
+        headerClass={"dark:!text-white transition-colors"}
       />
       <div className="flex items-center justify-center gap-6">
         <Button
