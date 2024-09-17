@@ -8,7 +8,7 @@ function MenuListFooter() {
       <li>
         <Link
           href={getRoute("education")}
-          className="text-title text-xl font-Estedad-Regular"
+          className="text-title text-xl font-Estedad-Regular dark:text-gray-200"
         >
           یادم بده
         </Link>
@@ -16,7 +16,7 @@ function MenuListFooter() {
       <li>
         <Link
           href={getRoute("home")}
-          className="text-title text-xl font-Estedad-Regular"
+          className="text-title text-xl font-Estedad-Regular dark:text-gray-200"
         >
           خانه
         </Link>
@@ -24,7 +24,7 @@ function MenuListFooter() {
       <li>
         <Link
           href={getRoute("donwload")}
-          className="text-title text-xl font-Estedad-Regular"
+          className="text-title text-xl font-Estedad-Regular dark:text-gray-200"
         >
           دانلود
         </Link>
