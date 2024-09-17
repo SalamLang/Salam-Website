@@ -7,7 +7,7 @@ export default function NotFoundLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body>
-        <div className="relative w-full min-h-screen overflow-auto flex flex-col justify-start">
+        <div className="relative w-full min-h-screen overflow-auto flex flex-col justify-start dark:bg-gray-900">
           <SecondHeader />
           <Alert
             intent="orange"
