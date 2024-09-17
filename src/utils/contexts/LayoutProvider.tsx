@@ -1,4 +1,5 @@
 "use client";
+import useLocalStorage from "@/hooks/useLocalStorage";
 import React, { createContext, useEffect, useState } from "react";
 
 export const LayoutContext = createContext({
@@ -15,13 +16,9 @@ export function LayoutProvider({ children }) {
     "default"
   );
   const [isFooterHidden, setIsFooterHidden] = useState(false);
-  const [theme, setTheme] = useState<"light" | "system" | "dark">(() => {
-    const savedState = localStorage.getItem("theme");
-    return savedState ? JSON.parse(savedState) : "light";
-  });
-  useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(theme));
-  }, [theme]);
+
+  const [theme,setTheme] = useLocalStorage("theme","light");
+
 
   // for theme site
   useEffect(() => {
