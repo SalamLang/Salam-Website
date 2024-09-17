@@ -53,14 +53,14 @@ function BoxDownload({ variant, className, imgClass, isBlack, href }) {
         className="flex items-center justify-center flex-col gap-2 cursor-pointer"
       >
         <div
-          className={`bg-bg-box rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
+          className={`bg-bg-box dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-700/20 rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
         >
           {svgComponent}
         </div>
-        <h4 className="text-title text-center font-Estedad-SemiBold">
+        <h4 className="text-title text-center font-Estedad-SemiBold dark:text-white">
           {title}
         </h4>
-        <p className="text-description text-center text-xs font-Estedad-Regular w-24">
+        <p className="text-description text-center text-xs font-Estedad-Regular w-24 dark:text-gray-400">
           {description}
         </p>
       </Link>
@@ -69,14 +69,14 @@ function BoxDownload({ variant, className, imgClass, isBlack, href }) {
     return (
       <div className="flex items-center justify-center flex-col gap-2 cursor-pointer">
         <div
-          className={`bg-bg-box rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
+          className={`bg-bg-box dark:bg-gray-800 dark:shadow-2xl dark:shadow-gray-700 rounded-lg flex items-center justify-center  w-16 h-16 2xl:w-20 2xl:h-20 ${className}`}
         >
           {svgComponent}
         </div>
-        <h4 className="text-title text-center font-Estedad-SemiBold">
+        <h4 className="text-title text-center font-Estedad-SemiBold text-white">
           {title}
         </h4>
-        <p className="text-description text-center text-xs font-Estedad-Regular w-24">
+        <p className="text-description text-center text-xs font-Estedad-Regular w-24 dark:text-gray-400">
           {description}
         </p>
       </div>
