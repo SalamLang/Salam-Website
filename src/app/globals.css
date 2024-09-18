@@ -70,6 +70,7 @@
   background-image: url("/svgs/slider_arrow2.svg") !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  @apply max-sm:!hidden;
 }
 
 .swiper-button-prev {
@@ -78,6 +79,7 @@
   background-image: url("/svgs/slider_arrow.svg") !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  @apply max-sm:!hidden;
 }
 
 .swiper-button-next:before,
