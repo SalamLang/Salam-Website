@@ -16,6 +16,7 @@ function MenuListMobile() {
   const [blockScroll, allowScroll] = useScrollBlock();
 
   const handleClose = () => {
+    allowScroll();
     setIsOpen(false);
   };
 
