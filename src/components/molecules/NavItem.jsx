@@ -12,6 +12,7 @@ export default function NavItem({
   className,
   classLink,
   children,
+  ...attr
 }) {
   const pathname = usePathname();
   const isActive = href === pathname;
@@ -25,6 +26,7 @@ export default function NavItem({
             ? "bg-[#ff5c00]/60 shadow-2xl shadow-black/50 text-white font-AliBaba-Regular"
             : `hover:bg-black/10 dark:hover:bg-gray-600/50`
         } ${className || ""}`}
+         {...attr}
       >
         <span className={`font-Estedad-Regular ${classLink || ""}`}>
           {children}
@@ -39,6 +41,7 @@ export default function NavItem({
         }`}
         initial={{ scale: 1 }}
         animate={{ scale: isActive ? 1.2 : 1 }}
+        {...attr}
       >
         <Link
           href={href}
@@ -62,6 +65,7 @@ export default function NavItem({
         } ${className || ""}`}
         initial={{ scale: 1 }}
         animate={{ scale: isActive ? 1.25 : 1 }}
+        {...attr}
       >
         <Link
           href={href}
