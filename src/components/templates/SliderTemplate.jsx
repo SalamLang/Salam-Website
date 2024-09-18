@@ -6,8 +6,9 @@ import Avatar1 from "../../../public/images/avatar-comment-1.png";
 import Avatar2 from "../../../public/images/avatar-comment-2.png";
 import Avatar3 from "../../../public/images/avatar-comment-3.png";
 
+import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay , Pagination } from "swiper/modules";
 
 import "swiper/css";
 import CommentBox from "../home/comment-box";
@@ -94,7 +95,7 @@ const SliderTemplate = () => {
         loop={true}
         autoplay={{ delay: 2000, disableOnInteraction: false }} // پیکربندی تنظیمات autoplay
         longSwipes={true}
-        modules={[Autoplay]}
+        modules={[Autoplay,Pagination]}
       >
         {comments.map((comment) => (
           <SwiperSlide key={comment.id}>
