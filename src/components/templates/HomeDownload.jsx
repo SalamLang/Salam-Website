@@ -20,40 +20,40 @@ function HomeDownload({ isBlackIcon }) {
           </div>
           <BoxDownload
             variant="Linux"
-            className="bg-bg-button-green dark:bg-gray-700"
+            className="bg-bg-button-green dark:hover:!bg-gray-700 transition-all dark:shadow-2xl dark:shadow-gray-600/50 hover:opacity-70"
             isBlack={isBlackIcon || false}
-            href={`download?os=Linux`}
+            href={`download?os=linux`}
           />
           <BoxDownload
             variant="Windows"
-            className="bg-bg-button-green dark:bg-gray-700"
+            className="bg-bg-button-green dark:hover:!bg-gray-700 transition-all dark:shadow-2xl dark:shadow-gray-600/50 hover:opacity-70"
             isBlack={isBlackIcon || false}
-            href={`download?os=Windows`}
+            href={`download?os=windows`}
           />
           <BoxDownload
             variant="Mac"
-            className="bg-bg-button-green dark:bg-gray-700"
+            className="bg-bg-button-green dark:hover:!bg-gray-700 transition-all dark:shadow-2xl dark:shadow-gray-600/50 hover:opacity-70"
             isBlack={isBlackIcon || false}
-            href={`download?os=Mac`}
+            href={`download?os=mac`}
           />
           <BoxDownload
             variant="Android"
-            className="bg-bg-button-green dark:bg-gray-700"
+            className="bg-bg-button-green dark:hover:!bg-gray-700 transition-all dark:shadow-2xl dark:shadow-gray-600/50 hover:opacity-70"
             isBlack={isBlackIcon || false}
-            href={`download?os=Android`}
+            href={`download?os=android`}
           />
           <BoxDownload
             variant="Pwa"
-            className="bg-bg-button-green dark:bg-gray-700"
+            className="bg-bg-button-green dark:hover:!bg-gray-700 transition-all dark:shadow-2xl dark:shadow-gray-600/50 hover:opacity-70"
             isBlack={isBlackIcon || false}
-            href={`download?os=Pwa`}
+            href={`download?os=pwa`}
           />
         </div>
         <SliderBestComment />
       </div>
       <div
         className={
-          "bg-dark-green absolute bottom-0 h-[690px] md:h-[590px] w-full bg-vector bg-contain bg-center bg-no-repeat"
+          "bg-dark-green max-[350px]:pt-8 absolute bottom-0 h-[690px] md:h-[590px] w-full bg-vector bg-contain bg-center bg-no-repeat"
         }
       ></div>
     </div>
