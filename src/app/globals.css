@@ -109,6 +109,19 @@
 .comment_slider .swiper-button-prev {
   @apply !right-[30px];
 }
+
+.comment_slider2 .swiper-pagination-bullet {
+  @apply !inline-block !w-[35px] max-sm:!w-[20px] !rounded-[10px] !transition-all !duration-300 bg-[--bg-section-purple] opacity-50 !mx-2;
+}
+
+.comment_slider2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 80px !important;
+  @apply max-sm:!w-[30px];
+  background-color: var(--bg-section-purple);
+  opacity: 100 !important;
+}
+
+
 .orange-scrollbar::-webkit-scrollbar {
   width: 3px;
   background-color: var(--bg-button-orange2);
