@@ -5,6 +5,7 @@ on:
 
 jobs:
   deploy:
+    if: github.repository == 'SalamLang/Salam-Website'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
