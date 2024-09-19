@@ -23,7 +23,7 @@ export default function ToggleMode() {
   
   return (
     <>
-      <Classic duration={750} toggled={isToggle} toggle={setIsToggle} />
+      <Classic className="!opacity-50 dark:!opacity-70" duration={750} toggled={isToggle} toggle={setIsToggle} />
     </>
   );
 }
