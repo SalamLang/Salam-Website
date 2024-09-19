@@ -76,19 +76,19 @@ function MenuListMobile() {
                 </button>
               </div>
             </div>
-            <NavItem href={getRoute("home")} variants="mobile" className="mt-5">
+            <NavItem href={getRoute("home")} variants="mobile" className="mt-5" onClick={handleClose}>
               سلام
             </NavItem>
-            <NavItem href={getRoute("education")} variants="mobile">
+            <NavItem href={getRoute("education")} variants="mobile" onClick={handleClose}>
               یادگیری
             </NavItem>
-            <NavItem href={getRoute("donwload")} variants="mobile">
+            <NavItem href={getRoute("donwload")} variants="mobile" onClick={handleClose}>
               دانلود
             </NavItem>
             <NavItem href={"#"} variants="mobile">
               انجمن
             </NavItem>
-            <NavItem href={getRoute("playground")} variants="mobile">
+            <NavItem href={getRoute("playground")} variants="mobile" onClick={handleClose}>
               آزمایش آنلاین
             </NavItem>
             <NavItem href={"#"} variants="mobile">
