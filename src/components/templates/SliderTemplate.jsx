@@ -6,11 +6,11 @@ import Avatar1 from "../../../public/images/avatar-comment-1.png";
 import Avatar2 from "../../../public/images/avatar-comment-2.png";
 import Avatar3 from "../../../public/images/avatar-comment-3.png";
 
+import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay , Pagination } from "swiper/modules";
 
-import "swiper/css";
 import CommentBox from "../home/comment-box";
 import CommentContent from "../home/comment-box/CommentContent";
 
@@ -87,12 +87,15 @@ const SliderTemplate = () => {
   }, []);
 
   return (
-    <div className="max-xl:w-11/12 w-full max-w-[1082px] mx-auto p-6 border-2 border-bg-section-purple rounded-3xl z-10">
+    <div className="max-xl:w-11/12 w-full max-w-[1082px] mx-auto border-2 border-bg-section-purple rounded-3xl z-10">
       <Swiper
         spaceBetween={30}
+        centeredSlides={true}
         slidesPerView={perViewSlide}
         onSlideChange={(swiper) => console.log(swiper)}
         loop={true}
+        pagination={{ clickable: true }}
+        className="comment_slider2 !p-6 !pb-10"
         autoplay={{ delay: 2000, disableOnInteraction: false }} // پیکربندی تنظیمات autoplay
         longSwipes={true}
         modules={[Autoplay,Pagination]}
