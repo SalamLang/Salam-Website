@@ -33,7 +33,7 @@
     "react-tooltip": "^5.28.0",
     "rimraf": "^6.0.1",
     "sharp": "^0.33.5",
-    "swiper": "^11.1.9",
+    "swiper": "^11.1.14",
     "yup": "^1.4.0"
   },
   "devDependencies": {
