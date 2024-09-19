@@ -20,7 +20,7 @@ export default function ToggleMode() {
       setTheme("light");
     }
   }, [isToggle, setTheme]);
-  
+
   return (
     <>
       <Classic className="!opacity-50 dark:!opacity-70" duration={750} toggled={isToggle} toggle={setIsToggle} />
