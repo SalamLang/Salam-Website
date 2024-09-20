@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `"<Badge className="primary">آنلاین کار کن</Badge>"`;
+exports[`renders correctly 1`] = `
+<span
+  className="span bg-light-primary text-primary py-1 sm:py-2 px-2 sm:px-4 font-Estedad-Medium text-[10px] sm:text-xs rounded-full primary"
+>
+  آنلاین کار کن
+</span>
+`;
 
-exports[`renders correctly 2`] = `"<Badge className="primary medium full">آنلاین کار کن</Badge>"`;
+exports[`renders correctly 2`] = `
+<span
+  className="span bg-light-primary text-primary py-1 sm:py-2 px-2 sm:px-4 font-Estedad-Medium text-[10px] sm:text-xs rounded-full primary medium full"
+>
+  آنلاین کار کن
+</span>
+`;
+
+exports[`renders correctly 3`] = `
+<span
+  className="span bg-light-success text-success py-1 sm:py-2 px-2 sm:px-4 font-Estedad-Medium text-[10px] sm:text-xs rounded-full"
+>
+  کوتاه بودن
+</span>
+`;
+
+exports[`renders correctly 4`] = `
+<span
+  className="span bg-light-warning text-warning py-1 sm:py-2 px-2 sm:px-4 font-Estedad-Medium text-[10px] sm:text-xs rounded-full"
+>
+  زیبا بودن
+</span>
+`;
+
+exports[`renders correctly 5`] = `
+<span
+  className="span bg-light-danger text-danger py-1 sm:py-2 px-2 sm:px-4 font-Estedad-Medium text-[10px] sm:text-xs rounded-full"
+>
+  فارسی بودن
+</span>
+`;
