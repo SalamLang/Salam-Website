@@ -2,6 +2,7 @@ import ImageBoxAdvantage from "../atoms/ImageBoxAdvantage";
 import TitleDescription from "../atoms/TitleDescription";
 import TitleDescriptionBox from "../atoms/TitleDescriptionBox";
 import Vector from "../../../public/svgs/vector11.svg";
+import React from "react";
 
 function LanguageAdvantage() {
   return (
