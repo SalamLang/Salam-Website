@@ -4,6 +4,7 @@ import { Badge } from "../common/Badge";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
 import ToggleMode from "./ToggleMode";
+import React from "react";
 
 function SecondMenuList() {
   return (
