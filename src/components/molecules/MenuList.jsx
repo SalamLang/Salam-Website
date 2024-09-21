@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "../../../public/svgs/logo.svg";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
+import React from "react";
 
 function MenuList() {
   return (
