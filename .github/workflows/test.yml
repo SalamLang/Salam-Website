@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Installing dependencies
-        run: npm install
       - name: Installing bun
         run:
-          curl -fsSL https://bun.sh/install | bash
+          curl -fsSL https://bun.sh/install | bash      
+      - name: Installing dependencies
+        run: bun install      
       - name: Running tests
         run: bun test
   pre-commit:
