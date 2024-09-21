@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import nProgress from "nprogress";
 import { LayoutProvider } from "@/utils/contexts/LayoutProvider";
 import ReactQueryProvider from "@/utils/react-query/ReactQueryProvider";
+import React from "react";
 
 function RootLayout({ children }) {
   const pathname = usePathname(); // Get the current path
