@@ -6,6 +6,7 @@ import Android from "../../../public/svgs/android.svg";
 import Windows from "../../../public/svgs/windows.svg";
 import Pwa from "../../../public/svgs/pwa.svg";
 import Link from "next/link";
+import React from "react";
 
 function BoxDownload({ variant, className, imgClass, isBlack, href }) {
   let classes = `scale-[0.65] ${imgClass} ${isBlack && "!brightness-0 dark:invert"}`;
