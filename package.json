@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "tailwind": "npx tailwind -w",
-    "test": "jest"
+    "test": "bun test"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.9",
