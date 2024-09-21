@@ -23,7 +23,7 @@ jobs:
             git fetch --all
             git pull
             npm install --force
-            npm run build
+            bun run build
             if [ $? -eq 0 ]; then
               if [ -f "package.json" ]; then
                 if pm2 describe "salamlang-website" > /dev/null; then
