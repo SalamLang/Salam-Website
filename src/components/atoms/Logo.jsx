@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import Logosvg from "../../../public/svgs/logo.svg";
+import React from "react";
 
 function Logo({ className }) {
   return (
