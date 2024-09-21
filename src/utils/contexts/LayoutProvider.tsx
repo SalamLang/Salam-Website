@@ -9,6 +9,8 @@ export const LayoutContext = createContext({
   setIsFooterHidden: null,
   theme: "light",
   setTheme: null,
+  isFixedHeaderHidden : false,
+  setIsFixedHeaderHidden : null
 });
 
 export function LayoutProvider({ children }) {
@@ -17,8 +19,9 @@ export function LayoutProvider({ children }) {
   );
   const [isFooterHidden, setIsFooterHidden] = useState(false);
 
-  const [theme,setTheme] = useLocalStorage("theme","light");
+  const [isFixedHeaderHidden, setIsFixedHeaderHidden] = useState(false);
 
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
   // for theme site
   useEffect(() => {
@@ -51,6 +54,8 @@ export function LayoutProvider({ children }) {
         setIsFooterHidden,
         theme,
         setTheme,
+        isFixedHeaderHidden,
+        setIsFixedHeaderHidden
       }}
     >
       {children}
