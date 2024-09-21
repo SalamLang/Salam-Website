@@ -14,7 +14,6 @@ const nextConfig = {
     forceSwcTransforms: true,
   },
   images: {
-    domains: ["logo.samandehi.ir"],
     remotePatterns: [
       {
         protocol: "https",
