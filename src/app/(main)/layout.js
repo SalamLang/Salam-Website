@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import FixedMenu from "@/components/molecules/FixedMenu";
 import SwitchHeader from "@/components/templates/SwitchHeader";
 import ShowFooter from "@/components/templates/ShowFooter";
+import React from "react";
 
 export default function RootLayout({ children }) {
   try {
