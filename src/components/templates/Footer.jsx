@@ -26,7 +26,7 @@ function Footer() {
         <hr className="w-full h-1 bg-border-grey lg:hidden" />
 
         <InteractiveImage
-          referrerPolicy="origin"
+          referrerPolicy="no-referrer"
           id="rgvjjzpenbqenbqefukzfukz"
           style={{ cursor: "pointer" }}
           onClick={() =>
