@@ -5,6 +5,7 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 import ArrowLeft from "../../public/svgs/arrowleft.svg";
 import CarectersNotFound from "@/components/molecules/CarectersNotFound";
 import NotFoundLayout from "@/components/atoms/NotFoundLayout";
+import React from "react";
 
 export const metadata = {
   title: "یه مشکلی داریم - زبان سلام",
