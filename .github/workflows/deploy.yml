@@ -1,3 +1,5 @@
+name: Salam Website
+
 on:
   push:
     branches:
