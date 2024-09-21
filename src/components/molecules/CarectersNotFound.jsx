@@ -1,6 +1,7 @@
 import CarecterNotFound from "../../../public/svgs/carecter404.svg";
 import Ghost from "../../../public/svgs/ghost.svg";
 import NotFound from "../../../public/svgs/404.svg";
+import React from "react";
 
 function CarectersNotFound() {
   return (
