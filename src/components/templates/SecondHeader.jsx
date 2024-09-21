@@ -5,6 +5,7 @@ import Hamberger from "../atoms/Hamberger";
 import Logo from "@/components/atoms/Logo";
 import ToggleMenuProvider from "@/utils/contexts/ToggleMenu";
 import SecondMenuList from "../molecules/SecondMenuList";
+import React from "react";
 
 function SecondHeader({ className }) {
   return (
