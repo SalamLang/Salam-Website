@@ -4,6 +4,7 @@ import Persons from "../../../public/svgs/personsicon.svg";
 import Rtl from "../../../public/svgs/rtlicon.svg";
 import Design from "../../../public/svgs/designicon.svg";
 import Lamp from "../../../public/svgs/lampicon.svg";
+import React from "react";
 
 function ImageBoxAdvantage({ variant }) {
   let classes = "scale-[0.85] brightness-0";
