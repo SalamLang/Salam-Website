@@ -31,7 +31,7 @@ function DescriptionOnlineCode() {
         <div className={"relative z-20"}>
           <TitleDescription
             headerClass="text-white"
-            descClass="text-white"
+            descClass="text-white dark:!text-white"
             className="!gap-4"
             title="میتونی به صورت آنلاین با سلام کار کنی 🚀"
             description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
