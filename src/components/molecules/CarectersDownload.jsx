@@ -1,6 +1,7 @@
 import CarecterBlue from "../../../public/svgs/carecterblue.svg";
 import Ghost from "../../../public/svgs/ghost.svg";
 import CaracterGreen from "../../../public/svgs/caracter5.svg";
+import React from "react";
 
 function CarectersDownload() {
   return (
