@@ -6,6 +6,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import VersionItem from "./VersionItem";
 import toast, { LoaderIcon } from "react-hot-toast";
 import { EditorModalsContext } from "@/utils/contexts/EditorModals";
+import React from "react";
 
 const ControlsVersion = () => {
   const [isOpenVersion, setIsOpenVersion] = useState(false);
