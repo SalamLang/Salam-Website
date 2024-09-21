@@ -2,6 +2,7 @@ import TitleDescription from "../atoms/TitleDescription";
 
 import ArrowLeft from "../../../public/svgs/arrowleft.svg";
 import { Button } from "../common/Button";
+import React from "react";
 
 function BoxStartLanguge() {
   return (
