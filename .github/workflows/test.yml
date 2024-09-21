@@ -19,7 +19,7 @@ jobs:
         run: |
           curl -fsSL https://bun.sh/install | bash
           source /home/runner/.bashrc
-          bun --help
+          ./bun --help
       - name: Installing dependencies
         run: bun install
       - name: Running tests
