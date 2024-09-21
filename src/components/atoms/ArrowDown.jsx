@@ -1,5 +1,6 @@
 import Clear from "../../../public/svgs/arrow-down-clear.svg";
 import Screw from "../../../public/svgs/arrow-down-screw.svg";
+import React from "react";
 
 function ArrowDown({ variant }) {
   let classes = "";
