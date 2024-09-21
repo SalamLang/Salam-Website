@@ -3,6 +3,7 @@ import Carecterblue from "../../../public/svgs/carecter-hero-1.svg";
 import CaracterBluetow from "../../../public/svgs/carecter-hero-4.svg";
 import CaracterGreen from "../../../public/svgs/carecter-hero-2.svg";
 import CaracterGreentow from "../../../public/svgs/carecter-hero-3.svg";
+import React from "react";
 
 function CarectersHeroMain() {
   return (
