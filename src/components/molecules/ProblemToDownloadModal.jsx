@@ -1,12 +1,30 @@
 "use client";
 
-import React, { useCallback } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import Modal from "../common/Modal";
 import CloseSvg from "../../../public/svgs/svg-close-box.svg";
 import { Button } from "../common/Button";
+import { useScrollBlock } from "@/hooks/useScrollBlock ";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
+  const [blockScroll, allowScroll] = useScrollBlock();
+  const { setIsFixedHeaderHidden } = useContext(LayoutContext);
+
+  useEffect(() => {
+    if (isOpen) {
+      blockScroll();
+      setIsFixedHeaderHidden(true);
+    } else allowScroll();
+
+    return () => {
+      setIsFixedHeaderHidden(false)
+      allowScroll();
+    };
+  }, [blockScroll, allowScroll, isOpen]);
+
   const onCloseModal = useCallback(() => {
+    allowScroll();
     setIsOpen(false);
   }, [setIsOpen]);
   return (
@@ -51,7 +69,7 @@ const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
                   "https://dl2.soft98.ir/soft/t/TweakNow.WinSecret.Plus.v5.6.6.rar?1726403582"
                 )
               }
-              className="!w-full hover:scale-100"
+              className="!w-full hover:!scale-[1.02]"
               rounded="large"
             >
               دانلود
