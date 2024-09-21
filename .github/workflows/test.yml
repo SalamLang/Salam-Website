@@ -15,10 +15,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: install dependencies
+      - name: Installing dependencies
         run: npm install
-      - name: run jest test
-        run: npm test
+      - name: Installing bun
+        run:
+          curl -fsSL https://bun.sh/install | bash
+      - name: Running tests
+        run: bun test
   pre-commit:
     name: Run pre-commit  # https://pre-commit.com/
     runs-on: ubuntu-latest
