@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SecondHeader from "../templates/SecondHeader";
+import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 export default function FixedMenu() {
   const [isShowMenu, setIsShowMenu] = useState(false);
+  const {isFixedHeaderHidden} = useContext(LayoutContext)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 150) {
@@ -21,6 +23,10 @@ export default function FixedMenu() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(()=>{
+    if(isFixedHeaderHidden) setIsShowMenu(false)
+  },[isFixedHeaderHidden])
 
   return (
     <>
