@@ -4,6 +4,7 @@ import { EditorModalsProvider } from "@/utils/contexts/EditorModals";
 import SettingModal from "./SettingModal";
 import ShareModal from "./ShareModal";
 import BottonSheet from "../common/BottonSheet";
+import React from "react";
 
 export default function Editor() {
   return (
