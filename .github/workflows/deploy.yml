@@ -22,7 +22,7 @@ jobs:
             cd ${{ secrets.SERVER_PATH }}
             git fetch --all
             git pull
-            npm install --force
+            bun install --force
             bun run build
             if [ $? -eq 0 ]; then
               if [ -f "package.json" ]; then
