@@ -7,7 +7,7 @@ const InteractiveImage = ({
   src,
   alt,
   id,
-  referrerPolicy,
+  referrerPolicy = "no-referrer",
   onClick,
   style,
   ...attr
