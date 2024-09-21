@@ -6,8 +6,8 @@ permissions:
   contents: read
 
 jobs:
-  jest:
-    name: Run Jest
+  bun:
+    name: Run bun test
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout ${{ github.ref }} ( ${{ github.sha }} )"
@@ -17,9 +17,10 @@ jobs:
           node-version: 22
       - name: Installing bun
         run:
-          curl -fsSL https://bun.sh/install | bash      
+          curl -fsSL https://bun.sh/install | bash
+          source /home/runner/.bashrc
       - name: Installing dependencies
-        run: bun install      
+        run: bun install
       - name: Running tests
         run: bun test
   pre-commit:
