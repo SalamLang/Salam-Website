@@ -3,6 +3,7 @@ import Image from "next/image";
 import BgCursor from "../../../public/images/bgcursor.png";
 import Cursor from "../../../public/images/cursor.png";
 import Link from "next/link";
+import React from "react";
 
 function ImageClick() {
   return (
