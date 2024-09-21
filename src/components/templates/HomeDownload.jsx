@@ -1,6 +1,7 @@
 import TitleDescription from "../atoms/TitleDescription";
 import BoxDownload from "../molecules/BoxDownload";
 import SliderBestComment from "@/components/organisms/SliderBestComment";
+import React from "react";
 
 function HomeDownload({ isBlackIcon }) {
   return (
