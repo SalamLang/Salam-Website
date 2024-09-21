@@ -1,6 +1,7 @@
 import DownloadItem from "@/components/molecules/DownloadItem";
 import LoadingPage from "@/components/molecules/LoadingPage";
 import { Suspense } from "react";
+import React from "react";
 
 export const metadata = {
   title: "دانلود زبان سلام - برنامه نویسی سلام",
