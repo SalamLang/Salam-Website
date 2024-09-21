@@ -17,9 +17,7 @@ jobs:
           node-version: 22
       - name: Installing bun
         run: |
-          curl -fsSL https://bun.sh/install | bash
-          source /home/runner/.bashrc
-          ./bun --help
+          curl -fsSL https://bun.sh/install | bash && ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
       - name: Installing dependencies
         run: bun install
       - name: Running tests
