@@ -37,3 +37,8 @@ next-env.d.ts
 
 .idea/
 .idea/*
+
+# Bun files
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map
