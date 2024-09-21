@@ -10,6 +10,7 @@ import { useScrollBlock } from "@/hooks/useScrollBlock ";
 import NavItem from "./NavItem";
 import { getRoute } from "@/utils/constants/getRoutes";
 import ToggleMode from "./ToggleMode";
+import React from "react";
 
 function MenuListMobile() {
   const { isOpen, setIsOpen } = useContext(ToggleMenuContext);
