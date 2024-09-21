@@ -1,6 +1,7 @@
 import Gif from '../atoms/Gif'
 import ImageClick from '../atoms/ImageClick'
 import TitleDescription from '../atoms/TitleDescription'
+import React from "react";
 
 function SectionInstall() {
   return (
