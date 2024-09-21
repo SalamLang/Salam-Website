@@ -4,6 +4,7 @@ import CarectersDownload from "@/components/molecules/CarectersDownload";
 
 import ArrowBottom from "../../../public/svgs/arrowbottom.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
+import React from "react";
 
 function EducationHero() {
   return (
