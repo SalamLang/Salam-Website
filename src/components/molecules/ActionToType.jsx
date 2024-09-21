@@ -1,4 +1,5 @@
 import EmojiShape from "../../../public/svgs/emoji-shape.svg";
+import React from "react";
 
 export default function ActionToType() {
   return (
