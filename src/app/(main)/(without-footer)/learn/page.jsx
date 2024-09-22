@@ -4,7 +4,7 @@ import DoobleEmoji from "../../../../../public/svgs/dooble-emoji.svg";
 
 export default function page() {
   return (
-    <div className="w-full h-full flex-grow flex flex-col justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-14 xl:gap-16 overflow-hidden">
+    <div className="w-full h-full flex-grow flex p-6 flex-col justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-14 xl:gap-16 overflow-hidden">
       <TitleDescription
         title="فهرست متن های زبان سلام"
         description="قسمت اسناد اولین زبان برنامه نویسی به نام سلام خوش اومدید"
