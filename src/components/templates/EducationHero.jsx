@@ -1,10 +1,10 @@
-import Button from "@/components/atoms/Button";
 import Gif from "@/components/atoms/Gif";
 import CarectersDownload from "@/components/molecules/CarectersDownload";
 
 import ArrowBottom from "../../../public/svgs/arrowbottom.svg";
 import TitleDescription from "@/components/atoms/TitleDescription";
 import React from "react";
+import { Button } from "../common/Button";
 
 function EducationHero() {
   return (
@@ -18,16 +18,14 @@ function EducationHero() {
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
       <Button
-        text="برو بریم"
-        variant="buttonBlue2"
-        type="link"
-        href="/"
-        icon={
-          <span>
-            <ArrowBottom />
-          </span>
-        }
-      />
+        intent="primary"
+        rounded="full"
+        className="flex justify-center items-center gap-1 !bg-white !text-text-button-orange2"
+        link="/playground"
+      >
+        برو بریم
+        <ArrowBottom className="relative top-0.5 scale-90" />
+      </Button>
     </div>
   );
 }
