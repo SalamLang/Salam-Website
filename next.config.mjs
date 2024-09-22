@@ -20,6 +20,11 @@ const nextConfig = {
         hostname: "logo.samandehi.ir",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "trustseal.enamad.ir",
+        pathname: "/**",
+      },
     ],
   },
   webpack(config) {
