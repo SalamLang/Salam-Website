@@ -5,7 +5,7 @@ import { Button } from "../common/Button";
 
 function EducationDownload() {
   return (
-    <div className="flex items-center justify-center flex-col gap-5">
+    <div className="flex items-center justify-center flex-col gap-5" id="download-section">
       <TitleDescription title="اولین قدم اینه که میری برای دانلود نرم افزار" />
       <div className={"-translate-y-1/3"}>
         <Button
