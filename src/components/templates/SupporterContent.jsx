@@ -21,15 +21,19 @@ export default function SupporterContent() {
                 در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
                 نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
                 کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان"
-                descClass={"dark:!text-white/90"}
+                descClass={
+                  "dark:!text-white/90 text-xs md:text-sm lg:text-base"
+                }
               />
             </div>
           </div>
         </div>
-        <div className="w-1/4 h-full flex flex-col justify-between gap-8 items-center">
-          <SupportBox intent="kofi" />
-          <SupportBox intent="opencollective" />
-          <SupportBox intent="patreon" />
+        <div className="w-auto h-full flex justify-center items-center">
+          <div className="w-2/4 h-full flex flex-col justify-between gap-8 items-center">
+            <SupportBox intent="kofi" />
+            <SupportBox intent="opencollective" titleclass="!text-base"  />
+            <SupportBox intent="patreon" />
+          </div>
         </div>
       </div>
     </div>
