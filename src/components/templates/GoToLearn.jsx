@@ -1,9 +1,9 @@
 import React from "react";
 import TitleDescription from "../atoms/TitleDescription";
-import Button from "../atoms/Button";
 
 import ArrowLeft from "../../../public/svgs/arrowleft.svg";
 import CarecterGoToLearn from "../molecules/CarecterGoToLearn";
+import { Button } from "../common/Button";
 
 function GoToLearn() {
   return (
@@ -13,17 +13,14 @@ function GoToLearn() {
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
       <Button
-        text="بزن بریم"
-        variant="buttonBlue"
-        type="link"
-        href="/playground"
-        className="!z-20"
-        icon={
-          <span>
-            <ArrowLeft />
-          </span>
-        }
-      />
+        intent="primary"
+        rounded="full"
+        className="flex justify-center items-center gap-1"
+        link="/playground"
+      >
+        بزن بریم
+        <ArrowLeft className="relative top-0.5 scale-75" />
+      </Button>
       <CarecterGoToLearn />
     </div>
   );
