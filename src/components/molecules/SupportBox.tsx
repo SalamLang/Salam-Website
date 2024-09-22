@@ -13,30 +13,12 @@ const SupportBoxClass = cva(
   {
     variants: {
       intent: {
-        patreon: [
-          "text-black",
-          "border-black",
-        ],
-        buymeacoffee: [
-          "text-yellow-600",
-          "border-yellow-600",
-        ],
-        issuehunt: [
-          "text-green-700",
-          "border-green-700",
-        ],
-        kofi: [
-          "text-sky-600",
-          "border-sky-600",
-        ],
-        liberapay: [
-          "text-black",
-          "border-black",
-        ],
-        opencollective: [
-          "text-indigo-400",
-          "border-indigo-400",
-        ],
+        patreon: ["text-black", "border-black", "dark:invert"],
+        buymeacoffee: ["text-yellow-600", "border-yellow-600"],
+        issuehunt: ["text-green-700", "border-green-700"],
+        kofi: ["text-sky-600", "border-sky-600"],
+        liberapay: ["text-black", "border-black", "dark:invert"],
+        opencollective: ["text-indigo-400", "border-indigo-400"],
       },
     },
     defaultVariants: {
@@ -47,11 +29,14 @@ const SupportBoxClass = cva(
 
 export interface DivProps
   extends React.HtmlHTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof SupportBoxClass> {}
+    VariantProps<typeof SupportBoxClass> {
+      titleclass?: string;
+    }
 
 export const SupportBox: React.FC<DivProps> = ({
   className,
   intent = "patreon",
+  titleclass,
   ...props
 }) => {
   const getIcon = (intent: string): string => {
@@ -83,7 +68,7 @@ export const SupportBox: React.FC<DivProps> = ({
   return (
     <div className={SupportBoxClass({ intent, className })} {...props}>
       <Image src={getIcon(intent)} width={50} height={50} alt={intent} />
-      <h2 className="font-Estedad-SemiBold text-lg uppercase">{intent}</h2>
+      <h2 className={`font-Estedad-SemiBold text-lg uppercase ${titleclass || ""}`}>{intent}</h2>
     </div>
   );
 };
