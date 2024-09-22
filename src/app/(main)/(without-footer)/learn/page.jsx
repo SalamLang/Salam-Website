@@ -2,6 +2,13 @@ import TitleDescription from "@/components/atoms/TitleDescription";
 import React from "react";
 import DoobleEmoji from "../../../../../public/svgs/dooble-emoji.svg";
 
+export const metadata = {
+  title: "اسناد زبان سلام - برنامه نویسی سلام",
+  description:
+    "به قسمت اسناد اولین زبان برنامه نویسی به نام سلام خوش آمدید. در اینجا می‌توانید فهرست متن‌های زبان سلام را مشاهده کنید",
+  author: "تیم برنامه نویسی زبان سلام",
+};
+
 export default function page() {
   return (
     <div className="w-full h-full flex-grow flex p-6 flex-col justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-14 xl:gap-16 overflow-hidden">
