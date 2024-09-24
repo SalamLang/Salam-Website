@@ -6,7 +6,7 @@ import Design from "../../../public/svgs/designicon.svg";
 import Lamp from "../../../public/svgs/lampicon.svg";
 import React from "react";
 
-function ImageBoxAdvantage({ variant }) {
+function ImageBoxAdvantage({ variant , className }) {
   let classes = "scale-[0.85] brightness-0";
   let svgComponent = null;
 
@@ -37,7 +37,7 @@ function ImageBoxAdvantage({ variant }) {
       break;
   }
   return (
-    <div className="bg-bg-button-green w-24 h-24 rounded-3xl flex items-center justify-center">
+    <div className={`bg-bg-button-green w-24 h-24 rounded-3xl flex items-center justify-center ${className || ""}`}>
       {svgComponent}
     </div>
   );
