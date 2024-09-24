@@ -6,11 +6,11 @@ import TitleDescription from "../atoms/TitleDescription";
 
 export default function WantSupporter() {
   return (
-    <div className="w-full min-h-[300px] md:min-h-[500px] h-full flex flex-col gap-4 md:gap-7 justify-center items-center">
+    <div className="max-w-[476px] w-10/12 md:w-full min-h-[300px] py-36 md:min-h-[500px] h-full flex flex-col gap-4 md:gap-7 justify-center items-center">
       <TitleDescription
         title="من میخوام حامی بشم چیکار کنم ؟"
-        description="برای حامی شدم روی دکمه ی زیر بزنید و ما چندتا حامی هم داریم میتونی
-        ببینید به سادگی بفرما !"
+        description="برای حامی شدن روی دکمه ی زیر بزن و ما چندتا حامی هم داریم میتونی
+        ببینی به سادگی بفرما !"
       />
       <Button
         intent="crimson"
