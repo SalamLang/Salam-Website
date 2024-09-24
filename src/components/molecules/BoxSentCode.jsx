@@ -52,23 +52,27 @@ function BoxSentCode() {
           action=""
           onSubmit={formik.handleSubmit}
           className={
-            "bg-light-orange relative max-w-[400px] md:max-w-[500px] w-full h-full max-sm:h-5/6 rounded-[40px] flex items-center justify-between max-sm:px-1.5 px-2 max-sm:py-1 py-1.5 md:p-2.5"
+            "bg-light-orange relative max-w-[400px] md:max-w-[500px] w-full h-full max-sm:h-5/6 rounded-[40px] flex flex-row-reverse items-center justify-between max-sm:px-1.5 px-2 max-sm:py-1 py-1.5 md:p-2.5"
           }
         >
-          <div className="w-full flex gap-1 md:gap-4 items-center justify-start -translate-x-1.5">
-            <Mobile className="max-sm:scale-[0.55] max-md:scale-[0.65] scale-75 opacity-50 brightness-0" />
-            <div className="bg-black/10 !rounded-full max-sm:w-[1.5px] w-[2px] ml-1  h-[30px]"></div>
+          <div className="relative w-full flex flex-row-reverse gap-1 md:gap-4 items-center justify-start">
+            <div className="w-[30px]">
+              <Mobile className="max-sm:scale-[0.55] max-md:scale-[0.65] scale-75 opacity-25 brightness-0" />
+            </div>
+            <div className="bg-black/[0.05] !rounded-full max-sm:w-[1.5px] mr-1 w-[2px] h-[30px]"></div>
             <Input
               type="text"
-              placeholder="مثال: ۰۹۹۱۳۹۱۵۲۵۴"
+              placeholder="۰۹۹۱۳۹۱۵۲۵۴"
               maxLength={11}
               className={
-                "placeholder:opacity-45 h-full placeholder:max-sm:text-sm"
+                "placeholder:opacity-25 h-full placeholder:max-sm:text-sm"
               }
+              dir="ltr"
               {...formik.getFieldProps("number")}
               onChange={handleChange}
             />
           </div>
+          <span className="text-xs sm:text-sm md:text-base opacity-25 mr-1">مثال:</span>
           <Button
             intent="orange"
             size="medium"
@@ -78,7 +82,7 @@ function BoxSentCode() {
             disabled={isPending}
           >
             {isPending ? (
-              <LoaderIcon className="!w-5 !h-5 m-1.5" />
+              <LoaderIcon className="max-md:!w-4 max-md:!h-4 !w-5 !h-5 m-1.5" />
             ) : (
               "ارسال کد"
             )}
@@ -92,7 +96,7 @@ function BoxSentCode() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 20, opacity: 0 }}
-              className="absolute max-sm:text-xs max-md:text-sm !text-rose-600"
+              className="absolute max-sm:text-xs max-md:text-sm !text-bg-main"
             >
               {formik.errors.number}
             </motion.p>
