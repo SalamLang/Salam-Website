@@ -8,7 +8,7 @@ import React from "react";
 function ImageClick() {
   return (
     <Link
-      href="/404"
+      href="/download"
       className="w-fit h-fit flex items-center justify-center relative"
     >
       <Image src={BgCursor} alt="bgclick" />
