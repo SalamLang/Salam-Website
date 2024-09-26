@@ -7,6 +7,7 @@ import Kofi from "../../../public/images/supportlogos/kofi.png";
 import Liberapay from "../../../public/images/supportlogos/liberapay.png";
 import Opencollective from "../../../public/images/supportlogos/opencollective.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const SupportBoxClass = cva(
   "min-w-60 max-md:w-full w-full min-h-20 bg-transparent flex flex-row-reverse border-2 justify-start px-4 items-center gap-4 rounded-xl",
@@ -30,8 +31,8 @@ const SupportBoxClass = cva(
 export interface DivProps
   extends React.HtmlHTMLAttributes<HTMLDivElement>,
     VariantProps<typeof SupportBoxClass> {
-      titleclass?: string;
-    }
+  titleclass?: string;
+}
 
 export const SupportBox: React.FC<DivProps> = ({
   className,
@@ -68,7 +69,13 @@ export const SupportBox: React.FC<DivProps> = ({
   return (
     <div className={SupportBoxClass({ intent, className })} {...props}>
       <Image src={getIcon(intent)} width={50} height={50} alt={intent} />
-      <h2 className={`font-Estedad-SemiBold text-lg uppercase ${titleclass || ""}`}>{intent}</h2>
+      <h2
+        className={`font-Estedad-SemiBold text-lg uppercase ${
+          titleclass || ""
+        }`}
+      >
+        {intent}
+      </h2>
     </div>
   );
 };
