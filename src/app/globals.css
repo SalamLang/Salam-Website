@@ -150,3 +150,11 @@
   width: 25px !important;
   height: 25px !important;
 }
+
+.mark-down div h1 {
+  @apply !text-2xl !font-Estedad-Bold !text-[#000000] !mt-4 mb-1;
+}
+
+.mark-down div h2 {
+  @apply !text-xl !font-Estedad-Medium !text-[#000000] !mt-4 mb-1;
+}
