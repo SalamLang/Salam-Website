@@ -11,6 +11,7 @@ function Faq() {
         <TitleDescription
             title="توی این قسمت میتونی سوالات متداول رو ببینی"
             description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
+            headerClass="max-md:!text-2xl max-sm:!text-xl"
         />
         <AccordionContainer />
     </div>
