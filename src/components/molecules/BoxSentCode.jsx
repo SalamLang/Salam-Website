@@ -57,7 +57,7 @@ function BoxSentCode() {
         >
           <div className="relative w-full flex flex-row-reverse gap-1 md:gap-4 items-center justify-start">
             <div className="w-[30px]">
-              <Mobile className="max-sm:scale-[0.55] max-md:scale-[0.65] scale-75 opacity-25 brightness-0" />
+              <Mobile className="max-sm:scale-[0.55] max-md:scale-[0.65] scale-75 opacity-45 brightness-0" />
             </div>
             <div className="bg-black/[0.05] !rounded-full max-sm:w-[1.5px] mr-1 w-[2px] h-[30px]"></div>
             <Input
@@ -65,14 +65,18 @@ function BoxSentCode() {
               placeholder="۰۹۹۱۳۹۱۵۲۵۴"
               maxLength={11}
               className={
-                "placeholder:opacity-25 h-full placeholder:max-sm:text-sm"
+                "placeholder:opacity-45 h-full placeholder:max-sm:text-sm"
               }
               dir="ltr"
               {...formik.getFieldProps("number")}
               onChange={handleChange}
             />
           </div>
-          <span className="text-xs sm:text-sm md:text-base opacity-25 mr-1">مثال:</span>
+          {formik.values.number.length === 0 && (
+            <span className="text-xs sm:text-sm md:text-base opacity-45 mr-3">
+              مثال:
+            </span>
+          )}
           <Button
             intent="orange"
             size="medium"
