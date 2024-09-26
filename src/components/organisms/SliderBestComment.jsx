@@ -40,7 +40,6 @@ function SliderBestComment() {
     <div className={"overflow-hidden w-full"}>
       <Swiper
         slidesPerView={1}
-        centeredSlides={true}
         className={"!max-w-[672px] w-full comment_slider"}
         pagination={{ clickable: true }}
         navigation={true}
