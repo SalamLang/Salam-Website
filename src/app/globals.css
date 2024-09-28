@@ -121,12 +121,14 @@
   opacity: 100 !important;
 }
 
-
 .orange-scrollbar::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
   background-color: var(--bg-button-orange2);
 }
-
+.orange-scrollbar::-webkit-scrollbar-track {
+  @apply bg-white dark:bg-gray-800;
+}
 .orange-scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--bg-button-orange);
   border-radius: 5px;
@@ -151,10 +153,20 @@
   height: 25px !important;
 }
 
+.mark-down div {
+  @apply overflow-auto p-2 text-gray-900 dark:text-white transition-colors;
+}
 .mark-down div h1 {
-  @apply !text-2xl !font-Estedad-Bold !text-[#000000] !mt-4 mb-1;
+  @apply !text-2xl max-md:!text-xl !font-Estedad-Bold mb-1;
 }
 
 .mark-down div h2 {
-  @apply !text-xl !font-Estedad-Medium !text-[#000000] !mt-4 mb-1;
+  @apply !text-xl max-md:!text-lg !font-Estedad-SemiBold mt-8 mb-2;
+}
+.mark-down div p {
+  @apply !text-sm max-md:!text-xs !font-Estedad-Medium;
+}
+
+.mark-down div pre {
+  @apply !overflow-auto;
 }
