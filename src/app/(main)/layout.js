@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
             },
           }}
         />
-        <div className="relative w-full min-h-screen overflow-auto flex transition-colors dark:bg-gray-900 flex-col flex-grow justify-start">
+        <div className="relative w-full min-h-screen flex transition-colors dark:bg-gray-900 flex-col flex-grow justify-start">
           <SwitchHeader />
           <FixedMenu />
           <div className="w-full h-full flex flex-col flex-grow">
