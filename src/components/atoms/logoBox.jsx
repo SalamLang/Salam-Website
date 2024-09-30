@@ -10,7 +10,6 @@ function LogoBox() {
         <Link href={"/"}>
         <LogoSvg/>
         </Link>
-      
       </div>
     </div>
   )
