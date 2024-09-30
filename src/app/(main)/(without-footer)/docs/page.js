@@ -1,6 +1,7 @@
 import DocsSidebar from "@/components/templates/DocsSidebar";
 import DocsContent from "@/components/templates/DocsContent";
 import React from "react";
+import ToggleDocSidebar from "@/components/templates/ToggleDocSidebar";
 
 export const metadata = {
   title: "آموزش زبان سلام - برنامه نویسی زبان سلام",
@@ -11,9 +12,10 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="w-full px-5 py-5 h-full flex gap-5 flex-grow overflow-hidden">
+    <div className="w-full px-5 py-5 h-full flex gap-5 flex-grow">
       <DocsSidebar />
       <DocsContent />
+      <ToggleDocSidebar />
     </div>
   );
 };
