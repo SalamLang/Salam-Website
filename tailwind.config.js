@@ -25,7 +25,7 @@ module.exports = {
         "Graphik-Regular": "GraphikRegular",
       },
       colors: {
-        "bg-main": "var(--bg-main)",
+        "bg-main": "#ff5c00",
         "bg-box": "var(--bg-box)",
         "bg-box2": "var(--bg-box2)",
         "bg-button-orange": "var(--bg-button-orange)",
