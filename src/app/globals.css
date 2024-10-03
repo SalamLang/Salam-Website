@@ -170,3 +170,6 @@
 .mark-down div pre {
   @apply !overflow-auto;
 }
+.dynamic-width{
+  width: calc(100% - 300px);
+}
