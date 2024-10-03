@@ -18,7 +18,7 @@ function NotFound() {
     <NotFoundLayout>
       <div className="flex flex-col items-center overflow-hidden mb-10 justify-center gap-14">
         <div className="relative w-full sm:w-fit flex items-center justify-center">
-          <Gif variant="Gif404"></Gif>
+          <Gif variant="Gif404" />
           <CarectersNotFound />
         </div>
         <TitleDescription
