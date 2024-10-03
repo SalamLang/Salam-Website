@@ -24,6 +24,7 @@ jobs:
             cd ${{ secrets.SERVER_PATH }}
             git fetch --all
             git pull
+            npm i -g bun
             bun install --force
             bun run build
             if [ $? -eq 0 ]; then
