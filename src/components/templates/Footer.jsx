@@ -56,7 +56,7 @@ function Footer() {
               referrerPolicy="origin"
               src="https://trustseal.enamad.ir/logo.aspx?id=529005&Code=Gx6PecZik5vUpVJkVsATqoYQS1NADBAc"
               alt="enmad"
-              style="cursor:pointer"
+              style={{ cursor: "pointer" }}
               code="Gx6PecZik5vUpVJkVsATqoYQS1NADBAc"
             />
           </a>
