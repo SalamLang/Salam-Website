@@ -6,7 +6,6 @@ import { DocsContext } from "@/utils/contexts/DocsProvider";
 
 export default function ToggleDocSidebar() {
   const { setIsOpenMenu, isOpenMenu } = useContext(DocsContext);
-  console.log(isOpenMenu);
   return (
     <motion.div
       whileHover={{ y: -5 }}
