@@ -74,6 +74,8 @@ module.exports = {
         "dark-green": "var(--dark-green)",
         "footer-green": "rgba(142, 214, 89, 1)",
         dark: "rgba(24, 25, 31, 1)",
+        "blue-box": "#276EF6",
+        "green-box":"#8CFD33",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
