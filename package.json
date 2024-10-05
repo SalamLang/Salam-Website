@@ -11,7 +11,6 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@ducanh2912/next-pwa": "^10.2.9",
     "@eslint/config-array": "^0.18.0",
     "@eslint/object-schema": "^2.1.4",
     "@svgr/webpack": "^8.1.0",
@@ -41,8 +40,8 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.8",
-    "eslint": "^9.11.0",
-    "eslint-config-next": "14.2.14",
+    "eslint": "^9.12.0",
+    "eslint-config-next": "^14.2.14",
     "jest": "^29.7.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.12",
