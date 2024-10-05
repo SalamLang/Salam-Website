@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://api.test.com/v1/";
+const baseURL = "https://auth.salamlang.ir/api/mobile";
 
 const instance = axios.create({
   baseURL,
