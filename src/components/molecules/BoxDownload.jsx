@@ -19,25 +19,25 @@ function BoxDownload({ variant, className, imgClass, isBlack, href }) {
       classes;
       svgComponent = <Linux className={classes} />;
       title = "لینوکس";
-      description = "12 مگابایت";
+      description = "۱۲ مگابایت";
       break;
     case "Mac":
       classes;
       svgComponent = <Mac className={classes} />;
       title = "مک";
-      description = "47 مگابایت";
+      description = "۴۷ مگابایت";
       break;
     case "Android":
       classes;
       svgComponent = <Android className={classes} />;
       title = "اندروید";
-      description = "56 مگابایت";
+      description = "۵۶ مگابایت";
       break;
     case "Windows":
       classes;
       svgComponent = <Windows className={classes} />;
       title = "ویندوز";
-      description = "27 مگابایت";
+      description = "۲۷ مگابایت";
       break;
     case "Pwa":
       classes;
