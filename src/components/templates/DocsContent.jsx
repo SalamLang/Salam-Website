@@ -8,7 +8,7 @@ async function DocsContent() {
 
   return (
     <DocsContainer className={"!w-[10rem]"}>
-      <div className="mark-down">
+      <div className="mark-down" id="mark-down">
         <MarkDownDocsContent mark_down={markdownContent} />
       </div>
     </DocsContainer>
