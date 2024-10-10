@@ -17,7 +17,7 @@ function DocsSidebar() {
             animate={{ x: 0 }}
             exit={{ x: "100vw" }}
             transition={{ type: "keyframes" }}
-            className="text-white items-center w-full p-4 bg-gray-100/20 flex-grow dark:bg-gray-700/20 backdrop-blur-xl rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 max-w-[15rem] h-screen !sticky max-md:!fixed inset-0 max-md:!top-0 !z-40 !top-28 py-10"
+            className="text-white !overflow-auto orange-scrollbar items-center w-full p-4 bg-gray-100/20 flex-grow dark:bg-gray-700/20 backdrop-blur-xl rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 max-w-[15rem] h-screen !sticky max-md:!fixed inset-0 max-md:!top-0 !z-40 !top-28 py-10"
           >
             <LogoBox />
             <SidebarMenu />
