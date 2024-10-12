@@ -11,6 +11,7 @@ function SecondHeader({ className }) {
   return (
     <div
       className={`relative w-full shadow-2xl transition-colors shadow-black/[0.05] dark:shadow-gray-600/[0.05] dark:bg-gray-900/80 dark:text-white ${className}`}
+      id="second-header"
     >
       <header
         className={
