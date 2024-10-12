@@ -18,6 +18,36 @@ export default function MarkDownDocsContent({ mark_down }) {
               );
             },
           },
+          h2: {
+            component: ({ children, ...props }) => {
+              const id = children.toString();
+              return (
+                <h2 {...props} id={id}>
+                  {children}
+                </h2>
+              );
+            },
+          },
+          h3: {
+            component: ({ children, ...props }) => {
+              const id = children.toString();
+              return (
+                <h3 {...props} id={id}>
+                  {children}
+                </h3>
+              );
+            },
+          },
+          h4: {
+            component: ({ children, ...props }) => {
+              const id = children.toString();
+              return (
+                <h4 {...props} id={id}>
+                  {children}
+                </h4>
+              );
+            },
+          },
         },
       }}
     >
