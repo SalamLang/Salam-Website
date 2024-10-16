@@ -7,7 +7,7 @@ async function DocsContent() {
   const markdownContent = await getReadmeContent();
 
   return (
-    <DocsContainer className={"!w-[10rem]"}>
+    <DocsContainer>
       <div className="mark-down" id="mark-down">
         <MarkDownDocsContent mark_down={markdownContent} />
       </div>
