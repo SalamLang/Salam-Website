@@ -5,7 +5,6 @@ import React, { useEffect } from "react";
 function SidebarMenu() {
   useEffect(() => {
     const updateMenu = () => {
-
       // start initial position box
       const box = document.getElementById("box");
       box.style.transform = `translateY(${45}px)`;
@@ -119,6 +118,11 @@ function SidebarMenu() {
         box.style.height = `${increasedHeight + 8}px`;
         box.style.top = "-4px";
         box.style.width = `${tagItemSidebar.clientWidth || 20}px`;
+
+        tagItemSidebar.scrollIntoView({
+          block: "nearest",
+          behavior: "smooth",
+        });
       }
     };
 
