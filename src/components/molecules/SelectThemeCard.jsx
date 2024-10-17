@@ -8,11 +8,12 @@ export default function SelectThemeCard({
   titleSelectTheme,
   spanText,
   isActive,
+  onClick,
   ...attr
 }) {
   return (
-    <div className="w-auto h-auto flex flex-col justify-center items-center gap-2">
-      <div className="w-auto h-auto relative cursor-pointer" {...attr}>
+    <div className="w-auto h-auto flex flex-col justify-center items-center gap-2" onClick={onClick} {...attr}>
+      <div className="w-auto h-auto relative cursor-pointer">
         <ModeLight />
         <AnimatePresence>
           {isActive && (
