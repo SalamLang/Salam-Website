@@ -5,20 +5,16 @@ import Modal from "../common/Modal";
 import CloseSvg from "../../../public/svgs/svg-close-box.svg";
 import { Button } from "../common/Button";
 import { useScrollBlock } from "@/hooks/useScrollBlock ";
-import { LayoutContext } from "@/utils/contexts/LayoutProvider";
 
 const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
   const [blockScroll, allowScroll] = useScrollBlock();
-  const { setIsFixedHeaderHidden } = useContext(LayoutContext);
 
   useEffect(() => {
     if (isOpen) {
       blockScroll();
-      setIsFixedHeaderHidden(true);
     } else allowScroll();
 
     return () => {
-      setIsFixedHeaderHidden(false)
       allowScroll();
     };
   }, [blockScroll, allowScroll, isOpen]);
