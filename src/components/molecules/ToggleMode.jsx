@@ -1,28 +1,21 @@
 "use client";
 
 import React, { useContext, useEffect, useState } from "react";
-import "@theme-toggles/react/css/Classic.css";
-import { Classic } from "@theme-toggles/react";
 import { LayoutContext } from "@/utils/contexts/LayoutProvider";
+import SunMoonToggle from "../templates/SunMoonToggle";
 
 export default function ToggleMode() {
-  const {theme, setTheme } = useContext(LayoutContext);
-  const [isToggle,setIsToggle] = useState(()=>{
-    if(theme === "dark" || theme === "system") return true;
-    else return false
-  })
-
-  useEffect(() => {
+  const { setTheme, isToggle, setIsToggle } = useContext(LayoutContext);
+  const handleToggle = () => {
+    setIsToggle(!isToggle);
     if (isToggle) {
-      setTheme("dark");
-    } else {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
-  }, [isToggle, setTheme]);
+  };
 
   return (
-    <>
-      <Classic className="!opacity-50 dark:!opacity-70" duration={750} toggled={isToggle} toggle={setIsToggle} />
-    </>
+    <SunMoonToggle isToggle={isToggle} onClick={handleToggle} />
   );
 }
