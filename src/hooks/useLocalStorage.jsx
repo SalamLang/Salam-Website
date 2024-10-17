@@ -1,36 +1,49 @@
-"use client";
+import { useState, useEffect } from "react";
 
-import { useState } from "react";
-
-const IS_SERVER = typeof window === "undefined";
-
-const useLocalStorage = (key, initialValue) => {
-  const [state, setState] = useState(() => {
-    // Initialize the state
-    try {
-      const value = IS_SERVER ? null : window.localStorage.getItem(key);
-      // Check if the local storage already has any values,
-      // otherwise initialize it with the passed initialValue
-      return value && !IS_SERVER ? JSON.parse(value) : initialValue;
-    } catch (error) {
-      console.log(error);
+function useLocalStorage(key, initialValue) {
+  // Get from local storage then
+  // parse stored json or return initialValue
+  const readValue = () => {
+    if (typeof window === "undefined") {
+      return initialValue;
     }
-  });
 
-  const setValue = (value) => {
     try {
-      // If the passed value is a callback function,
-      //  then call it with the existing state.
-      const valueToStore = value instanceof Function ? value(state) : value;
-      if (IS_SERVER)
-        window.localStorage.setItem(key, JSON.stringify(valueToStore));
-      setState(value);
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
     } catch (error) {
-      console.log(error);
+      console.warn(`Error reading localStorage key “${key}”:`, error);
+      return initialValue;
     }
   };
 
-  return [state, setValue];
-};
+  // State to store our value
+  const [storedValue, setStoredValue] = useState(readValue);
+
+  // Return a wrapped version of useState's setter function that
+  // persists the new value to localStorage.
+  const setValue = (value) => {
+    try {
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+
+      // Save state
+      setStoredValue(valueToStore);
+
+      // Save to local storage
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      console.warn(`Error setting localStorage key “${key}”:`, error);
+    }
+  };
+
+  useEffect(() => {
+    setStoredValue(readValue());
+  }, []);
+
+  return [storedValue, setValue];
+}
 
 export default useLocalStorage;
