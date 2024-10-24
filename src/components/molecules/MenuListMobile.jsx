@@ -51,7 +51,7 @@ function MenuListMobile() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed w-full h-full inset-0 bg-black/10 dark:bg-white/10 z-[1000] backdrop-blur-sm"
+          className="fixed w-full min-h-screen h-full inset-0 bg-black/40 z-50 backdrop-blur-sm"
           onClick={handleClose}
         >
           <motion.ul
