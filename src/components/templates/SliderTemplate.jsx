@@ -92,7 +92,7 @@ const SliderTemplate = () => {
         spaceBetween={30}
         centeredSlides={true}
         slidesPerView={perViewSlide}
-        onSlideChange={(swiper) => console.log(swiper)}
+        // onSlideChange={(swiper) => console.log(swiper)}
         loop={true}
         pagination={{ clickable: true }}
         className="comment_slider2 !p-6 !pb-10"
