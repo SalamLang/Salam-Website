@@ -27,7 +27,7 @@ function Footer() {
             />
           </div>
         </div>
-        <hr className="w-full h-1 bg-border-grey lg:hidden" />
+        <hr className="w-full h-1 bg-border-grey dark:opacity-10 lg:hidden" />
         <div className="w-auto h-auto flex justify-center items-center gap-3">
           <InteractiveImage
             referrerPolicy="no-referrer"
