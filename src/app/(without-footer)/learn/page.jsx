@@ -1,7 +1,6 @@
 import TitleDescription from "@/components/atoms/TitleDescription";
 import React from "react";
-import DoobleEmoji from "../../../../../public/svgs/dooble-emoji.svg";
-import { Button } from "@/components/common/Button";
+import DoobleEmoji from "../../../../public/svgs/dooble-emoji.svg";
 import { BoxLearn } from "@/components/molecules/BoxLearn";
 
 export const metadata = {
