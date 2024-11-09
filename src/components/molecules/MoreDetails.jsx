@@ -13,8 +13,8 @@ export default function MoreDetails() {
       <div className="w-full h-full flex flex-col gap-10 justify-start items-center">
         <ControlsVersion />
         <div className="w-full h-auto flex flex-col gap-2">
-          <h2 className="text-lg font-Estedad-Medium text-bg-main">
-            برای تعویض نسخه سلام روی نسخه کلیک کنید
+          <h2 className="text-lg font-Estedad-Medium">
+            برای تعویض نسخه سلام روی <span className="text-bg-main">دکمه تعویض نسخه</span> کلیک کنید
           </h2>
           <p className="text-[17px] font-Estedad-Medium opacity-50">
             سلام زبانی کاملا فارسی ویژه سنین ۱۰ تا ۱۵ سال ولی هیچ محدودیتی نیس
