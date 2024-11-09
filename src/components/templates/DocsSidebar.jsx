@@ -35,23 +35,20 @@ function DocsSidebar() {
 
   return (
     <>
-      <AnimatePresence>
-        {isOpenMenu && (
-          <motion.div
-            initial={{ x: "100vw" }}
-            animate={{
-              x: isOpenMenu ? 0 : "100vw",
-            }}
-            exit={{ x: "100vw" }}
-            transition={{ type: "keyframes", duration: 0.1 }}
-            className="text-white min-w-[15rem] !overflow-auto transition-all orange-scrollbar items-center w-full p-4 bg-gray-100/20 flex-grow dark:bg-gray-700/20 backdrop-blur-xl rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 max-w-[15rem] h-screen !sticky max-md:!fixed inset-0 !z-50 py-10"
-            id="sidebar"
-          >
-            <LogoBox />
-            <SidebarMenu />
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <motion.div
+        initial={{ x: "100vw" , visibility: "hidden" }}
+        animate={{
+          x: isOpenMenu ? 0 : "100vw",
+          visibility: isOpenMenu ? "visible" : "hidden",
+        }}
+        exit={{ x: "100vw", visibility: "hidden" }}
+        transition={{ type: "keyframes", duration: 0.1 }}
+        className="text-white min-w-[15rem] !overflow-auto transition-all orange-scrollbar items-center w-full p-4 bg-gray-100/20 flex-grow dark:bg-gray-700/20 backdrop-blur-xl rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 max-w-[15rem] h-screen !sticky max-md:!fixed inset-0 !z-50 py-10"
+        id="sidebar"
+      >
+        <LogoBox />
+        <SidebarMenu />
+      </motion.div>
     </>
   );
 }
