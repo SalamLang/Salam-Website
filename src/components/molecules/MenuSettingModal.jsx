@@ -16,12 +16,19 @@ const MenuSetting = ({ page, setPage }) => {
           size="medium"
           className={`!w-full !text-black transition-colors !text-sm !font-Estedad-Medium !py-3 flex justify-center items-center gap-1 ${
             page === item.id
-              ? "bg-cream-light"
+              ? "bg-cream-light !invert-0"
               : "!bg-transparent dark:!text-white"
           }`}
           onClick={() => setPage(item.id)}
         >
-          {item.title} {item.icon}
+          {item.title}{" "}
+          {item.id !== 2 ? (
+            item.icon
+          ) : (
+            <MoreThreeDots
+              className={`${page === item.id ? "invert-0" : "invert"}`}
+            />
+          )}
         </Button>
       ))}
     </div>
