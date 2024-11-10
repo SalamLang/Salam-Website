@@ -7,7 +7,7 @@ async function DocsContent() {
   const markdownContent = await getReadmeContent();
 
   return (
-    <DocsContainer>
+    <DocsContainer className="min-w-[5rem]">
       <div className="mark-down" id="mark-down">
         <MarkDownDocsContent mark_down={markdownContent} />
       </div>
