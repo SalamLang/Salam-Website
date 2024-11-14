@@ -157,15 +157,31 @@
   @apply overflow-auto p-2 text-gray-900 dark:text-white transition-colors;
 }
 .mark-down div h1 {
-  @apply !text-2xl max-md:!text-xl !font-Estedad-Bold mb-1;
+  @apply !text-2xl max-md:!text-xl !font-Estedad-Bold mb-1 dark:bg-gray-500/20 border-2 border-gray-700/50 text-center p-2 rounded-xl;
 }
 
 .mark-down div h2 {
-  @apply !text-xl max-md:!text-lg !font-Estedad-SemiBold mt-8 mb-2;
+  @apply !text-xl max-md:!text-lg !font-Estedad-SemiBold mb-1 mt-6;
 }
+.mark-down div h2::before {
+  content: "📖";
+  display: inline;
+  margin-left: 4px;
+}
+
 .mark-down div p {
-  @apply !text-sm max-md:!text-xs !font-Estedad-Medium;
+  @apply !text-sm max-md:!text-xs !font-Estedad-Medium mt-1 mb-6 !leading-[2.2];
 }
+
+.mark-down div ul {
+  @apply flex flex-col !space-y-1;
+}
+.mark-down div ul li::before{
+  content: "📌";
+  display: inline;
+  margin-left: 4px;
+}
+
 
 .mark-down div pre {
   @apply !overflow-auto;
