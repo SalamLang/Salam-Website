@@ -2,53 +2,41 @@
 
 import LogoBox from "../atoms/logoBox.jsx";
 import SidebarMenu from "../templates/SidebarMenu.jsx";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { DocsContext } from "@/utils/contexts/DocsProvider";
 
 function DocsSidebar() {
   const { isOpenMenu } = useContext(DocsContext);
-  // const [isSpaceTop, setIsSpaceTop] = useState(false);
-  // const [fixedMenuHeight, setFixedMenuHeight] = useState(0);
 
-  // useEffect(() => {
-  //   const fixedMenu = document.getElementById("second-header");
-
-  //   const handleScroll = () => {
-  //     if (fixedMenu) {
-  //       setFixedMenuHeight(fixedMenu.clientHeight);
-  //     }
-
-  //     if (window.scrollY > 150) {
-  //       setIsSpaceTop(true);
-  //     } else {
-  //       setIsSpaceTop(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  const sidebarVariants = {
+    open: { width: 400, x:0 },
+    closed: { width: 0 , x:"100vw" },
+  };
 
   return (
     <>
       <AnimatePresence>
+        {isOpenMenu && (
           <motion.div
-            initial={{ x: "100vw" }}
-            animate={{
-              x: isOpenMenu ? 0 : "100vw",
-            }}
-            exit={{ x: "100vw" }}
-            transition={{ type: "keyframes", duration: 0.3 }}
-            className="text-white min-w-[15rem] !overflow-auto transition-all orange-scrollbar items-center w-full p-4 bg-gray-100/20 flex-grow dark:bg-gray-700/20 backdrop-blur-xl rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 max-w-[15rem] h-screen !sticky max-md:!fixed inset-0 !z-50 py-10"
-            id="sidebar"
+            key="sidebar"
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={sidebarVariants}
+            className="md:ml-5 max-md:fixed max-md:inset-0 z-50"
+            transition={{ type: "keyframes", stiffness: 260, damping: 20 , duration: 0.3}}
+            style={{ minHeight: "100vh" }}
           >
-            <LogoBox />
-            <SidebarMenu />
+            <div
+              className="text-white !flex-nowrap w-full !text-nowrap !overflow-auto transition-all orange-scrollbar items-center p-4 bg-gray-100/20 dark:bg-gray-700/20 backdrop-blur-xl md:rounded-3xl shadow-2xl shadow-gray-400/50 dark:shadow-gray-700/20 h-screen !sticky max-md:!max-w-[15rem] max-md:!fixed inset-0 !z-50 py-10"
+              id="sidebar"
+            >
+              <LogoBox />
+              <SidebarMenu />
+            </div>
           </motion.div>
+        )}
       </AnimatePresence>
     </>
   );
