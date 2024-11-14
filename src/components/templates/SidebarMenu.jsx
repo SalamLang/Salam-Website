@@ -71,7 +71,7 @@ function SidebarMenu() {
             const target = document.getElementById(h.id);
             const targetPosition =
               target.getBoundingClientRect().top + window.scrollY;
-            const offsetPosition = targetPosition - 100;
+            const offsetPosition = targetPosition;
 
             window.scrollTo({
               top: offsetPosition,
@@ -90,7 +90,7 @@ function SidebarMenu() {
 
       headers.forEach((header) => {
         const rect = header.getBoundingClientRect();
-        const distance = Math.abs(rect.top - 100);
+        const distance = Math.abs(rect.top);
 
         if (distance < minDistance) {
           minDistance = distance;
@@ -117,7 +117,7 @@ function SidebarMenu() {
         const increasedHeight = tagItemSidebar.clientHeight;
         box.style.height = `${increasedHeight + 8}px`;
         box.style.top = "-4px";
-        box.style.width = `${tagItemSidebar.clientWidth || 20}px`;
+        box.style.width = `${tagItemSidebar.clientWidth || 0}px`;
 
         tagItemSidebar.scrollIntoView({
           block: "nearest",
@@ -135,7 +135,7 @@ function SidebarMenu() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative md:min-w-[200px]">
       <div
         className="transition-all duration-300 p-1 bg-gray-600/20 absolute rounded-lg -right-2"
         id="box"
