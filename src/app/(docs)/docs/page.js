@@ -17,7 +17,9 @@ const page = () => {
     <DocsProvider>
       <DocsMainContainer>
         <DocsSidebar />
+
         <DocsContent />
+
         <ToggleDocSidebar />
       </DocsMainContainer>
     </DocsProvider>
@@ -25,3 +27,4 @@ const page = () => {
 };
 
 export default page;
+
