@@ -22,7 +22,7 @@ const ProblemToDownloadModal = ({ isOpen, setIsOpen }) => {
   const onCloseModal = useCallback(() => {
     allowScroll();
     setIsOpen(false);
-  }, [setIsOpen]);
+  }, [allowScroll, setIsOpen]);
   return (
     <>
       <Modal isOpen={isOpen} onClose={onCloseModal} className="overflow-auto">
