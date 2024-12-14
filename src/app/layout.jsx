@@ -7,14 +7,14 @@ import { LayoutProvider } from "@/utils/contexts/LayoutProvider";
 import ProgressBar from "@/components/templates/ProgressBar";
 
 function RootLayout({ children }) {
-  let theme = "light"; // پیش‌فرض
-  if (typeof window === "undefined") {
-    // خواندن کوکی در سمت سرور
-    const { cookies } = require("next/headers");
-    theme = cookies().get("theme")?.value || "light";
-  }
+  // let theme = "light"; // default
+  // if (typeof window === "undefined") {
+  //   // read cookie from server
+  //   const { cookies } = require("next/headers");
+  //   theme = cookies().get("theme")?.value || "light";
+  // }
   return (
-    <html lang="fa" dir="rtl" className={theme}>
+    <html lang="fa" dir="rtl">
       <body className="orange-scrollbar">
         <Toaster
           reverseOrder={false}
