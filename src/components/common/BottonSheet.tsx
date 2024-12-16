@@ -15,7 +15,7 @@ import Iframe from "react-iframe";
 export default function BottonSheet() {
   const { isOpenBottonSheet, initialSnap, setInitialSnap } =
     useContext(EditorModalsContext);
-  const ref = useRef<SheetRef>();
+  const ref = useRef<SheetRef | null>(null);
   const [dynamicSnapPoints, setDynamicSnapPoints] = useState([
     window.innerHeight / 2,
     0,
