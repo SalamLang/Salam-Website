@@ -75,7 +75,9 @@ module.exports = {
         "footer-green": "rgba(142, 214, 89, 1)",
         dark: "rgba(24, 25, 31, 1)",
         "blue-box": "#276EF6",
-        "green-box":"#8CFD33",
+        "green-box": "#8CFD33",
+        "blue-cutsom": "#1E58F7",
+        "gray-custom" : "rgba(192, 203, 236, 1)"
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
