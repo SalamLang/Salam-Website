@@ -6,7 +6,7 @@ import Issuehunt from "../../../public/images/supportlogos/issuehunt.png";
 import Kofi from "../../../public/images/supportlogos/kofi.png";
 import Liberapay from "../../../public/images/supportlogos/liberapay.png";
 import Opencollective from "../../../public/images/supportlogos/opencollective.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 const SupportBoxClass = cva(
@@ -41,28 +41,28 @@ export const SupportBox: React.FC<DivProps> = ({
   ...props
 }) => {
   const getIcon = (intent: string): string => {
-    let icon: string;
+    let icon: StaticImageData | string;
     switch (intent) {
       case "patreon":
-        icon = Patreon;
+        icon = Patreon.src;
         break;
       case "buymeacoffee":
-        icon = Buymeacoffee;
+        icon = Buymeacoffee.src;
         break;
       case "issuehunt":
-        icon = Issuehunt;
+        icon = Issuehunt.src;
         break;
       case "kofi":
-        icon = Kofi;
+        icon = Kofi.src;
         break;
       case "liberapay":
-        icon = Liberapay;
+        icon = Liberapay.src;
         break;
       case "opencollective":
-        icon = Opencollective;
+        icon = Opencollective.src;
         break;
       default:
-        icon = Patreon;
+        icon = Patreon.src;
     }
     return icon;
   };
