@@ -77,7 +77,11 @@ module.exports = {
         "blue-box": "#276EF6",
         "green-box": "#8CFD33",
         "blue-cutsom": "#1E58F7",
-        "gray-custom" : "rgba(192, 203, 236, 1)"
+        "gray-custom" : "rgba(192, 203, 236, 1)",
+        "orange-custom" : "#FF5C00",
+        "purple-custom":"#5B1EF7",
+        "green-custom":"#98BB48",
+        "pink-custom":"#E939D9",
       },
       boxShadow: {
         my: "0px 0px 20px 8px #0000000d",
