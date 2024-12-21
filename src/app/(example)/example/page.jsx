@@ -20,10 +20,14 @@ export default function page() {
         <ExampleListTagsBudges />
       </div>
       <div className="max-w-[1200px] w-full p-4 flex flex-wrap gap-5 justify-center items-center">
-          <div className="max-w-[300px] w-full h-full min-h-[300px] flex flex-col justify-center items-center gap-4 overflow-hidden">
+          <div className="max-w-[300px] w-full h-full min-h-[300px] flex flex-col justify-center items-center gap-2 overflow-hidden">
             <Image src="/images/bg-post.png" alt="bg post" width="300" height="300" />
+            <div className="w-full flex flex-row-reverse justify-between items-center gap-2">
+              <Image src="/images/icon-man-post.png" alt="icon man" width={30} height={30} />
+              <h3 className="text-lg text-center">عنوان پست</h3>
+              <p className="text-sm text-center">توضیحات پست</p>
+            </div>
           </div>
-          <div className="w-full py-1"></div>
       </div>
     </main>
   );
