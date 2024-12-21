@@ -21,7 +21,7 @@ export default function page() {
       </div>
       <div className="max-w-[1200px] w-full p-4 flex flex-wrap gap-5 justify-center items-center">
           <div className="max-w-[300px] w-full h-full min-h-[300px] flex flex-col justify-center items-center gap-4 overflow-hidden">
-            <Image src="/images/ bg-post.png" width="300" height="300" />
+            <Image src="/images/bg-post.png" alt="bg post" width="300" height="300" />
           </div>
           <div className="w-full py-1"></div>
       </div>
