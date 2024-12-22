@@ -21,13 +21,22 @@ export default function page() {
         <ExampleTextFormSection />
         <ExampleListTagsBudges />
       </div>
-      <div className="max-w-[1200px] w-full p-4 flex flex-wrap gap-5 justify-center items-center">
+      <div className="max-w-[1200px] w-full p-4 flex flex-wrap gap-8 justify-center items-center">
         <ExamplePostItem />
         <ExamplePostItem />
         <ExamplePostItem />
         <ExamplePostItem />
         <ExamplePostItem />
         <ExamplePostItem />
+      </div>
+      <div className="w-full h-full flex justify-center items-center mb-10">
+        <Button
+          rounded="full"
+          size="medium"
+          className="!bg-blue-cutsom/[0.06] text-nowrap !text-blue-cutsom font-semibold"
+        >
+          نمایش بیشتر
+        </Button>
       </div>
     </main>
   );
