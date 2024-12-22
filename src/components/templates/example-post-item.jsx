@@ -14,7 +14,7 @@ export default function ExamplePostItem() {
             width={30}
             height={30}
           />
-          <h3 className="text-xs text-center font-Estedad-SemiBold">
+          <h3 className="text-xs transition-colors dark:text-white/80 text-center font-Estedad-SemiBold">
             علی محمدیه
           </h3>
         </div>
@@ -42,8 +42,8 @@ export default function ExamplePostItem() {
       </div>
       <div className="w-full flex justify-between items-center gap-3">
         <div className="w-full max-w-[45%] flex flex-col justify-center items-start gap-2">
-          <h2 className="font-Estedad-SemiBold">ساخت سایت گوگل</h2>
-          <p className="text-[11px] text-black/40">مراحل اجرایی و توسعه</p>
+          <h2 className="font-Estedad-SemiBold dark:text-white/80 transition-colors">ساخت سایت گوگل</h2>
+          <p className="text-[11px] text-black/40 dark:text-white/50 transition-colors">مراحل اجرایی و توسعه</p>
         </div>
         <div className="w-full max-w-[55%]  flex flex-wrap justify-end items-end gap-2">
           <Button
