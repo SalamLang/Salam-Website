@@ -6,7 +6,7 @@ import { Button } from "../common/Button";
 export default function ExampleTextFormSection() {
   return (
     <>
-      <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-Estedad-SemiBold">
+      <h2 className="text-base sm:text-lg dark:text-white transition-colors md:text-xl lg:text-2xl xl:text-3xl font-Estedad-SemiBold">
         اکسپلور سلام، جایی که خلاقیت انتهایی نداره
       </h2>
       <div className="w-full max-w-[350px] min-h-[45px] bg-blue-cutsom/[0.02] rounded-full flex justify-between p-[9px] gap-2.5 items-center">
