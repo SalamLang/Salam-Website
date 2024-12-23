@@ -14,11 +14,11 @@ export default function ExampleTextFormSection() {
           src="/svgs/search-modern-icon.svg"
           alt="icon"
           width="25"
-          height="25"
+          height="425"
         />
-        <div className="w-[2px] bg-gray-custom h-[19px]" />
+        <div className="w-[2px] bg-gray-custom backdrop-blur-lg dark:bg-gray-custom/10 transition-colors h-[19px]" />
         <Input
-          className="w-full !bg-transparent border-none outline-none ring-0"
+          className="w-full dark:text-white/80 dark:placeholder:text-white/20 !bg-transparent border-none outline-none ring-0"
           placeholder="هرچی دوست داری سرچ بزن"
         />
         <Button
