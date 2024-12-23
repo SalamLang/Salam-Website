@@ -189,3 +189,7 @@
 .dynamic-width{
   width: calc(100% - 300px);
 }
+
+.swiper_slider_template .swiper-pagination{
+  @apply !-bottom-1
+}
