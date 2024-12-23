@@ -87,7 +87,7 @@ const SliderTemplate = () => {
   }, []);
 
   return (
-    <div className="max-xl:w-11/12 w-full max-w-[1082px] mx-auto border-2 border-bg-section-purple rounded-3xl z-10">
+    <div className="max-xl:w-11/12 w-full max-w-[1082px] mx-auto border-none z-10">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -95,7 +95,7 @@ const SliderTemplate = () => {
         // onSlideChange={(swiper) => console.log(swiper)}
         loop={true}
         pagination={{ clickable: true }}
-        className="comment_slider2 !p-6 !pb-10"
+        className="comment_slider2 swiper_slider_template !p-6 !pb-10"
         autoplay={{ delay: 2000, disableOnInteraction: false }} // پیکربندی تنظیمات autoplay
         longSwipes={true}
         modules={[Autoplay,Pagination]}
