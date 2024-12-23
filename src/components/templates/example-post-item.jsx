@@ -4,8 +4,8 @@ import { Button } from "../common/Button";
 
 export default function ExamplePostItem() {
   return (
-    <div className="max-w-[300px] w-full h-full min-h-[300px] flex flex-col justify-center items-center gap-3 overflow-hidden">
-      <Image src="/images/bg-post.png" alt="bg post" width="300" height="300" />
+    <div className="sm:max-w-[300px] w-full h-full min-h-[300px] flex flex-col justify-center items-center gap-3 overflow-hidden">
+      <Image src="/images/bg-post.png" alt="bg post" width="300" className="max-sm:!w-full" height="300" />
       <div className="w-full flex flex-row-reverse justify-between items-center gap-2">
         <div className="w-auto h-auto flex flex-row-reverse justify-center items-center gap-1.5">
           <Image
