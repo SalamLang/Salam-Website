@@ -6,7 +6,7 @@ export function middleware(request) {
 
   response.cookies.set("theme", theme, {
     path: "/",
-    maxAge: Infinity, 
+    maxAge: Infinity,
   });
 
   return response;
