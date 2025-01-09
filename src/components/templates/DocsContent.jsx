@@ -16,4 +16,3 @@ async function DocsContent() {
 }
 
 export default DocsContent;
-
