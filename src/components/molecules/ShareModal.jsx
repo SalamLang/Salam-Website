@@ -6,6 +6,7 @@ import ShareModalIcon from "../../../public/gifs/download.gif";
 import CopyIcon from "../../../public/svgs/copy.svg";
 import Image from "next/image";
 import { copyToClipboard } from "@/utils/helper/handlers";
+import { useQuery } from "@tanstack/react-query";
 
 export default function ShareModal() {
   const [linkText] = useState("Sallam/ENfrzWaQDSOKdeOtD");
@@ -31,6 +32,10 @@ export default function ShareModal() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [onCloseModal]);
+
+  const handleCopy = () => {
+    const callWebService = useQuery("",{})
+  }
 
   return (
     <Modal isOpen={isOpenShareModal} onClose={onCloseModal}>
