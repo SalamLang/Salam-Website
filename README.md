@@ -27,13 +27,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Supporter](http://localhost:3000/supporter) || (salamlang.ir/supporter)
 
 <div dir="rtl">
-وب‌سایت سلام
-شروع به کار
+# وب‌سایت سلام
+## شروع به کار
+
 برای اجرای سرور توسعه، از یکی از دستورات زیر استفاده کنید:
 
-bash
-Copy
-Edit
+```bash
 npm run dev
 # یا
 yarn dev
@@ -41,15 +40,18 @@ yarn dev
 pnpm dev
 # یا
 bun dev
-مرورگر خود را باز کرده و http://localhost:3000 را مشاهده کنید.
+```
+مرورگر خود را باز کرده و [http://localhost:3000] را مشاهده کنید.
 
-صفحات
-صفحه اصلی || (salamlang.ir)
-مستندات || (salamlang.ir/docs)
-نمونه || (salamlang.ir/example)
-آموزش || (salamlang.ir/education)
-دانلود || (salamlang.ir/download)
-یادگیری || (salamlang.ir/learn)
-ویرایشگر || (salamlang.ir/playground)
-حامیان || (salamlang.ir/supporter)
-</div> ```
+## صفحات
+
+- [صفحه اصلی](http://localhost:3000) || (salamlang.ir)
+- [مستندات](http://localhost:3000/docs) || (salamlang.ir/docs)
+- [نمونه](http://localhost:3000/example) || (salamlang.ir/example)
+- [آموزش](http://localhost:3000/education) || (salamlang.ir/education)
+- [دانلود](http://localhost:3000/download) || (salamlang.ir/download)
+- [یادگیری](http://localhost:3000/learn) || (salamlang.ir/learn)
+- [ویرایشگر](http://localhost:3000/playground) || (salamlang.ir/playground)
+- [حامیان](http://localhost:3000/supporter) || (salamlang.ir/supporter)
+
+</div> 
