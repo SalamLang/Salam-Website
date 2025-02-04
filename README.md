@@ -26,7 +26,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Editor](http://localhost:3000/playground) || (salamlang.ir/playground)
 - [Supporter](http://localhost:3000/supporter) || (salamlang.ir/supporter)
 
+##
+
 <div dir="rtl">
+
 # وب‌سایت سلام
 ## شروع به کار
 
