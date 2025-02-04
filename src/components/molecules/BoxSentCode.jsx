@@ -6,7 +6,7 @@ import Input from "../atoms/Input";
 import Mobile from "../../../public/svgs/mobile.svg";
 import { Button } from "../common/Button";
 import { useMutation } from "@tanstack/react-query";
-import { sendNumber } from "@/utils/api/handler";
+import { sendMobile } from "@/utils/api/handler";
 import toast, { LoaderIcon } from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -14,10 +14,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { convertToPersianNumbers } from "@/utils/helper/handlers";
 
 function BoxSentCode() {
-  const { mutateAsync: sendNumberMutation, isPending } = useMutation({
-    mutationKey: ["send-number"],
-    mutationFn: sendNumber,
-    onSuccess: () => {
+  const { mutateAsync: sendMobileMutation, isPending } = useMutation({
+    mutationKey: ["send-mobile"],
+    mutationFn: sendMobile,
+    onSuccess: (res) => {
+      console.log(res)
       toast.success("با موفقیت شماره ارسال شد");
     },
     onError: (err) => {
@@ -27,22 +28,22 @@ function BoxSentCode() {
 
   const formik = useFormik({
     initialValues: {
-      number: "",
+      mobile: "",
     },
     validationSchema: Yup.object({
-      number: Yup.string()
+      mobile: Yup.string()
         .matches(/^[۰-۹]*$/, "فقط اعداد مجازه")
         .matches(/^۰۹[0-۹]{9}$/, "شماره باید با ۰۹ شروع شه و ۱۱ رقم باشه")
         .required("پرکردن این فیلد الزامیه"),
     }),
     onSubmit: (values) => {
-      sendNumberMutation();
+      sendMobileMutation();
     },
   });
 
   const handleChange = (event) => {
     const { value } = event.target;
-    formik.setFieldValue("number", convertToPersianNumbers(value));
+    formik.setFieldValue("mobile", convertToPersianNumbers(value));
   };
 
   return (
@@ -68,11 +69,11 @@ function BoxSentCode() {
                 "placeholder:opacity-45 h-full placeholder:max-sm:text-sm"
               }
               dir="ltr"
-              {...formik.getFieldProps("number")}
+              {...formik.getFieldProps("mobile")}
               onChange={handleChange}
             />
           </div>
-          {formik.values.number.length === 0 && (
+          {formik.values.mobile.length === 0 && (
             <span className="text-xs sm:text-sm md:text-base opacity-45 mr-3">
               مثال:
             </span>
@@ -95,14 +96,14 @@ function BoxSentCode() {
       </div>
       <div className="relative w-full min-h-10 h-full flex justify-center items-center">
         <AnimatePresence>
-          {formik.errors.number && (
+          {formik.errors.mobile && (
             <motion.p
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 20, opacity: 0 }}
               className="absolute max-sm:text-xs max-md:text-sm !text-bg-main"
             >
-              {formik.errors.number}
+              {formik.errors.mobile}
             </motion.p>
           )}
         </AnimatePresence>
