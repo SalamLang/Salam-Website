@@ -1,7 +1,4 @@
 # Salam Website
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -18,23 +15,41 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Home](http://localhost:3000) || (salamlang.ir)
+- [Docs](http://localhost:3000/docs) || (salamlang.ir/docs)
+- [Example](http://localhost:3000/example) || (salamlang.ir/example)
+- [Education](http://localhost:3000/education) || (salamlang.ir/education)
+- [Download](http://localhost:3000/download) || (salamlang.ir/download)
+- [Learn](http://localhost:3000/learn) || (salamlang.ir/learn)
+- [Editor](http://localhost:3000/playground) || (salamlang.ir/playground)
+- [Supporter](http://localhost:3000/supporter) || (salamlang.ir/supporter)
 
-## Learn More
+<div dir="rtl">
+وب‌سایت سلام
+شروع به کار
+برای اجرای سرور توسعه، از یکی از دستورات زیر استفاده کنید:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy
+Edit
+npm run dev
+# یا
+yarn dev
+# یا
+pnpm dev
+# یا
+bun dev
+مرورگر خود را باز کرده و http://localhost:3000 را مشاهده کنید.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-Copyright 2024-2025, Salam Team
+صفحات
+صفحه اصلی || (salamlang.ir)
+مستندات || (salamlang.ir/docs)
+نمونه || (salamlang.ir/example)
+آموزش || (salamlang.ir/education)
+دانلود || (salamlang.ir/download)
+یادگیری || (salamlang.ir/learn)
+ویرایشگر || (salamlang.ir/playground)
+حامیان || (salamlang.ir/supporter)
+</div> ```
