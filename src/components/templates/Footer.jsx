@@ -29,7 +29,7 @@ function Footer() {
         </div>
         <hr className="w-full h-1 bg-border-grey dark:opacity-10 lg:hidden" />
         <div className="w-auto h-auto flex justify-center items-center gap-3">
-          <InteractiveImage
+          {/* <InteractiveImage
             referrerPolicy="no-referrer"
             id="rgvjjzpenbqenbqefukzfukz"
             style={{ cursor: "pointer" }}
@@ -44,17 +44,17 @@ function Footer() {
             src="https://logo.samandehi.ir/logo.aspx?id=372266&p=qftiyndtodrfodrfwlbqwlbq"
             width={50}
             height={50}
-          />
+          /> */}
           <a
             referrerPolicy="origin"
             target="_blank"
             href="https://trustseal.enamad.ir/?id=529005&Code=Gx6PecZik5vUpVJkVsATqoYQS1NADBAc"
           >
             <Image
-              width={50}
-              height={50}
+              width={60}
+              height={60}
               referrerPolicy="origin"
-              src="https://trustseal.enamad.ir/logo.aspx?id=529005&Code=Gx6PecZik5vUpVJkVsATqoYQS1NADBAc"
+              src="/enamad.png"
               alt="enmad"
               style={{ cursor: "pointer" }}
               code="Gx6PecZik5vUpVJkVsATqoYQS1NADBAc"
