@@ -18,7 +18,6 @@ function BoxSentCode() {
     mutationKey: ["send-mobile"],
     mutationFn: sendMobile,
     onSuccess: (res) => {
-      console.log(res)
       toast.success("با موفقیت شماره ارسال شد");
     },
     onError: (err) => {
@@ -37,7 +36,9 @@ function BoxSentCode() {
         .required("پرکردن این فیلد الزامیه"),
     }),
     onSubmit: (values) => {
-      sendMobileMutation();
+      const mobile = convertToPersianNumbers(values?.mobile);
+
+      sendMobileMutation({ mobile });
     },
   });
 
