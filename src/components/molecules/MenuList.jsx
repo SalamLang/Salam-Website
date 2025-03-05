@@ -29,7 +29,7 @@ function MenuList() {
         <Logo />
       </Link>
       <NavItem href={"#"}>انجمن</NavItem>
-      <NavItem href={getRoute("playground")}>آزمایش آنلاین</NavItem>
+      <NavItem isAnchor href={process.env.NEXT_PUBLIC_EDITOR_URL}>آزمایش آنلاین</NavItem>
       <NavItem href={"#"}>مثال</NavItem>
     </ul>
   );

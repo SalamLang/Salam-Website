@@ -77,19 +77,37 @@ function MenuListMobile() {
                 </button>
               </div>
             </div>
-            <NavItem href={getRoute("home")} variants="mobile" className="mt-5" onClick={handleClose}>
+            <NavItem
+              href={getRoute("home")}
+              variants="mobile"
+              className="mt-5"
+              onClick={handleClose}
+            >
               سلام
             </NavItem>
-            <NavItem href={getRoute("education")} variants="mobile" onClick={handleClose}>
+            <NavItem
+              href={getRoute("education")}
+              variants="mobile"
+              onClick={handleClose}
+            >
               یادگیری
             </NavItem>
-            <NavItem href={getRoute("donwload")} variants="mobile" onClick={handleClose}>
+            <NavItem
+              href={getRoute("donwload")}
+              variants="mobile"
+              onClick={handleClose}
+            >
               دانلود
             </NavItem>
             <NavItem href={"#"} variants="mobile">
               انجمن
             </NavItem>
-            <NavItem href={getRoute("playground")} variants="mobile" onClick={handleClose}>
+            <NavItem
+              isAnchor
+              href={process.env.NEXT_PUBLIC_EDITOR_URL}
+              variants="mobile"
+              onClick={handleClose}
+            >
               آزمایش آنلاین
             </NavItem>
             <NavItem href={"#"} variants="mobile">

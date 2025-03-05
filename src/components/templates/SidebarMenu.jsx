@@ -27,7 +27,7 @@ function SidebarMenu() {
 
           const tagName = h.tagName;
 
-          li.classList.add("!w-auto");
+          li.classList.add("!w-auto","max-w-[250px]","line-clamp-1");
 
           switch (tagName) {
             case "H1":

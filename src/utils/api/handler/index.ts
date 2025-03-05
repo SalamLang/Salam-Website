@@ -1,5 +1,5 @@
-import instance from "@/utils/axios/http"
+import instance from "@/utils/axios/http";
 
-export const sendNumber = () => {
-    return instance.post('send-number')
-}
+export const sendMobile = (params: { mobile: string }) => {
+  return instance.post("/mobile", params);
+};

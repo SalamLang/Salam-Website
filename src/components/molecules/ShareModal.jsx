@@ -5,10 +5,13 @@ import CloseSvg from "../../../public/svgs/svg-close-box.svg";
 import ShareModalIcon from "../../../public/gifs/download.gif";
 import CopyIcon from "../../../public/svgs/copy.svg";
 import Image from "next/image";
-import { copyToClipboard } from "@/utils/helper/handlers";
+// import { copyToClipboard } from "@/utils/helper/handlers";
+import useCopyLinkSampleLoading from "@/utils/helper/useCopyLinkSampleLoading"
+import { LoaderIcon } from "react-hot-toast";
 
 export default function ShareModal() {
   const [linkText] = useState("Sallam/ENfrzWaQDSOKdeOtD");
+  const {isLoading , handleCopyClick} = useCopyLinkSampleLoading();
 
   const { isOpenShareModal, setIsOpenShareModal } =
     useContext(EditorModalsContext);
@@ -65,15 +68,15 @@ export default function ShareModal() {
           </div>
           <div className="w-full h-auto flex justify-center items-center">
             <div
-              className="w-auto border-2 border-cream-light rounded-[12px] p-0.5 select-none cursor-pointer"
-              onClick={() => copyToClipboard(linkText)}
+              className={`w-auto border-2 border-cream-light rounded-[12px] p-0.5 select-none cursor-pointer ${isLoading && "animate-pulse"}`}
+              onClick={() => handleCopyClick(linkText)}
             >
               <div className="w-full h-full px-4 py-2.5 bg-cream-light rounded-[9px] flex flex-row-reverse justify-center items-center gap-1">
                 <span className="text-xs font-Estedad-Bold text-bg-main">
                   {linkText}
                 </span>
                 <div className="w-auto h-auto">
-                  <CopyIcon className="text-nowrap" />
+                  {isLoading ? <LoaderIcon className="!w-[15px] !h-[15px]" /> : <CopyIcon className="text-nowrap" width={15} />}
                 </div>
               </div>
             </div>

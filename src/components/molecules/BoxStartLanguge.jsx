@@ -3,6 +3,7 @@ import TitleDescription from "../atoms/TitleDescription";
 import ArrowLeft from "../../../public/svgs/arrowleft.svg";
 import { Button } from "../common/Button";
 import React from "react";
+import Anchor from "../common/anchor";
 
 function BoxStartLanguge() {
   return (
@@ -11,15 +12,15 @@ function BoxStartLanguge() {
         title="حالا باید بگم به هدفت رسیدی"
         description="الان تو میتونی کارکردن با این زبان رو شروع کنی امیدوارم در این راه موفق باشی"
       />
-      <Button
+      <Anchor
         intent="primary"
         rounded="full"
         className="flex justify-center items-center gap-1"
-        link="/playground"
+        link={process.env.NEXT_PUBLIC_EDITOR_URL}
       >
         بزن بریم
         <ArrowLeft className="relative top-0.5 scale-75" />
-      </Button>
+      </Anchor>
     </div>
   );
 }

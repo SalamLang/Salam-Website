@@ -20,8 +20,8 @@ function CodeExample() {
             <CircelsBoxCode />
             <TextExampleCole />
           </div>
-          <Link
-            href={getRoute("playground")}
+          <a
+            href={process.env.NEXT_PUBLIC_EDITOR_URL}
             className="flex flex-col items-end justify-end gap-y-10"
           >
             <ButtonCodeBox
@@ -38,7 +38,7 @@ function CodeExample() {
                 </span>
               }
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
