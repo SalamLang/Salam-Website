@@ -55,7 +55,7 @@ const button = cva("hover:scale-105 transition-all disabled:opacity-70", {
 export interface ButtonProps
   extends HTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof button> {
-  link: string;
+  link?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
