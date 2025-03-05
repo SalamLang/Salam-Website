@@ -4,6 +4,7 @@ import ArrowLeft from "../../../../public/svgs/arrowleft.svg";
 import CircleDotClose from "../../../../public/svgs/svg-close-box.svg";
 import { Button } from "@/components/common/Button";
 import { Badge } from "@/components/common/Badge";
+import Anchor from "@/components/common/anchor";
 
 export default function GetTutorialCard() {
   return (
@@ -19,16 +20,16 @@ export default function GetTutorialCard() {
           <p className="text-xs sm:text-sm md:text-base font-Estedad-Regular opacity-80">
             دوره آموزشی های ما به شما کمک میکند تا بتوانید با این زبان کار کنید
           </p>
-          <Button
-            link="playground"
+          <Anchor
             intent="orange"
             size="large"
             rounded="full"
             className="flex gap-1 justify-center items-center"
+            href={process.env.NEXT_PUBLIC_EDITOR_URL}
           >
             بزن بریم
             <ArrowLeft className="scale-[0.7] relative top-0.5" />
-          </Button>
+          </Anchor>
         </div>
         <div className="w-full h-auto px-3 flex justify-between items-center">
           <Badge intent="warning">زیبا بودن</Badge>
