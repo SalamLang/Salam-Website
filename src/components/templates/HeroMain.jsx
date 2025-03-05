@@ -6,6 +6,7 @@ import Vactor2 from "../../../public/svgs/vector16.svg";
 import CarectersHeroMain from "../molecules/CarectersHeroMain";
 import { Button } from "../common/Button";
 import React from "react";
+import Anchor from "../common/anchor";
 
 function HeroMain() {
   return (
@@ -24,8 +25,8 @@ function HeroMain() {
         title="به جمع دوس داشتنی سلام ما بپیوند"
         description="اولین زبان برنامه نویسی فارسی، اونم کاملا رایگان باورت میشه ؟"
       />
-      <Button
-        link="playground"
+      <Anchor
+        href={process.env.NEXT_PUBLIC_EDITOR_URL}
         size="large"
         rounded="full"
         className="!bg-bg-button-orange2 z-10 !text-bg-button-orange !font-Estedad-Medium flex flex-row-reverse justify-center items-center gap-2"
@@ -33,7 +34,7 @@ function HeroMain() {
       >
         <ArrowLeft className="relative !top-0.5 scale-75" />
         بزن بریم
-      </Button>
+      </Anchor>
       {/* <Button
         text="بزن بریم"
         className="z-50"
