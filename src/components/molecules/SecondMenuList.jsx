@@ -42,10 +42,10 @@ function SecondMenuList() {
         </NavItem>
         <NavItem
           variants={"second-header"}
-          href={getRoute("playground")}
+          isAnchor
+          href={process.env.NEXT_PUBLIC_EDITOR_URL}
           className="text-sm !font-Estedad-Medium"
         >
-          {" "}
           آزمایش آنلاین
         </NavItem>
         <NavItem variants={"second-header"} href={"#"} className="text-sm">
@@ -54,11 +54,11 @@ function SecondMenuList() {
       </ul>
       <div className="w-auto h-auto flex flex-row-reverse gap-5 justify-center items-center">
         <ToggleMode />
-        <Link href={getRoute("playground")}>
+        <a href={process.env.NEXT_PUBLIC_EDITOR_URL}>
           <Badge className="!text-base !font-Estedad-SemiBold">
             آنلاین کار کن
           </Badge>
-        </Link>
+        </a>
       </div>
     </div>
   );
