@@ -1,5 +1,5 @@
-import "./globals.css";
 import "../styles/font.css";
+import "./globals.css";
 import ReactQueryProvider from "@/utils/react-query/ReactQueryProvider";
 import React from "react";
 import { Toaster } from "react-hot-toast";
