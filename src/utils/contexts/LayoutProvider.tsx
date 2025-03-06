@@ -1,6 +1,7 @@
 "use client";
 import useLocalStorage from "@/hooks/useLocalStorage";
 import React, { createContext, useEffect, useState } from "react";
+import { getCookie, setCookie } from "@/utils/persist-storage/cookie";
 
 export const LayoutContext = createContext({
   isToggle: false,
@@ -10,7 +11,8 @@ export const LayoutContext = createContext({
 });
 
 export function LayoutProvider({ children }) {
-  const [theme, setTheme] = useLocalStorage("theme", "light");
+  const cookieTheme = getCookie("theme");
+  const [theme, setTheme] = useLocalStorage("theme", cookieTheme || "light");
   const [isToggle, setIsToggle] = useState(false);
 
   // for theme site
@@ -36,6 +38,7 @@ export function LayoutProvider({ children }) {
         root.classList.add("light");
         setIsToggle(false);
       }
+      setCookie("theme", theme);
     }
   }, [theme]);
 
