@@ -2,8 +2,6 @@
 @import "../styles/font.css";
 @import "nprogress/nprogress.css";
 
-@config "../../tailwind.config.js";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
