@@ -5,6 +5,7 @@ import React from "react";
 import { Toaster } from "react-hot-toast";
 import { LayoutProvider } from "@/utils/contexts/LayoutProvider";
 import ProgressBar from "@/components/templates/ProgressBar";
+import { getCookie } from "./actions";
 
 export const metadata = {
   title: "زبان برنامه‌نویسی سلام",
@@ -33,15 +34,10 @@ export const metadata = {
   },
 };
 
-function RootLayout({ children }) {
-  // let theme = "light"; // default
-  // if (typeof window === "undefined") {
-  //   // read cookie from server
-  //   const { cookies } = require("next/headers");
-  //   theme = cookies().get("theme")?.value || "light";
-  // }
+async function RootLayout({ children }) {
+  const theme = (await getCookie("theme")) || "light";
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" className={theme}>
       <body className="orange-scrollbar">
         <Toaster
           reverseOrder={false}
@@ -57,7 +53,7 @@ function RootLayout({ children }) {
         />
         <ProgressBar />
         <ReactQueryProvider>
-          <LayoutProvider>{children}</LayoutProvider>
+          <LayoutProvider cookieTheme={theme}>{children}</LayoutProvider>
         </ReactQueryProvider>
       </body>
     </html>
