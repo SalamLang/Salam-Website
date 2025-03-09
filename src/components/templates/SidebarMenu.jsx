@@ -27,7 +27,7 @@ function SidebarMenu() {
 
           const tagName = h.tagName;
 
-          li.classList.add("!w-auto","max-w-[250px]","line-clamp-1");
+          li.classList.add("!w-auto", "max-w-[250px]", "line-clamp-1");
 
           switch (tagName) {
             case "H1":
@@ -135,7 +135,7 @@ function SidebarMenu() {
   }, []);
 
   return (
-    <div className="relative md:min-w-[200px]">
+    <div className="relative lg:min-w-[200px]">
       <div
         className="transition-all duration-300 p-1 bg-gray-600/20 absolute rounded-lg -right-2"
         id="box"
