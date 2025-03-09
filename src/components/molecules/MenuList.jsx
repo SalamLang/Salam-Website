@@ -28,8 +28,10 @@ function MenuList() {
       >
         <Logo />
       </Link>
-      <NavItem href={"#"}>انجمن</NavItem>
-      <NavItem isAnchor href={process.env.NEXT_PUBLIC_EDITOR_URL}>آزمایش آنلاین</NavItem>
+      <NavItem href={getRoute("docs")}>مستندات</NavItem>
+      <NavItem isAnchor href={process.env.NEXT_PUBLIC_EDITOR_URL}>
+        آزمایش آنلاین
+      </NavItem>
       <NavItem href={"#"}>مثال</NavItem>
     </ul>
   );
