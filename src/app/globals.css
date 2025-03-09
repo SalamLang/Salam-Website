@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "../styles/font.css";
 @import "nprogress/nprogress.css";
+@import "github-markdown-css/github-markdown.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -200,8 +201,9 @@
   background-color: var(--bg-button-orange2);
 }
 .orange-scrollbar::-webkit-scrollbar-track {
-  @apply bg-white dark:bg-gray-800;
+  @apply !bg-gray-500;
 }
+
 .orange-scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--bg-button-orange);
   border-radius: 5px;
@@ -226,38 +228,29 @@
   height: 25px !important;
 }
 
-.mark-down div {
-  @apply overflow-auto p-2 text-gray-900 dark:text-white transition-colors;
-}
-.mark-down div h1 {
-  @apply !text-2xl max-md:!text-xl !font-Estedad-Bold mb-1 dark:bg-gray-500/20 border-2 border-gray-700/50 text-center p-2 rounded-xl;
+.markdown-body {
+  @apply !bg-transparent !text-gray-900 dark:!text-gray-200;
 }
 
-.mark-down div h2 {
-  @apply !text-xl max-md:!text-lg !font-Estedad-SemiBold mb-1 mt-6;
-}
-.mark-down div h2::before {
-  content: "📖";
-  display: inline;
-  margin-left: 4px;
+.markdown-body table {
+  @apply !bg-transparent !text-gray-200;
 }
 
-.mark-down div p {
-  @apply !text-sm max-md:!text-xs !font-Estedad-Medium mt-1 mb-6 !leading-[2.2];
+.markdown-body pre {
+  @apply dark:!bg-gray-800 !bg-gray-700 backdrop-blur-lg border border-gray-700;
 }
 
-.mark-down div ul {
-  @apply flex flex-col !space-y-1;
-}
-.mark-down div ul li::before {
-  content: "📌";
-  display: inline;
-  margin-left: 4px;
+.markdown-body table {
+  @apply !mx-auto;
 }
 
-.mark-down div pre {
-  @apply !overflow-auto;
+.markdown-body table tr {
+  @apply !bg-gray-100 !text-gray-900 dark:!bg-gray-900 dark:!text-gray-300;
 }
+.markdown-body table tr:nth-child(2n) {
+  @apply !bg-gray-200 !text-gray-900 dark:!bg-gray-800 dark:!text-gray-200;
+}
+
 .dynamic-width {
   width: calc(100% - 300px);
 }
