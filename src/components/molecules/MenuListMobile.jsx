@@ -99,8 +99,8 @@ function MenuListMobile() {
             >
               دانلود
             </NavItem>
-            <NavItem href={"#"} variants="mobile">
-              انجمن
+            <NavItem href={getRoute("docs")} variants="mobile">
+            مستندات
             </NavItem>
             <NavItem
               isAnchor
