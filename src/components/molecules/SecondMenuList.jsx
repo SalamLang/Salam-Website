@@ -35,10 +35,10 @@ function SecondMenuList() {
         </NavItem>
         <NavItem
           variants={"second-header"}
-          href={"#"}
+          href={getRoute("docs")}
           className="text-sm !font-Estedad-Medium"
         >
-          انجمن
+          مستندات
         </NavItem>
         <NavItem
           variants={"second-header"}
