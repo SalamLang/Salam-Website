@@ -39,7 +39,7 @@
   --dark-green: rgba(139, 210, 87, 1);
 }
 
-@theme inline {
+@theme {
   --font-Estedad: "EstedadThin";
   --font-Estedad-ExtraLight: "ExtraLight";
   --font-Estedad-Light: "Light";
@@ -53,7 +53,7 @@
   --font-AliBaba-Regular: "AliBabaRegular";
   --font-Peyda-Regular: "PeydaRegular";
   --font-Graphik-Regular: "GraphikRegular";
-  --color-bg-main: "#ff5c00";
+  --color-bg-main: #ff5c00;
   --color-bg-box: var(--bg-box);
   --color-bg-box2: var(--bg-box2);
   --color-bg-button-orange: var(--bg-button-orange);
@@ -264,4 +264,51 @@
 
 .swiper_slider_template .swiper-pagination {
   @apply !-bottom-1;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px dotted;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  @apply border-gray-600 dark:border-white;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #ff3d00;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
