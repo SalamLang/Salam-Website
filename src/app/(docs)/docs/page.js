@@ -17,9 +17,7 @@ const page = () => {
     <DocsProvider>
       <DocsMainContainer>
         <DocsSidebar />
-
         <DocsContent />
-
         <ToggleDocSidebar />
       </DocsMainContainer>
     </DocsProvider>
