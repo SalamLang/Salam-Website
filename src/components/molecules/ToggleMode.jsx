@@ -11,13 +11,15 @@ export default function ToggleMode() {
   const { handleSetCookie } = useCookie("theme");
 
   const handleToggle = () => {
+    const maxAgeCookie = 365 * 24 * 60 * 60;
+
     setIsToggle(!isToggle);
     if (isToggle) {
       setTheme("light");
-      handleSetCookie("light");
+      handleSetCookie("light", { maxAge: maxAgeCookie });
     } else {
       setTheme("dark");
-      handleSetCookie("dark");
+      handleSetCookie("dark", { maxAge: maxAgeCookie });
     }
   };
 
