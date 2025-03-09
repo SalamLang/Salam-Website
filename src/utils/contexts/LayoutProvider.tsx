@@ -9,8 +9,8 @@ export const LayoutContext = createContext({
   setTheme: null,
 });
 
-export function LayoutProvider({ children }) {
-  const [theme, setTheme] = useLocalStorage("theme", "light");
+export function LayoutProvider({ children, cookieTheme }) {
+  const [theme, setTheme] = useLocalStorage("theme", cookieTheme || "light");
   const [isToggle, setIsToggle] = useState(false);
 
   // for theme site

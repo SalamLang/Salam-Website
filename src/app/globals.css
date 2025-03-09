@@ -1,8 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
+@import "../styles/font.css";
 @import "nprogress/nprogress.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --bg-button-orange: #ff5c00;
@@ -37,6 +37,79 @@
   --bg-slider: rgba(233, 240, 255, 0.13);
   --pagination: #3ed44e;
   --dark-green: rgba(139, 210, 87, 1);
+}
+
+@theme inline {
+  --font-Estedad: "EstedadThin";
+  --font-Estedad-ExtraLight: "ExtraLight";
+  --font-Estedad-Light: "Light";
+  --font-Estedad-Regular: "Regular";
+  --font-Estedad-Medium: "Medium";
+  --font-Estedad-SemiBold: "SemiBold";
+  --font-Estedad-Bold: "Bold";
+  --font-Estedad-ExtraBold: "ExtraBold";
+  --font-IranSans-Regular: "IranSansRegular";
+  --font-YekanBakh-Regular: "YekanBakhRegular";
+  --font-AliBaba-Regular: "AliBabaRegular";
+  --font-Peyda-Regular: "PeydaRegular";
+  --font-Graphik-Regular: "GraphikRegular";
+  --color-bg-main: "#ff5c00";
+  --color-bg-box: var(--bg-box);
+  --color-bg-box2: var(--bg-box2);
+  --color-bg-button-orange: var(--bg-button-orange);
+  --color-bg-button-blue: var(--bg-button-blue);
+  --color-bg-button-blue-2: var(--bg-button-blue-2);
+  --color-bg-button-white: var(--bg-button-white);
+  --color-bg-button-green: var(--bg-button-green);
+  --color-bg-gray: var(--bg-gray);
+  --color-bg-gray-hover: (--bg-gray-hover);
+  --color-bg-button-black: var(--bg-button-black);
+  --color-bg-button-orange2: var(--bg-button-orange2);
+  --color-text-button-orange2: var(--text-button-orange2);
+  --color-text-button-black: var(--text-button-black);
+  --color-text-button-white: var(--text-button-white);
+  --color-text-button-blue: var(--text-button-blue);
+  --color-text-orange: var(--text-orange);
+  --color-title: var(--title);
+  --color-description: var(--description);
+  --color-border-grey: var(--border-grey);
+  --color-border-grey2: var(--border-grey2);
+  --color-bg-circel-blue: var(--bg-circel-blue);
+  --color-bg-circel-green: var(--bg-circel-green);
+  --color-bg-circel-orange: var(--bg-circel-orange);
+  --color-bg-box-advantage: var(--bg-box-advantage);
+  --color-bg-box-download: var(--bg-box-download);
+  --color-bg-section: var(--bg-section);
+  --color-bg-section2: var(--bg-section2);
+  --color-bg-section-purple: var(--bg-section-purple);
+  --color-bg-box-purple: var(--bg-box-purple);
+  --color-bg-slider: var(--bg-slider);
+  --color-color-card: #f3f4ed;
+  --color-light-primary: rgba(217, 230, 255, 0.8);
+  --color-primary: rgba(39, 110, 246, 1);
+  --color-light-success: rgba(0, 255, 194, 0.2);
+  --color-success: rgba(8, 119, 92, 1);
+  --color-light-warning: rgba(248, 182, 14, 0.2);
+  --color-warning: rgba(144, 95, 0, 1);
+  --color-light-danger: rgba(255, 215, 216, 0.8);
+  --color-danger: rgba(126, 0, 0, 1);
+  --color-crimson: rgba(205, 51, 69, 1);
+  --color-light-orange: rgba(255, 245, 226, 1);
+  --color-cream-light: rgba(255, 242, 235, 1);
+  --color-orange-medium: rgba(255, 171, 0, 1);
+  --color-light: rgba(238, 244, 255, 1);
+  --color-cream: #ffccaf;
+  --color-dark-green: var(--dark-green);
+  --color-footer-green: rgba(142, 214, 89, 1);
+  --color-dark: rgba(24, 25, 31, 1);
+  --color-blue-box: #276ef6;
+  --color-green-box: #8cfd33;
+  --color-blue-cutsom: #1e58f7;
+  --color-gray-custom: rgba(192, 203, 236, 1);
+  --color-orange-custom: #ff5c00;
+  --color-purple-custom: #5b1ef7;
+  --color-green-custom: #98bb48;
+  --color-pink-custom: #e939d9;
 }
 
 @layer base {
@@ -176,20 +249,19 @@
 .mark-down div ul {
   @apply flex flex-col !space-y-1;
 }
-.mark-down div ul li::before{
+.mark-down div ul li::before {
   content: "📌";
   display: inline;
   margin-left: 4px;
 }
 
-
 .mark-down div pre {
   @apply !overflow-auto;
 }
-.dynamic-width{
+.dynamic-width {
   width: calc(100% - 300px);
 }
 
-.swiper_slider_template .swiper-pagination{
-  @apply !-bottom-1
+.swiper_slider_template .swiper-pagination {
+  @apply !-bottom-1;
 }
