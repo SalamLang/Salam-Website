@@ -3,6 +3,7 @@ const routes = {
   education: "/education",
   donwload: "/download",
   playground: "/playground",
+  docs: "/docs",
   //   blog: (slug) => `/blog/${slug}`,
 };
 
