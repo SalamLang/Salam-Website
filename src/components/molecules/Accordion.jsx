@@ -38,10 +38,12 @@ const Accordion = ({ number, title, content, index, active, handleToggle }) => {
         className="overflow-hidden w-full max-w-[60rem]"
       >
         <div className="p-4 pt-0 w-10/12 mx-auto mb-4">
-          <p className="max-md:text-sm dark:text-gray-300 transition-colors">{content}</p>
+          <p className="max-md:text-sm dark:text-gray-300 transition-colors">
+            {content}
+          </p>
         </div>
       </motion.div>
-      <hr className={"border-border-grey2 border-b-2 relative opacity-60"} />
+      {/* <hr className={"border-border-grey2 border-b-2 relative opacity-60"} /> */}
     </div>
   );
 };
