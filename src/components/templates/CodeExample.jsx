@@ -22,7 +22,7 @@ function CodeExample() {
           </div>
           <a
             href={process.env.NEXT_PUBLIC_EDITOR_URL}
-            className="flex flex-col items-end justify-end gap-y-10"
+            className="flex flex-col items-end justify-end gap-y-8"
           >
             <ButtonCodeBox
               icon={
