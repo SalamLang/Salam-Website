@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Input from "../atoms/Input";
 
 import Mobile from "../../../public/svgs/mobile.svg";
@@ -14,6 +14,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { convertToPersianNumbers } from "@/utils/helper/handlers";
 
 function BoxSentCode() {
+  const inputRef = useRef(null);
+
   const { mutateAsync: sendMobileMutation, isPending } = useMutation({
     mutationKey: ["send-mobile"],
     mutationFn: sendMobile,
@@ -47,12 +49,18 @@ function BoxSentCode() {
     formik.setFieldValue("mobile", convertToPersianNumbers(value));
   };
 
+  const handleFormClick = (e) => {
+    if (e.target.type !== "submit") {
+      inputRef.current.focus();
+    }
+  };
   return (
     <>
       <div className="w-full flex justify-center items-center">
         <form
           action=""
           onSubmit={formik.handleSubmit}
+          onClick={handleFormClick}
           className={
             "bg-light-orange relative max-w-[400px] md:max-w-[500px] w-full h-full max-sm:h-5/6 rounded-[40px] flex flex-row-reverse items-center justify-between max-sm:px-1.5 px-2 max-sm:py-1 py-1.5 md:p-2.5"
           }
@@ -63,6 +71,7 @@ function BoxSentCode() {
             </div>
             <div className="bg-black/[0.05] !rounded-full max-sm:w-[1.5px] mr-1 w-[2px] h-[30px]"></div>
             <Input
+              ref={inputRef}
               type="text"
               placeholder="۰۹۹۱۳۹۱۵۲۵۴"
               maxLength={11}
