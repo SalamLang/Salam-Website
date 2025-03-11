@@ -51,34 +51,34 @@ function Marquee() {
         className={"slider"}
       >
         <SwiperSlide>
-          <Image src={Snap} alt="Snap" className="" />
+          <Image src={Snap} alt="Snap" className="dark:invert" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Digikala} alt="Digikala" className="" />
+          <Image src={Digikala} alt="Digikala" className="dark:invert" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Asrez} alt="Asrez" className="" />
+          <Image src={Asrez} alt="Asrez" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Tapsi} alt="Tapsi" className="" />
+          <Image src={Tapsi} alt="Tapsi" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TapsiGarage} alt="Tapsi Garage" className="" />
+          <Image src={TapsiGarage} alt="Tapsi Garage" className="dark:invert" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Snap} alt="Snap" className="" />
+          <Image src={Snap} alt="Snap" className="dark:invert" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Digikala} alt="Digikala" className="" />
+          <Image src={Digikala} alt="Digikala" className="dark:invert" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Asrez} alt="Asrez" className="" />
+          <Image src={Asrez} alt="Asrez" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Tapsi} alt="Tapsi" className="" />
+          <Image src={Tapsi} alt="Tapsi" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TapsiGarage} alt="Tapsi Garage" className="" />
+          <Image src={TapsiGarage} alt="Tapsi Garage" className="dark:invert" />
         </SwiperSlide>
       </Swiper>
     </div>
