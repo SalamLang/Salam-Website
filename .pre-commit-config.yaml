@@ -18,6 +18,7 @@ repos:
       #- id: check-executables-have-shebangs
       - id: check-merge-conflict
       - id: check-shebang-scripts-are-executable
+      - id: check-toml
       - id: check-vcs-permalinks
       - id: check-yaml
       - id: destroyed-symlinks
