@@ -1,4 +1,5 @@
 # Salam Website
+
 ## Getting Started
 
 First, run the development server:
@@ -29,6 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 <div dir="rtl">
 
 # وب‌سایت سلام
+
 ## شروع به کار
 
 برای اجرای سرور توسعه، از یکی از دستورات زیر استفاده کنید:
@@ -42,6 +44,7 @@ pnpm dev
 # یا
 bun dev
 ```
+
 مرورگر خود را باز کرده و [http://localhost:3000] را مشاهده کنید.
 
 ## صفحات
@@ -55,4 +58,4 @@ bun dev
 - [ویرایشگر](http://localhost:3000/playground) || (salamlang.ir/playground)
 - [حامیان](http://localhost:3000/supporter) || (salamlang.ir/supporter)
 
-</div> 
+</div>
