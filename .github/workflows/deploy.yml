@@ -1,4 +1,4 @@
-name: Salam Website
+name: 🌐 Salam Website
 
 on:
   push:
@@ -10,10 +10,15 @@ jobs:
     if: github.repository == 'SalamLang/Salam-Website'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v5
 
-      - name: Run and deploy
+      - name: 🧪 Install dependencies
+        run: |
+          npm i -g bun
+          bun install --force
+
+      - name: 🚀 Build and Deploy
         uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -24,8 +29,6 @@ jobs:
             cd ${{ secrets.SERVER_PATH }}
             git fetch --all
             git pull
-            npm i -g bun
-            bun install --force
             bun run build
             if [ $? -eq 0 ]; then
               if [ -f "package.json" ]; then
@@ -36,8 +39,9 @@ jobs:
                 fi
                 pm2 save
               else
-                echo "package.json not found. Skipping start/restart."
+                echo "📄 package.json not found. Skipping start/restart."
               fi
             else
-              echo "Build failed. Skipping PM2 restart."
+              echo "❌ Build failed. Skipping PM2 restart."
             fi
+            
