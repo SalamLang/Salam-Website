@@ -1,6 +1,6 @@
-# Salam Website
+# 💻 Salam Website
 
-## Getting Started
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -16,7 +16,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Pages
+## 📄 Pages
 
 - [Home](http://localhost:3000) || (salamlang.ir)
 - [Docs](http://localhost:3000/docs) || (salamlang.ir/docs)
@@ -29,9 +29,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 <div dir="rtl">
 
-# وب‌سایت سلام
+# 💻 وب‌سایت سلام
 
-## شروع به کار
+## 🚀 شروع به کار
 
 برای اجرای سرور توسعه، از یکی از دستورات زیر استفاده کنید:
 
@@ -47,7 +47,7 @@ bun dev
 
 مرورگر خود را باز کرده و [http://localhost:3000] را مشاهده کنید.
 
-## صفحات
+## 📄 صفحات
 
 - [صفحه اصلی](http://localhost:3000) || (salamlang.ir)
 - [مستندات](http://localhost:3000/docs) || (salamlang.ir/docs)
