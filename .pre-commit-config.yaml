@@ -47,3 +47,11 @@ repos:
         name: run markdown link check
         description: check the Markdown files for broken links
         args: [-q]
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        name: run yamllint
+        description: Check YAML files with yamllint
+        args: [--config-file=.yamllint.yml]
+        types: [yaml]
