@@ -1,6 +1,6 @@
-// Bun Snapshot v1, https://goo.gl/fbAQLP
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
 
-exports[`renders correctly 1`] = `
+exports[`Badge component renders with primary className correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
 }
 `;
 
-exports[`renders correctly 2`] = `
+exports[`Badge component renders with multiple classNames correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -26,7 +26,7 @@ exports[`renders correctly 2`] = `
 }
 `;
 
-exports[`renders correctly 3`] = `
+exports[`Badge component renders with success intent correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -39,7 +39,7 @@ exports[`renders correctly 3`] = `
 }
 `;
 
-exports[`renders correctly 4`] = `
+exports[`Badge component renders with warning intent correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -52,7 +52,7 @@ exports[`renders correctly 4`] = `
 }
 `;
 
-exports[`renders correctly 5`] = `
+exports[`Badge component renders with danger intent correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
