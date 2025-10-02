@@ -1,4 +1,4 @@
-name: Salam Website
+name: 🌐 Salam Website
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
     if: github.repository == 'SalamLang/Salam-Website'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v5
 
-      - name: Run and deploy
+      - name: 🚀 Run and deploy
         uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.SERVER_HOST }}
