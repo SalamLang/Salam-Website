@@ -1,4 +1,6 @@
 name: 🌐 Salam Website
+permissions:
+  contents: read
 
 on:
   push:

@@ -1,0 +1,33 @@
+name: Lint Markdown and YAML
+
+on:
+  pull_request:
+  push:
+    branches: [ "main" ]
+
+permissions: {}
+
+jobs:
+  lint:
+    name: Super-Linter - Markdown & YAML
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      statuses: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Run Super-Linter
+        uses: super-linter/super-linter@v8.2.0
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_MARKDOWN: true
+          VALIDATE_YAML: true
