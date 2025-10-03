@@ -1,4 +1,4 @@
-name: Lint Markdown
+name: Lint Markdown and YAML
 
 on:
   pull_request:
@@ -8,8 +8,8 @@ on:
 permissions: {}
 
 jobs:
-  lint-markdown:
-    name: Super-Linter - Markdown Only
+  lint:
+    name: Super-Linter - Markdown & YAML
     runs-on: ubuntu-latest
 
     permissions:
@@ -23,10 +23,11 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Run Super-Linter (Markdown only)
+      - name: Run Super-Linter
         uses: super-linter/super-linter@v8.2.0
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_MARKDOWN: true
+          VALIDATE_YAML: true
