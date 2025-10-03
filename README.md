@@ -16,6 +16,29 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## 🔒 Security
+
+This project includes automated security measures:
+
+- **Pre-commit Security Audits**: Automatically scans dependencies for vulnerabilities before each commit
+- **Bun Audit**: Primary security scanning using `bun audit`
+- **NPM Audit Fallback**: Backup scanning with `npm audit` when Bun is unavailable
+
+### Security Commands
+
+```bash
+# Run security audit
+bun run audit
+
+# Run security audit with fixes
+bun run audit:fix
+
+# Comprehensive security check
+bun run security:check
+```
+
+For detailed security information, see [SECURITY.md](./SECURITY.md).
+
 ## Pages
 
 - [Home](http://localhost:3000) || (salamlang.ir)

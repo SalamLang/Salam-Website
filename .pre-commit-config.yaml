@@ -40,3 +40,19 @@ repos:
         args: [--config=.github/linters/.markdown-lint.yml]
         types: [markdown]
         files: \.md$
+  - repo: local
+    hooks:
+      - id: bun-audit
+        name: Bun Security Audit
+        entry: bun audit
+        language: system
+        description: Run security audit to check for vulnerabilities in dependencies
+        pass_filenames: false
+        stages: [pre-commit]
+      - id: npm-audit-fallback
+        name: NPM Security Audit (Fallback)
+        entry: bash -c 'if ! command -v bun &> /dev/null; then npm audit --audit-level=moderate; else echo "Using Bun audit instead"; fi'
+        language: system
+        description: Run NPM security audit as fallback if Bun is not available
+        pass_filenames: false
+        stages: [pre-commit]
