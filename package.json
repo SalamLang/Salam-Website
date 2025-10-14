@@ -41,14 +41,17 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.12",
+    "@tailwindcss/postcss": "^4.0.12",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.0.10",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.1",
-    "jest": "^30.0.0",
+    "jest": "^30.2.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.12",
-    "@tailwindcss/postcss": "^4.0.12",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.9.3",
     "webpack": "^5.98.0"
   }
 }
