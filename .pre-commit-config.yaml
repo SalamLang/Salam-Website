@@ -57,13 +57,13 @@ repos:
         types: [yaml]
 
 # Local hooks
-- repo: local
-  hooks:
-    - id: npm-audit
-      name: npm audit
-      description: Run `npm run audit` to detect high/critical vulnerabilities before committing
-      entry: npm run audit
-      language: system
-      types: [javascript, json]
-      # run only on pre-commit stage (default_stages includes pre-commit and pre-push)
-      stages: [pre-commit]
+  - repo: local
+    hooks:
+      - id: npm-audit
+        name: npm audit
+        description: Run `npm run audit` to detect high/critical vulnerabilities before committing
+        entry: npm run audit
+        language: system
+        types: [javascript, json]
+        # run only on pre-commit stage (default_stages includes pre-commit and pre-push)
+        stages: [pre-commit]
