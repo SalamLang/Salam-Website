@@ -61,9 +61,9 @@ repos:
     hooks:
       - id: npm-audit
         name: npm audit
-        description: Run `npm run audit` to detect high/critical vulnerabilities before committing
+        description: Run `npm run audit` to detect vulnerabilities (moderate or higher) before committing
         entry: npm run audit
         language: system
-        types: [javascript, json]
-        # run only on pre-commit stage (default_stages includes pre-commit and pre-push)
+        files: '^(package\.json|package-lock\.json)$'
+        pass_filenames: false
         stages: [pre-commit]
