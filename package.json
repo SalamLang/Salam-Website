@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "audit": "npm audit --audit-level=moderate",
     "tailwind": "bunx @tailwindcss/cli -w",
     "test": "bun test"
   },
