@@ -19,7 +19,7 @@
     "@theme-toggles/react": "^4.1.0",
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
-    "formik": "^2.4.6",
+    "formik": "^2.4.8",
     "framer-motion": "^12.4.10",
     "glob": "^11.0.1",
     "lru-cache": "^11.0.2",
