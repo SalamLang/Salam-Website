@@ -19,7 +19,7 @@
     "@theme-toggles/react": "^4.1.0",
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
-    "formik": "^2.4.6",
+    "formik": "^2.4.9",
     "framer-motion": "^12.4.10",
     "glob": "^11.0.1",
     "lru-cache": "^11.0.2",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.17",
     "@types/react": "^19.0.10",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.22",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.1",
     "jest": "^30.0.0",
