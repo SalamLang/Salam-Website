@@ -15,7 +15,7 @@
     "@eslint/config-array": "^0.23.0",
     "@eslint/object-schema": "^3.0.0",
     "@svgr/webpack": "^8.1.0",
-    "@tanstack/react-query": "^5.90.11",
+    "@tanstack/react-query": "^5.90.12",
     "@theme-toggles/react": "^4.1.0",
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
