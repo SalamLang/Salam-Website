@@ -43,8 +43,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "@types/react": "^19.2.7",
-    "autoprefixer": "^10.4.22",
-    "eslint": "^9.39.1",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.2",
     "eslint-config-next": "^16.0.10",
     "jest": "^30.0.0",
     "postcss": "^8.5.3",
