@@ -20,7 +20,7 @@
     "axios": "^1.13.2",
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
-    "framer-motion": "^12.24.7",
+    "framer-motion": "^12.24.10",
     "glob": "^13.0.0",
     "lru-cache": "^11.2.4",
     "markdown-to-jsx": "^9.5.0",
