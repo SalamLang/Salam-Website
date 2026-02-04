@@ -20,8 +20,8 @@
     "axios": "^1.13.4",
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
-    "framer-motion": "^12.30.0",
-    "glob": "^13.0.0",
+    "framer-motion": "^12.31.0",
+    "glob": "^13.0.1",
     "lru-cache": "^11.2.5",
     "markdown-to-jsx": "^9.6.1",
     "next": "16.1.6",
@@ -50,6 +50,6 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.18",
     "@tailwindcss/postcss": "^4.1.18",
-    "webpack": "^5.104.1"
+    "webpack": "^5.105.0"
   }
 }
