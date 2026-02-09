@@ -12,12 +12,12 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@eslint/config-array": "^0.23.0",
+    "@eslint/config-array": "^0.23.1",
     "@eslint/object-schema": "^3.0.0",
     "@svgr/webpack": "^8.1.0",
     "@tanstack/react-query": "^5.90.20",
     "@theme-toggles/react": "^4.1.0",
-    "axios": "^1.13.4",
+    "axios": "^1.13.5",
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.33.0",
@@ -44,7 +44,7 @@
     "@tailwindcss/cli": "^4.1.18",
     "@types/react": "^19.2.13",
     "autoprefixer": "^10.4.24",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-next": "^16.1.6",
     "jest": "^30.0.0",
     "postcss": "^8.5.3",
