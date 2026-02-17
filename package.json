@@ -21,7 +21,7 @@
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.34.0",
-    "glob": "^13.0.3",
+    "glob": "^13.0.4",
     "lru-cache": "^11.2.6",
     "markdown-to-jsx": "^9.7.4",
     "next": "16.1.6",
