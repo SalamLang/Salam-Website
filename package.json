@@ -17,7 +17,7 @@
     "@svgr/webpack": "^8.1.0",
     "@tanstack/react-query": "^5.90.21",
     "@theme-toggles/react": "^4.1.0",
-    "axios": "^1.13.5",
+    "axios": "^1.13.6",
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.34.3",
