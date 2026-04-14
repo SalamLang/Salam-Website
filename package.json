@@ -22,7 +22,7 @@
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
     "glob": "^13.0.6",
-    "lru-cache": "^11.3.3",
+    "lru-cache": "^11.3.5",
     "markdown-to-jsx": "^9.7.15",
     "next": "16.2.3",
     "nprogress": "^0.2.0",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "@types/react": "^19.2.14",
-    "autoprefixer": "^10.4.27",
+    "autoprefixer": "^10.5.0",
     "eslint": "^10.2.0",
     "eslint-config-next": "^16.2.3",
     "jest": "^30.3.0",
