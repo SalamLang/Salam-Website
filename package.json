@@ -17,7 +17,7 @@
     "@svgr/webpack": "^8.1.0",
     "@tanstack/react-query": "^5.99.2",
     "@theme-toggles/react": "^4.1.0",
-    "axios": "^1.15.1",
+    "axios": "^1.15.2",
     "class-variance-authority": "^0.7.1",
     "formik": "^2.4.9",
     "framer-motion": "^12.38.0",
@@ -41,15 +41,15 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.2.3",
+    "@tailwindcss/cli": "^4.2.4",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.5.0",
     "eslint": "^10.2.1",
     "eslint-config-next": "^16.2.4",
     "jest": "^30.3.0",
     "postcss": "^8.5.10",
-    "tailwindcss": "^4.2.3",
-    "@tailwindcss/postcss": "^4.2.3",
+    "tailwindcss": "^4.2.4",
+    "@tailwindcss/postcss": "^4.2.4",
     "webpack": "^5.106.2"
   }
 }
